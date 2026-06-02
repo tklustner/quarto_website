@@ -1,17 +1,17 @@
 ---
 title: ""
 about:
-  template: jolla
+  template: solana
 
 ---
 
 # Tim Klustner
 
-Mapping conflict, building tools. Currently based in Seattle.
+Mapping conflict, building tools. Currently based in Seattle, USA.
 
 
 
-<p class="featured-header">Featured — Infrastructure of Violence in Michoacán & Guerrero</p>
+<p class="featured-header">Featured — Michoacán & Guerrero</p>
 
 ![](charts/assets/mich_guer_binned_road_proximity.png)
 
