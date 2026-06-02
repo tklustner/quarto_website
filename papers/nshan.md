@@ -40,7 +40,7 @@ The roughly 19% decrease in cultivation zone-adjacent conflict (from 35.4% in 20
 
 *Figure 2: Fatality-Scaled Conflict Events & Fatality Rates in North Shan State (2018-2025)*
 
-![](../charts/assets/shan_med2.gif)
+![](../charts/assets/nshan_clipped_gif.gif)
 
 **IV. Operation 1027 and the Surge in Conflict Lethality**
 

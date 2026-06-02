@@ -7,7 +7,7 @@ title: "Data Visualizations"
 **Does conflict track opium cultivation or transit routes? North Shan (2018–2025)**<br>
 *Fatality-scaled hex grid animation · From: [Conflict, Opium & Territorial Control in North Shan](../papers/nshan.html)*
 
-![](assets/shan_med2.gif)
+![](assets/nshan_clipped_gif.gif)
 
 **Where does violence concentrate relative to infrastructure? South Kivu (2018–2024)**<br>
 *Fatality-scaled event map · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
