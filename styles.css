@@ -68,3 +68,7 @@ img {
     color: #888;
     text-align: left;
 }
+
+.description {
+    max-width: 100%;
+}

@@ -7,9 +7,7 @@ about:
 
 # Tim Klustner
 
-Mapping conflict, building tools. Currently based in Seattle, USA.
-
-
+<p class="description">Conflict geographer crowdsourcing ground truth. Based in Seattle. </p>
 
 <p class="featured-header">Featured — Michoacán & Guerrero</p>
 
@@ -17,3 +15,6 @@ Mapping conflict, building tools. Currently based in Seattle, USA.
 
 *"For armed groups unable to dominate transnational drug routes, the same connective spaces that civilians depend on for daily routines also expose local populations to persistently high levels of risk."*<br>
 *[Read the full paper →](papers/mich_guer.html)*
+
+
+Available for contract analysis, field data systems, and geospatial pipelines: from satellite to street level. [Get in touch →](mailto:timklustner@proton.me) 
