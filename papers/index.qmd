@@ -1,0 +1,21 @@
+---
+title: "Papers"
+---
+
+## Working Papers
+
+**[Detecting Coercion Without Visible Enforcement: Evidence from Afghanistan's Opium Ban](afg.html)** <br>
+Spatial triangulation methodology for identifying compliance under threat using satellite and cultivation data.
+
+**[Infrastructure of Violence in Michoacán & Guerrero](mich_guer.html)**<br>
+How cartel violence follows transit corridors; road networks as conflict infrastructure.
+
+**[Conflict, Opium & Territorial Control in North Shan](nshan.html)**<br>
+Why armed groups increasingly target transit routes over opium cultivation zones.
+
+**[COMING SOON-Conflict, Deforestation & Mining in South Kivu](skivu.html)**<br>
+Mine proximity predicts conflict risk, but only when roads are present.
+
+
+
+---

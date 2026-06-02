@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "TK"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: papers/index.qmd
+        text: Papers
+      - href: charts/index.qmd
+        text: Charts
+      - href: work.qmd
+        text: Work
+
+format:
+  html:
+    include-after-body: scripts.html
+    theme: darkly
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    mainfont: "Inter"        
+    fontsize: 1.2em          
+    linestretch: 1.6         
+    page-layout: article
+    body-width: 900px 
+
+
+execute:
+  freeze: auto          

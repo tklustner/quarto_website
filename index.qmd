@@ -1,0 +1,19 @@
+---
+title: ""
+about:
+  template: jolla
+
+---
+
+# Tim Klustner
+
+Mapping conflict, building tools. Currently based in Seattle.
+
+
+
+<p class="featured-header">Featured — Infrastructure of Violence in Michoacán & Guerrero</p>
+
+![](charts/assets/mich_guer_binned_road_proximity.png)
+
+*"For armed groups unable to dominate transnational drug routes, the same connective spaces that civilians depend on for daily routines also expose local populations to persistently high levels of risk."*<br>
+*[Read the full paper →](papers/mich_guer.html)*

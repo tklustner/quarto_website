@@ -1,0 +1,12 @@
+---
+title: "Work"
+---
+
+## Systems
+
+**[SMS-to-Map Pipeline](https://github.com/tklustner/sms-mapper-overview.git)**  
+**March 2026:**
+Real-time field report ingestion and mapping system. CQRS + event-driven architecture, 
+designed for low-resource conflict contexts.
+
+---

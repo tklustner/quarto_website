@@ -1,0 +1,68 @@
+---
+title: "Data Visualizations"
+---
+
+## Animated
+
+**Does conflict track opium cultivation or transit routes? North Shan (2018–2025)**<br>
+*Fatality-scaled hex grid animation · From: [Conflict, Opium & Territorial Control in North Shan](../papers/nshan.html)*
+
+![](assets/shan_med2.gif)
+
+**Where does violence concentrate relative to infrastructure? South Kivu (2018–2024)**<br>
+*Fatality-scaled event map · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+
+![](assets/skivu_map_chart_TL.gif)
+
+## Maps
+
+**Where do mineral extraction sites overlap with conflict? South Kivu (2013–2024)**<br>
+*Aggregated event density + extraction sites · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+
+![](assets/skivu_mineral_extraction_map.png)
+
+**Does road proximity predict cartel violence? Michoacán & Guerrero (2018–2025)**<br>
+*Binned proximity analysis · From: [Infrastructure of Violence in Michoacán & Guerrero](../papers/mich_guer.html)*
+
+![](assets/mich_guer_binned_road_proximity.png)
+
+**How do international transit routes mediate conflict exposure? East Africa**<br>
+*Corridor mapping · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+
+![](assets/north_central_transit_corridors.png)
+
+**Does deforestation co-locate with conflict intensity? South Kivu (2018–2024)**<br>
+*Bivariate spatial analysis · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+
+![](assets/skivu_conflict_defor_bivariate.png)
+
+## Charts
+
+**How did conflict tactics shift after the 2021 coup? North Shan (2018–2025)**<br>
+*Disaggregated event type over time · From: [Conflict, Opium & Territorial Control in North Shan](../papers/nshan.html)*
+
+![](assets/nshan_conflict_tactics.png)
+
+**Did military and opposition ordnance lethality diverge post-coup? North Shan (2022–2025)**<br>
+*Stacked bar + fatality rate by actor · From: [Conflict, Opium & Territorial Control in North Shan](../papers/nshan.html)*
+
+![](assets/nshan_ordnance_dyad_stackedBar.png)
+
+**How do cartel rivalries structure violence networks? Michoacán & Guerrero (2018–2025)**<br>
+*Directional actor network · From: [Infrastructure of Violence in Michoacán & Guerrero](../papers/mich_guer.html)*
+
+![](assets/mich_guer_directional_network.png)
+
+## Models
+
+**How well do Monte Carlo and logistic regression predict conflict intensity? South Kivu (2018-2024)**<br>
+*Side-by-side model comparison · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+
+![](assets/skivu_MC_LogReg_sideBySide.png)
+
+**Does road proximity amplify mine proximity's effect on conflict risk? South Kivu (2018-2024)**<br>
+*GAM interaction term · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+
+![](assets/skivu_roadMines_interaction_scatter.png)
+
+---
