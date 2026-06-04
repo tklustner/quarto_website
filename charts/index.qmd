@@ -1,7 +1,9 @@
 ---
 title: "Data Visualizations"
 ---
-
+<!-- Note: directory named 'charts/' (original scope); 
+     now serves as data viz hub (charts, maps, models) -->
+     
 ## Animated
 
 **Does conflict track opium cultivation or transit routes? North Shan (2018–2025)**<br>

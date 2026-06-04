@@ -10,8 +10,9 @@ website:
         text: Home
       - href: papers/index.qmd
         text: Papers
-      - href: charts/index.qmd
-        text: Charts
+      - href: charts/index.qmd # path uses original 'charts' name for URL stability; 
+                               # scope expanded to include maps, stats models 
+        text: Data Visualizations
       - href: work.qmd
         text: Work
 

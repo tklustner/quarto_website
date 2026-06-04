@@ -25,6 +25,10 @@ The relevant question for the Afghanistan ban is therefore not if it succeeded n
 
 Three analytical steps operationalize the divergence detection logic. First, a cultivation-precipitation baseline is established for each province using pre-ban data (2015–2021), characterizing the historical relationship between rainfall anomaly and cultivated area. Post-ban residuals– observed cultivation minus precipitation-predicted cultivation– isolate the coercive signal from climatic variation. Second, cross-correlation analysis between UCDP enforcement event counts and NDVI-derived vegetation anomalies identifies the lead/lag structure: whether enforcement activity precedes or follows cultivation change, and by how many months. A positive lag indicates enforcement is driving compliance, while a negative lag indicates authorities are reacting to cultivation decisions already made. Third, the spatial distribution of enforcement events within each province is characterized using the Clark-Evans nearest-neighbor statistic, which distinguishes clustered from dispersed enforcement presence. Clustering indicates coherent territorial coverage; dispersal indicates porous enforcement.
 
+*Figure 1: Provincial Patterns of Precipitation, Cultivation & Enforcement: 2022-2025*
+
+![](../charts/assets/afg_precip_enforcement_5prov.png)
+
 **IV. Helmand: Enforcement Coherence & Compliance**
 
 Prior to the 2022 ban, Helmand province was the primary historical producer of opium in Afghanistan. After rebounding from the 2000 ban, cultivation in the province persisted through concerted eradication campaigns until 2008-9, when the Helmand Food Zone– backed by $992 million in US funding and significant armed international presence– incentivized wheat as a crop replacement strategy. In 2009, Helmand's cultivation area declined 37%.[^mansfield] (p. 230) That partial compliance under maximum international pressure sets a baseline: Helmand cultivators respond to credible enforcement, but the threshold for credibility is high. 
@@ -37,26 +41,23 @@ In contrast to Helmand, northeastern Badakhshan's experience with inconsistent, 
 
 Unique among the five provinces in the panel, Badakhshan's cultivation area has increased 86% since the 2022 ban, from 1,573 ha in its first year to 6,639 ha in 2025.[^unodc] While Badakhshan, like Helmand, has long been singled-out as a opium ban target, enforcement events in Badakhshan lag six months *behind* vegetation *growth*. The spatial dispersion of enforcement events (R = 1.28) indicates enforcement activity without *coherence*. Enforcement events averaged 40 km apart across a province that historically requires credible sustained presence in cultivation zones. This inverts the relationship found in Helmand. In Badakhshan, authorities are responding to cultivation decisions, not dictating them. 
 
+*Figure 2: Province-level change in cultivation area, Afghanistan Opium Survey 2025 (UNODC)*
+
+![](../charts/assets/afg_unodc_prov_cultivation.png)
+*UNODC's 2024–25 provincial change map codes Helmand and Badakhshan identically at –10%. The divergence detection analysis suggests these represent structurally different outcomes.*
+
+
 **VI. Findings**
 
 The two-province comparison above confirms the divergence detection logic. Where enforcement coherence was sufficient to meet the credibility threshold– Helmand– satellite-derived vegetation anomalies follow enforcement events by five months, and cultivation collapsed to near zero. Where it was not– Badakhshan– the sequence inverts. Cultivation trends upward throughout the panel regardless of enforcement event counts. The precipitation-residual baseline confirms that neither pattern is a result of climatic variation. 
 
 Badakhshan represents a compliance failure, not a detection failure. The methodology reads the province correctly: high enforcement visibility against rising cultivation is the signal, versus a data problem. Monitoring systems that aggregate event counts without accounting for their spatial coherence will misread this as partial ban progress. The R= 1.28 dispersion statistic and negative lead/lag together identify what event counts alone cannot: enforcement presence was never dense enough to function as a credible constraint.
 
-*Figure 1: Provincial Patterns of Precipitation, Cultivation & Enforcement: 2022-2025*
-
-![](../charts/assets/afg_precip_enforcement_5prov.png)
-
 The three intermediate provinces occupy distinct positions within the bracket. Kabul matches Helmand on detection speed– 2.5σ within six months, with the panel's strongest enforcement lead correlation (r = −0.47, p = 0.011)– but its marginal pre-ban cultivation base makes it structurally the least demanding compliance case. Nangarhar presents a harder read: cultivation collapsed to zero by 2024 and a 61mm precipitation recovery that year produced no cultivation rebound. However, high pre-ban variance delays detection to 30 months and enforcement leads compliance by only one month against Helmand's five. The methodology reads both as compliance, differentiated by enforcement coherence and baseline volatility. Balkh never clears 1σ, but this is a confound problem instead of a compliance failure: persistent drought suppresses predicted cultivation so far below baseline that the enforcement residual is statistically indistinguishable from noise. In other words, compliance signal is absent because the climate model has already explained it.
-
-*Figure 2: Province-level change in cultivation area, Afghanistan Opium Survey 2025 (UNODC)*
-
-![](../charts/assets/afg_unodc_prov_cultivation.png)
-*UNODC's 2024–25 provincial change map codes Helmand and Badakhshan identically at –10%. The divergence detection analysis suggests these represent structurally different outcomes.*
 
 **VII. Policy Implications**
 
-Existing monitoring methodologies cannot differentiate variable enforcement coherence in Helmand and Badakhshan using event counts and aggregate province metrics alone. In the Afghanistan case, these two sources combine to misrepresent ground-truth reality. State presence is not generating compliance the way it does in Helmand, yet a 10% cultivation decline between 2024-25[^unodc] (see Figure 2) reads as encouraging progress in a province long outside the Taliban's effective control. Remote sensing provides the independent temporal axis that event counts cannot by distinguishing whether enforcement is driving cultivation decisions or reacting to them. Without that axis, high enforcement visibility in a low-coherence province actively masks non-compliance. 
+Existing monitoring methodologies cannot differentiate variable enforcement coherence in Helmand and Badakhshan using event counts and aggregate province metrics alone. In Badakhshan, these two sources combine to misrepresent ground-truth reality. State presence is not generating compliance the way it does in Helmand, yet a 10% cultivation decline between 2024-25[^unodc] (see Figure 2) reads as encouraging progress in a province long outside the Taliban's effective control. Remote sensing provides the independent temporal axis that event counts cannot by distinguishing whether enforcement is driving cultivation decisions or reacting to them. Without that axis, high enforcement visibility in a low-coherence province actively masks non-compliance. 
 
 Balkh highlights a generalizable hazard for attributing cultivation change to human activity under environmental strain. Persistent drought suppressed predicted cultivation so far below baseline that the enforcement residual became statistically indistinguishable from noise. For policymakers, this means drought-affected provinces will systematically generate false negatives in any monitoring system that doesn't first isolate the climatic signal. Before assigning compliance or non-compliance, the environmental baseline needs to be established independently.
 
