@@ -1,0 +1,8 @@
+---
+title: About
+about:
+    template: solana
+
+---
+
+Tim Klustner works at the intersection of political violence, satellite remote sensing, and field data systems. He came up through eight years of teaching, social work, warehouse and janitorial labor, and program design across Africa, Asia, and Latin America, including co-founding a teacher-training program in Egypt and writing cybersecurity curricula for USAID in Kazakhstan. He develops tools, research, and methods for detecting violence and coercion in informationally-constrained environments. He speaks Spanish.

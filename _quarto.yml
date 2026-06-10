@@ -15,7 +15,8 @@ website:
         text: Data Visualizations
       - href: work.qmd
         text: Work
-
+      - href: about.qmd
+        text: About
 format:
   html:
     include-after-body: scripts.html
