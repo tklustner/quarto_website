@@ -55,7 +55,7 @@ Second, the precipitation baseline controls for climatic variation, isolating ab
 
 ```{=html}
 <div style="width: 100vw; position: relative; left: 50%; transform: translateX(-50%);">
-<iframe src="figures/convenio_map.html" width="100%" height="560px" frameborder="0" style="border:none;"></iframe>
+<iframe src="charts/assets/convenio_map.html" width="100%" height="560px" frameborder="0" style="border:none;"></iframe>
 </div>
 ```
   *Pre-Convenio period is dominated by VAC concentrated in Tocoa; post-Convenio period shows shift toward battles and strategic developments, with VAC declining in absolute terms but persisting. Event counts are roughly equivalent across periods. The compositional shift, not volume reduction, is the signal.*

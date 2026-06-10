@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - charts/assets/convenio_map.html
 
 website:
   title: "TK"
