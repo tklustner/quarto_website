@@ -43,5 +43,8 @@
   },
   "papers/afg.md": {
     "afg.html": "8e70674a"
+  },
+  "about.qmd": {
+    "about.html": "a3039d72"
   }
 }
