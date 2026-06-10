@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d25ed8bb0b776c44d1c2df907822c0df {
+                    position: absolute;
+                    width: 50.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_48e6888d38d552c6dcdf6900a89bc530 {
+                    position: absolute;
+                    width: 50.0%;
+                    height: 100.0%;
+                    left: 50.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/jieter/Leaflet.Sync/L.Map.Sync.min.js"></script>
+</head>
+<body>
+    
+    
+<style>
+  .cv-label {
+    position: fixed; top: 12px; z-index: 9999; pointer-events: none;
+    background: rgba(255,255,255,0.88); padding: 4px 12px; border-radius: 3px;
+    font-family: sans-serif; font-size: 12px; font-weight: 500; color: #555;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    transform: translateX(-50%);
+  }
+</style>
+<div class="cv-label" style="left:25%">
+  Pre-Convenio &nbsp; 2018 – 22 Feb 2022
+  &nbsp;<span style="font-weight:400;font-size:10px;color:#999">n=117</span>
+</div>
+<div class="cv-label" style="left:75%">
+  Post-Convenio &nbsp; 22 Feb 2022 – 2025
+  &nbsp;<span style="font-weight:400;font-size:9px;color:#999">n=114</span>
+</div>
+<div style="
+  position:fixed; bottom:24px; left:50%; transform:translateX(-50%); z-index:9999;
+  background:rgba(255,255,255,0.92); border:1px solid #ddd; border-radius:3px;
+  padding:8px 400px; line-height:1.8; display:flex; gap:20px; align-items:center;
+  font-family:sans-serif; font-size:10px; color:#555;
+  box-shadow:0 1px 4px rgba(0,0,0,0.10);
+" >
+
+  <span style="font-size:10px;color:#999;white-space:nowrap">Event type</span>
+  <span style="white-space:nowrap"><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#B5443E" fill-opacity="0.75" stroke="#B5443E" stroke-width="1"/></svg>&nbsp;VAC</span><span style="white-space:nowrap"><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#3A6E9E" fill-opacity="0.75" stroke="#3A6E9E" stroke-width="1"/></svg>&nbsp;Protests</span><span style="white-space:nowrap"><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#888888" fill-opacity="0.75" stroke="#888888" stroke-width="1"/></svg>&nbsp;Strategic dev.</span><span style="white-space:nowrap"><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#A07820" fill-opacity="0.75" stroke="#A07820" stroke-width="1"/></svg>&nbsp;Riots</span><span style="white-space:nowrap"><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#4A7C59" fill-opacity="0.75" stroke="#4A7C59" stroke-width="1"/></svg>&nbsp;Battles</span>
+  <span style="font-size:9px;color:#aaa;white-space:nowrap">Data: ACLED 2018–2025 · palm land conflict events · circle size ~ event count</span>
+</div>
+<div style="
+    position:fixed; top:0; bottom:0; left:50%;
+    width:2px; background:#111; z-index:999;
+"></div>
+    
+            <div class="folium-map" id="map_d25ed8bb0b776c44d1c2df907822c0df" ></div>
+        
+    
+            <div class="folium-map" id="map_48e6888d38d552c6dcdf6900a89bc530" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d25ed8bb0b776c44d1c2df907822c0df = L.map(
+                "map_d25ed8bb0b776c44d1c2df907822c0df",
+                {
+                    center: [15.65, -86.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_574ded4d7d2f5141ca9d3a5890e54453 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_574ded4d7d2f5141ca9d3a5890e54453.addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            var circle_marker_5b15e27af7e0f7478e496b4561fa7278 = L.circleMarker(
+                [15.5214, -86.2238],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_5b15e27af7e0f7478e496b4561fa7278.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Saba<br>Events: 5 &nbsp;|&nbsp; Fatalities: 2<br>May 2019 – Aug 2021
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_78b77811062ab769658ddb918bc65894 = L.circleMarker(
+                [15.581, -86.137],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_78b77811062ab769658ddb918bc65894.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Prieta<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Jun 2019
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_12131dadacf0cd89f42cddc438ceea4e = L.circleMarker(
+                [15.6268, -86.0206],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_12131dadacf0cd89f42cddc438ceea4e.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Aldea Ceibita<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Jun 2019
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_1bccf93ba9af66ca98f11802c0f27cde = L.circleMarker(
+                [15.6553, -85.8687],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_1bccf93ba9af66ca98f11802c0f27cde.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Los Encuentros<br>Events: 1 &nbsp;|&nbsp; Fatalities: 3<br>Nov 2018
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_64720ee51f44154a081bdceb44349e2c = L.circleMarker(
+                [15.6828, -85.9351],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_64720ee51f44154a081bdceb44349e2c.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Taujica<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Jun 2019
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ed937b754f22241d57143b4936245e4d = L.circleMarker(
+                [15.6833, -86.0],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_ed937b754f22241d57143b4936245e4d.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Tocoa<br>Events: 93 &nbsp;|&nbsp; Fatalities: 40<br>Jan 2018 – Feb 2022
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e08323d1586d8624cb724d2790eb5b44 = L.circleMarker(
+                [15.737, -86.5046],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_e08323d1586d8624cb724d2790eb5b44.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Jutiapa<br>Events: 1 &nbsp;|&nbsp; Fatalities: 1<br>Jun 2018
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_7b90c1a2801d6cd8af0ad7769c3ed11e = L.circleMarker(
+                [15.7395, -86.0196],
+                {"bubblingMouseEvents": true, "color": "#4A7C59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A7C59", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_7b90c1a2801d6cd8af0ad7769c3ed11e.bindTooltip(
+                `<div>
+                     <b>Battles</b><br>El Remolino<br>Events: 1 &nbsp;|&nbsp; Fatalities: 1<br>Dec 2021
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_792b7e5882493a99e2cea066ac5d3cb5 = L.circleMarker(
+                [15.749, -85.7376],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_792b7e5882493a99e2cea066ac5d3cb5.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Bonito Oriental<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Feb 2020
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_dc242e21fef8b2ebb9935d946e746b5f = L.circleMarker(
+                [15.7743, -87.4673],
+                {"bubblingMouseEvents": true, "color": "#A07820", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A07820", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_dc242e21fef8b2ebb9935d946e746b5f.bindTooltip(
+                `<div>
+                     <b>Riots</b><br>Tela<br>Events: 2 &nbsp;|&nbsp; Fatalities: 0<br>Jul 2019 – Sep 2019
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ba6dde1c6375630af7b90a390d68c32a = L.circleMarker(
+                [15.9167, -85.9542],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_ba6dde1c6375630af7b90a390d68c32a.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Trujillo<br>Events: 9 &nbsp;|&nbsp; Fatalities: 9<br>Apr 2020 – Feb 2022
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ddd30d51ba9f87d0cd119bae8080549b = L.circleMarker(
+                [15.9529, -85.707],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            circle_marker_ddd30d51ba9f87d0cd119bae8080549b.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Santa Rosa de Aguan<br>Events: 1 &nbsp;|&nbsp; Fatalities: 2<br>Sep 2019
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var marker_19cfa7cea40a0f405b5c0425ef920cf6 = L.marker(
+                [15.8603, -85.815],
+                {
+}
+            ).addTo(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+    
+            var div_icon_e7d2eabffc07c1ff5b0d3bebe653ca31 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:11px; font-family:sans-serif; color:#666; white-space:nowrap; letter-spacing:0.02em;\u0027\u003eAgua Amarilla\u003c/div\u003e",
+  "iconSize": [110, 16],
+  "iconAnchor": [-6, 8],
+  "className": "empty",
+});
+            marker_19cfa7cea40a0f405b5c0425ef920cf6.setIcon(div_icon_e7d2eabffc07c1ff5b0d3bebe653ca31);
+        
+    
+            var map_48e6888d38d552c6dcdf6900a89bc530 = L.map(
+                "map_48e6888d38d552c6dcdf6900a89bc530",
+                {
+                    center: [15.65, -86.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41f29619af19a17dbb00109a41bd254d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_41f29619af19a17dbb00109a41bd254d.addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            var circle_marker_128f0e2ccb132363b6a8fe2249cf7d56 = L.circleMarker(
+                [15.5214, -86.2238],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_128f0e2ccb132363b6a8fe2249cf7d56.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Saba<br>Events: 3 &nbsp;|&nbsp; Fatalities: 1<br>Dec 2022 – Jul 2024
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_8ba7d3b36908d21e18ef7f9b700de47a = L.circleMarker(
+                [15.5625, -86.1569],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_8ba7d3b36908d21e18ef7f9b700de47a.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Paguales<br>Events: 1 &nbsp;|&nbsp; Fatalities: 1<br>Apr 2025
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_b37e5fff79880bbd0dee75b96f02fde9 = L.circleMarker(
+                [15.5666, -86.1833],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_b37e5fff79880bbd0dee75b96f02fde9.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Achiote<br>Events: 1 &nbsp;|&nbsp; Fatalities: 1<br>Mar 2024
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d45dc2f7c456c5bb477221497d296410 = L.circleMarker(
+                [15.6155, -86.3903],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_d45dc2f7c456c5bb477221497d296410.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Descombros<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Dec 2024
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ace63975717e428baf7d64f4f6b40dff = L.circleMarker(
+                [15.634, -87.309],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_ace63975717e428baf7d64f4f6b40dff.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Arizona<br>Events: 3 &nbsp;|&nbsp; Fatalities: 2<br>Nov 2022 – Dec 2023
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_fe01c3afd800353c03f267a990d78b55 = L.circleMarker(
+                [15.6828, -85.9351],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_fe01c3afd800353c03f267a990d78b55.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Taujica<br>Events: 1 &nbsp;|&nbsp; Fatalities: 2<br>May 2024
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_dea08d5fe4933ee46e1d635e6729084d = L.circleMarker(
+                [15.6833, -86.0],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_dea08d5fe4933ee46e1d635e6729084d.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Tocoa<br>Events: 78 &nbsp;|&nbsp; Fatalities: 30<br>Apr 2022 – Apr 2025
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_c66e399e2db528dd4d312ca2c3220f05 = L.circleMarker(
+                [15.7106, -86.0836],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_c66e399e2db528dd4d312ca2c3220f05.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Rigores<br>Events: 1 &nbsp;|&nbsp; Fatalities: 2<br>Jan 2025
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ebe282693e82b37fe62336e2fbcd40fb = L.circleMarker(
+                [15.7303, -85.8856],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_ebe282693e82b37fe62336e2fbcd40fb.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Quebrada de Arena<br>Events: 4 &nbsp;|&nbsp; Fatalities: 0<br>Jun 2022 – Jan 2025
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d5927d85cb2ad056387d3fc59b4b01f5 = L.circleMarker(
+                [15.7377, -85.8511],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_d5927d85cb2ad056387d3fc59b4b01f5.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Quebrada de Agua<br>Events: 2 &nbsp;|&nbsp; Fatalities: 0<br>Nov 2022 – Nov 2022
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_adf32237d63b3ef835eec3453a1c6cc1 = L.circleMarker(
+                [15.7442, -87.1761],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_adf32237d63b3ef835eec3453a1c6cc1.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Esparta<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Dec 2022
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_813aadff13c73e39d074e94a9e4c327c = L.circleMarker(
+                [15.749, -85.7376],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_813aadff13c73e39d074e94a9e4c327c.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Bonito Oriental<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Dec 2024
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_791f2c236b1cf4ef54563880aebb3167 = L.circleMarker(
+                [15.7585, -87.5028],
+                {"bubblingMouseEvents": true, "color": "#888888", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#888888", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_791f2c236b1cf4ef54563880aebb3167.bindTooltip(
+                `<div>
+                     <b>Strategic developments</b><br>Puerto Arturo<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Nov 2022
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_13eac81ffe1a5199e6c0dbb6c2513bf7 = L.circleMarker(
+                [15.7597, -86.7822],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_13eac81ffe1a5199e6c0dbb6c2513bf7.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>La Ceiba<br>Events: 4 &nbsp;|&nbsp; Fatalities: 6<br>Apr 2022 – May 2025
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_1b0d90ad7181189ab9f3972ee4773914 = L.circleMarker(
+                [15.7743, -87.4673],
+                {"bubblingMouseEvents": true, "color": "#B5443E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B5443E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_1b0d90ad7181189ab9f3972ee4773914.bindTooltip(
+                `<div>
+                     <b>Violence against civilians</b><br>Tela<br>Events: 2 &nbsp;|&nbsp; Fatalities: 3<br>Jun 2023 – Jun 2024
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_0888966ad14687ac57b2d2bd09328e07 = L.circleMarker(
+                [15.7805, -85.7869],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_0888966ad14687ac57b2d2bd09328e07.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Corocito<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>May 2022
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_738f198d42d1651f126382e499335fe7 = L.circleMarker(
+                [15.9167, -85.9542],
+                {"bubblingMouseEvents": true, "color": "#3A6E9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3A6E9E", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_738f198d42d1651f126382e499335fe7.bindTooltip(
+                `<div>
+                     <b>Protests</b><br>Trujillo<br>Events: 8 &nbsp;|&nbsp; Fatalities: 4<br>May 2022 – Feb 2025
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3e8623ee4d198d0c79c723727424d353 = L.circleMarker(
+                [16.009, -85.9504],
+                {"bubblingMouseEvents": true, "color": "#888888", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#888888", "fillOpacity": 0.72, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            circle_marker_3e8623ee4d198d0c79c723727424d353.bindTooltip(
+                `<div>
+                     <b>Strategic developments</b><br>Puerto Castilla<br>Events: 1 &nbsp;|&nbsp; Fatalities: 0<br>Nov 2022
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var marker_fdbdaa09550522e630e0fb7ea8fa209a = L.marker(
+                [15.8603, -85.815],
+                {
+}
+            ).addTo(map_48e6888d38d552c6dcdf6900a89bc530);
+        
+    
+            var div_icon_13bbaa3e3f5a76493459d8abdf1315d5 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:11px; font-family:sans-serif; color:#666; white-space:nowrap; letter-spacing:0.02em;\u0027\u003eAgua Amarilla\u003c/div\u003e",
+  "iconSize": [110, 16],
+  "iconAnchor": [-6, 8],
+  "className": "empty",
+});
+            marker_fdbdaa09550522e630e0fb7ea8fa209a.setIcon(div_icon_13bbaa3e3f5a76493459d8abdf1315d5);
+        
+    
+            map_d25ed8bb0b776c44d1c2df907822c0df.sync(map_48e6888d38d552c6dcdf6900a89bc530);
+            map_48e6888d38d552c6dcdf6900a89bc530.sync(map_d25ed8bb0b776c44d1c2df907822c0df);
+        
+</script>
+</html>

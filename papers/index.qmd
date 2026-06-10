@@ -4,6 +4,9 @@ title: "Papers"
 
 ## Working Papers
 
+**[Land Use, Coercion & Resistance in Bajo Aguán](honduras.html)
+How the absence– not presence– of organized resistance measures the depth of coercive land control.
+
 **[Detecting Coercion Without Visible Enforcement: Evidence from Afghanistan's Opium Ban](afg.html)** <br>
 Spatial triangulation methodology for identifying compliance under threat using satellite and cultivation data.
 

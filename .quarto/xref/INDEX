@@ -46,5 +46,8 @@
   },
   "about.qmd": {
     "about.html": "a3039d72"
+  },
+  "papers/honduras.qmd": {
+    "honduras.html": "3aa18bd8"
   }
 }
