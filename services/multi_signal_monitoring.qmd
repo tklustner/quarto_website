@@ -14,8 +14,8 @@ A monitoring brief updated on an agreed cadence, covering divergence signal tren
 calibration baseline.
 
 ## Proof
-- [Absent Violence Operationalization #1: Bajo Aguán](../papers/honduras.qmd)
-- [Absent Violence Calibration Case: Afghanistan](../papers/afg.md)
+- [Absent Violence Operationalization #1: Bajo Aguán](/papers/honduras.qmd)
+- [Absent Violence Calibration Case: Afghanistan](/papers/afg.md)
 
 ---
 
