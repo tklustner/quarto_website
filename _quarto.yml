@@ -17,6 +17,8 @@ website:
         text: Data Visualizations
       - href: work.qmd
         text: Work
+      - href: services/index.qmd
+        text: Services
       - href: about.qmd
         text: About
 format:

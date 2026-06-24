@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "services/ground_truth_infra.html",
+    "href": "services/ground_truth_infra.html",
+    "title": "Ground Truth Infrastructure",
+    "section": "",
+    "text": "Remote sensing and incident databases report events roughly 14 days after they occur. These resources cannot capture the shifting needs and threats communities face in real-time. In conflict-affected or underconnected areas, the most salient operational information never makes it into those databases at all."
+  },
+  {
+    "objectID": "services/ground_truth_infra.html#the-problem",
+    "href": "services/ground_truth_infra.html#the-problem",
+    "title": "Ground Truth Infrastructure",
+    "section": "",
+    "text": "Remote sensing and incident databases report events roughly 14 days after they occur. These resources cannot capture the shifting needs and threats communities face in real-time. In conflict-affected or underconnected areas, the most salient operational information never makes it into those databases at all."
+  },
+  {
+    "objectID": "services/ground_truth_infra.html#what-i-do",
+    "href": "services/ground_truth_infra.html#what-i-do",
+    "title": "Ground Truth Infrastructure",
+    "section": "What I do",
+    "text": "What I do\nI deploy and configure a lightweight SMS-based field reporting system that collects structured reports from community members and surfaces them as a real-time geographic dashboard. No smartphones or internet required on the reporting end."
+  },
+  {
+    "objectID": "services/ground_truth_infra.html#what-you-get",
+    "href": "services/ground_truth_infra.html#what-you-get",
+    "title": "Ground Truth Infrastructure",
+    "section": "What you get",
+    "text": "What you get\nA pilot deployment for one organization, one geography, over an agreed time window (typically 3–6 months), including system configuration, reporting schema design with your team, and a web-based map dashboard. Expansion to additional geographies or use cases is scoped after pilot completion."
+  },
+  {
+    "objectID": "services/ground_truth_infra.html#proof",
+    "href": "services/ground_truth_infra.html#proof",
+    "title": "Ground Truth Infrastructure",
+    "section": "Proof",
+    "text": "Proof\nTechnical overview and demo (GitHub) Prototype demonstrated at a civil society technology conference in San Cristóbal de las Casas, Chiapas. Active pilot in development with PATH Zambia.\n\nReach me at timklustner@protonmail.me"
+  },
+  {
+    "objectID": "services/index.html",
+    "href": "services/index.html",
+    "title": "Services",
+    "section": "",
+    "text": "I produce analysis and tools for organizations where standard data sources are not enough.\nLand conflict due diligence — Detect ground-truth liability risk for an area with satellite and event data.\nMulti-signal monitoring — Track compliance and coercion dynamics in multiple conflict areas over time.\nGround truth infrastructure — Build SMS-based field reporting infrastructure for underconnected communities."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -144,6 +186,76 @@
     "href": "index.html",
     "title": "Tim Klustner",
     "section": "",
-    "text": "Tim Klustner\n\nConflict geographer crowdsourcing ground truth. Based in Seattle.\n\n\nFeatured — Michoacán & Guerrero\n\n\n“For armed groups unable to dominate transnational drug routes, the same connective spaces that civilians depend on for daily routines also expose local populations to persistently high levels of risk.” Read the full paper →\nAvailable for contract analysis, field data systems, and geospatial pipelines: from satellite to street level. Get in touch →"
+    "text": "Tim Klustner\n\nConflict geographer crowdsourcing ground truth. Based in Seattle.\n\n\nFeatured — Michoacán & Guerrero\n\n\n“For armed groups unable to dominate transnational drug routes, the same connective spaces that civilians depend on for daily routines also expose local populations to persistently high levels of risk.” Read the full paper\nAvailable for contract analysis, field data systems, and geospatial pipelines: from satellite to street level. Get in touch"
+  },
+  {
+    "objectID": "services/multi_signal_monitoring.html",
+    "href": "services/multi_signal_monitoring.html",
+    "title": "Conflict Signal Monitoring",
+    "section": "",
+    "text": "Incident-based conflict monitoring captures what gets reported. It cannot capture coercion that works precisely because it produces no reportable incidents."
+  },
+  {
+    "objectID": "services/multi_signal_monitoring.html#the-problem",
+    "href": "services/multi_signal_monitoring.html#the-problem",
+    "title": "Conflict Signal Monitoring",
+    "section": "",
+    "text": "Incident-based conflict monitoring captures what gets reported. It cannot capture coercion that works precisely because it produces no reportable incidents."
+  },
+  {
+    "objectID": "services/multi_signal_monitoring.html#what-i-do",
+    "href": "services/multi_signal_monitoring.html#what-i-do",
+    "title": "Conflict Signal Monitoring",
+    "section": "What I do",
+    "text": "What I do\nAcross multiple areas of interest, I track systematic divergences between behavioral, environmental, and financial signals over time. Persistent divergence indicates active coercion dynamics. Convergence indicates either compliance or suppression."
+  },
+  {
+    "objectID": "services/multi_signal_monitoring.html#what-you-get",
+    "href": "services/multi_signal_monitoring.html#what-you-get",
+    "title": "Conflict Signal Monitoring",
+    "section": "What you get",
+    "text": "What you get\nA monitoring brief updated on an agreed cadence,covering divergence signal trends across your areas of interest, with flags for emerging coercion patterns and an explicit statement on detection limits. New areas of interest require a scoping assessment to determine signal stack and calibration baseline."
+  },
+  {
+    "objectID": "services/multi_signal_monitoring.html#proof",
+    "href": "services/multi_signal_monitoring.html#proof",
+    "title": "Conflict Signal Monitoring",
+    "section": "Proof",
+    "text": "Proof\n\nAbsent Violence Operationalization #1: Bajo Aguán\nAbsent Violence Calibration Case: Afghanistan\n\n\nReach me at timklustner@protonmail.me"
+  },
+  {
+    "objectID": "services/land_conflict_dd.html",
+    "href": "services/land_conflict_dd.html",
+    "title": "Land Conflict Due Diligence",
+    "section": "",
+    "text": "Conventional due diligence processes take available data and analyze it. Standard processes cannot capture what accountability-evading actors actively conceal."
+  },
+  {
+    "objectID": "services/land_conflict_dd.html#the-problem",
+    "href": "services/land_conflict_dd.html#the-problem",
+    "title": "Land Conflict Due Diligence",
+    "section": "",
+    "text": "Conventional due diligence processes take available data and analyze it. Standard processes cannot capture what accountability-evading actors actively conceal."
+  },
+  {
+    "objectID": "services/land_conflict_dd.html#what-i-do",
+    "href": "services/land_conflict_dd.html#what-i-do",
+    "title": "Land Conflict Due Diligence",
+    "section": "What I do",
+    "text": "What I do\nUsing a publicly-available set of behavioral, environmental, and financial data tailored to your case, I measure systematic disagreements between independent signals that should reflect a common reality on the ground. No disagreements means no detected evidence of concealed coercion by the firm in question."
+  },
+  {
+    "objectID": "services/land_conflict_dd.html#what-you-get",
+    "href": "services/land_conflict_dd.html#what-you-get",
+    "title": "Land Conflict Due Diligence",
+    "section": "What you get",
+    "text": "What you get\nA written memo (2,000–3,500 words), including 2–3 maps and signal charts, covering divergence analysis across behavioral, environmental, and financial data streams, for one firm. All causal claims include an explicit uncertainty statement. Spanish-language primary source integration available for qualifying geographies."
+  },
+  {
+    "objectID": "services/land_conflict_dd.html#proof",
+    "href": "services/land_conflict_dd.html#proof",
+    "title": "Land Conflict Due Diligence",
+    "section": "Proof",
+    "text": "Proof\n\nAbsent Violence Operationalization #1: Bajo Aguán\nAbsent Violence Calibration Case: Afghanistan\n\n\nReach me at timklustner@protonmail.me"
   }
 ]

@@ -1,0 +1,23 @@
+---
+title: Ground Truth Infrastructure
+---
+
+## The problem
+Remote sensing and incident databases report events roughly 14 days after they occur. These resources cannot capture the shifting needs and threats communities face in real-time. In conflict-affected or underconnected areas, the most salient operational information never makes it into those databases at all.
+
+## What I do
+I deploy and configure a lightweight SMS-based field 
+reporting system that collects structured reports from community members and surfaces them as a real-time geographic dashboard. No smartphones or internet required on the reporting end.
+
+## What you get
+A pilot deployment for one organization, one geography, over an agreed time window (typically 3–6 months), including system configuration, reporting schema design with your team, and a web-based map dashboard. Expansion to additional geographies or use 
+cases is scoped after pilot completion.
+
+## Proof
+[Technical overview and demo (GitHub)](https://github.com/tklustner/sms-mapper-overview.git)
+Prototype demonstrated at a civil society technology 
+conference in San Cristóbal de las Casas, Chiapas. Active pilot in development with PATH Zambia.
+
+---
+
+Reach me at [timklustner@protonmail.me](mailto:timklustner@proton.me)

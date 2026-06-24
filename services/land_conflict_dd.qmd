@@ -1,0 +1,23 @@
+---
+title: Land Conflict Due Diligence
+
+---
+
+## The problem
+Conventional due diligence processes take available data and analyze it. Standard processes cannot capture what accountability-evading actors actively conceal.
+
+## What I do
+Using a publicly-available set of behavioral, environmental, and financial data tailored to your case, I measure systematic disagreements between independent signals that should reflect a common reality on the ground. No disagreements means no detected evidence of concealed coercion by the firm in question. 
+
+## What you get
+A written memo (2,000–3,500 words), including 2–3 maps and signal charts, covering divergence analysis across behavioral, environmental, and financial data streams, for one firm. All causal claims include an explicit uncertainty statement. Spanish-language primary source integration available for qualifying geographies.
+
+
+## Proof
+- [Absent Violence Operationalization #1: Bajo Aguán](../papers/honduras.qmd)
+
+- [Absent Violence Calibration Case: Afghanistan](../papers/afg.md)
+  
+---
+
+Reach me at [timklustner@protonmail.me](mailto: timklustner@proton.me)

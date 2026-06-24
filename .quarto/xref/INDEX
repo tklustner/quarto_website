@@ -49,5 +49,17 @@
   },
   "papers/honduras.qmd": {
     "honduras.html": "3aa18bd8"
+  },
+  "services/land_conflict_dd.qmd": {
+    "land_conflict_dd.html": "c1d1d33b"
+  },
+  "services/index.qmd": {
+    "index.html": "80fe3e3e"
+  },
+  "services/multi_signal_monitoring.qmd": {
+    "multi_signal_monitoring.html": "bac4ea3a"
+  },
+  "services/ground_truth_infra.qmd": {
+    "ground_truth_infra.html": "c0c9a789"
   }
 }

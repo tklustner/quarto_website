@@ -1,0 +1,22 @@
+---
+title: Conflict Signal Monitoring
+---
+
+## The problem
+Incident-based conflict monitoring captures what gets reported. It cannot capture coercion that works precisely because it produces no reportable incidents.
+
+## What I do
+Across multiple areas of interest, I track systematic 
+divergences between behavioral, environmental, and financial  signals over time. Persistent divergence indicates active coercion dynamics. Convergence indicates either compliance or suppression.
+
+## What you get
+A monitoring brief updated on an agreed cadence,covering divergence signal trends across your areas of interest, with flags for emerging coercion patterns and an explicit statement on detection limits. New areas of interest require a scoping assessment to determine signal stack and 
+calibration baseline.
+
+## Proof
+- [Absent Violence Operationalization #1: Bajo Aguán](../papers/honduras.qmd)
+- [Absent Violence Calibration Case: Afghanistan](../papers/afg.md)
+
+---
+
+Reach me at [timklustner@protonmail.me](mailto:timklustner@proton.me)
