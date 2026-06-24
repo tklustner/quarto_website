@@ -1,5 +1,5 @@
 ---
-title: Conflict Signal Monitoring
+title: Multi-Signal Monitoring
 ---
 
 ## The problem

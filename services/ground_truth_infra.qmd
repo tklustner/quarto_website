@@ -15,8 +15,8 @@ cases is scoped after pilot completion.
 
 ## Proof
 [Technical overview and demo (GitHub)](https://github.com/tklustner/sms-mapper-overview.git)
-Prototype demonstrated at a civil society technology 
-conference in San Cristóbal de las Casas, Chiapas. Active pilot in development with PATH Zambia.
+
+Prototype demonstrated at a civil society technology conference in San Cristóbal de las Casas, Chiapas. Active pilot in development with PATH Zambia.
 
 ---
 
