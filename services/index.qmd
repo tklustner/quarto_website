@@ -3,10 +3,10 @@ title: Services
 ---
 I produce analysis and tools for organizations where standard data sources are not enough.
 
-**[Land conflict due diligence](/services/land_conflict_dd.qmd)**  — Detect ground-truth liability risk for an area with satellite and event data.
+**[Land conflict due diligence](/services/land_conflict_dd.qmd)**  – Detect ground-truth liability risk for an area with satellite and event data.
 
-**[Multi-signal monitoring](/services/multi_signal_monitoring.qmd)** — Track compliance and coercion dynamics in multiple conflict areas over time.
+**[Multi-signal monitoring](/services/multi_signal_monitoring.qmd)** – Track compliance and coercion dynamics in multiple conflict areas over time.
 
-**[Ground truth infrastructure](/services/ground_truth_infra.qmd)** — Build SMS-based field reporting infrastructure for underconnected communities.
+**[Ground truth infrastructure](/services/ground_truth_infra.qmd)** – Build SMS-based field reporting infrastructure for underconnected communities.
 
 
