@@ -16,7 +16,7 @@ Leveraging ACLED[^acled] event data (2018-2025), Hansen Global Forest Change[^ha
 
 *Figure 1: Violent Conflict, Palm Oil Infrastructure & Cooperative Land Presence: Bajo Aguán Valley (Jan 2018-May 2025)*
 
-![](../charts/assets//bajo_aguan_static_map.png)
+![](../charts/assets/bajo_aguan_static_map.png)
 
 *Cluster radius proportional to event count within 2km. Corporación Dinant finca and palm oil mill locations georeferenced from CAO audit documentation and satellite imagery. Cooperative finca boundaries represent dissolved buffers around known campesino cooperative land claims. Conflict density is highest in Tocoa municipality (n=171), with secondary clustering along the Dinant operational corridor between Sonaguera and Bonito Oriental. Cooperative land presence concentrates in the Quebrada de Arena–Bonito Oriental corridor, where Dinant infrastructure and conflict events spatially overlap.*
 
