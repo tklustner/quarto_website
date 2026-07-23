@@ -134,6 +134,8 @@ Food and Democracy in Northern Honduras.* Food First Books, 2013.
 Agrícola.* Decreto 31-92, 1992.
 https://www.tsc.gob.hn/biblioteca/index.php/leyes/134-ley-para-la-modernizacion-y-el-desarrollo-del-sector-agricola
 
+[^convenio_agrario_2022]: Gobierno de Honduras. (2022, February 22). *Convenio Agrario, Bajo Aguán*. Tegucigalpa.
+
 [^decreto_usurpacion]: Honduras. *Código Penal, Decreto 93-2021*
 (usurpación agravada provisions).
 https://criterio.hn/wp-content/uploads/2022/09/Decreto_93-2021-Codigo-Penal-4.pdf
