@@ -17,7 +17,7 @@ While proximity to roads alone does not explain all variation in conflict (as in
 
 These unidentified armed groups include *huachicoleros[^3]–* fuel thieves whose objectives inherently depend on proximity to infrastructure. Unlike other groups, their targeting patterns may reflect logistical opportunism rather than territorial control or civilian suppression.
 
-The roads exploited by these smaller groups serve as tactical chokepoints[^4] shaped by economic exigencies– such as the need[^5] to move agricultural products quickly– rugged[^6] terrain, and a history of incendiary[^7] state interventions. For armed groups unable to dominate transnational drug routes, the same connective spaces that civilians depend on public infrastructure for daily routines also expose local populations to persistently high levels of risk.
+The roads exploited by these smaller groups serve as tactical chokepoints[^4] shaped by economic exigencies– such as the need[^5] to move agricultural products quickly– rugged[^6] terrain, and a history of incendiary[^7] state interventions. Because civilians heavily depend on this limited infrastructure, violently contesting it is lucrative for armed groups.
 
 **II. Actor Typology & Targeting Behavior**
 
