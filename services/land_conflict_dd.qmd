@@ -14,10 +14,10 @@ A written memo (2,000–3,500 words), including 2–3 maps and signal charts, co
 
 
 ## Proof
-- [Absent Violence Operationalization #1: Bajo Aguán](../papers/honduras.qmd)
+- [Absent Violence Operationalization #1: Bajo Aguán](/papers/honduras.html)
+- [Absent Violence Calibration Case: Afghanistan](/papers/afg.html)
+- [Reading a sensor null correctly: SAR change-detection calibration](/work/sar_blindness/sar_blindness.html)
 
-- [Absent Violence Calibration Case: Afghanistan](../papers/afg.md)
-  
 ---
 
 Reach me at <timklustner@proton.me>
