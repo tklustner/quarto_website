@@ -54,6 +54,7 @@ We only caught this problem when building the reference period, which gave n = 3
 
 
 **2. Geocode in three layers.** 
+
 *Problem*: For the berm waypoints (1.1), our first geocoding pass used Nominatim, the open-access standard for name-to-coordinate search. Nominatim failed to return results for four villages – Golo, Tomnana, Umm Dalil, and Gileidit – named in English as berm waypoints in HRL reports. Rural, village-scale settlements in Sudan are simply not indexed by English-language name. Separately, at El Daein (1.4), OSM recorded exactly one hospital node for the entire town, versus 240 nodes in Khartoum.
 
 *Solution*: We proactively implemented a three-layer geocoding process to handle thinly indexed placenames:
@@ -66,6 +67,7 @@ c. Second independent source for corroborating coordinates: the single hospital 
 
 ### Running your tests
 **3. Never diff raw dates.** 
+
 *Problem*: At Alsen (1.1), our first SAR test differenced two dates directly, skipping the reference period. This approach produced what appeared to be a positive CD identification: an arbitrary point with no reported feature nearby shows a difference 30x the AOI's background standard deviation. Were this result in fact corroborated, it would have undoubtedly entered the analysis as a remarkable positive result.
 
 The result was completely confounded by moisture. The scene pair spanned 150 days and 242.5 mm of rainfall, a full wet-season onset. Since raw SAR backscatter is more sensitive to soil moisture than the optical channels used elsewhere in this project [@wagner1998; @stanyer2025], the berm's CD signature was swamped out by seasonal field-to-fallow changes. The 30x difference result was pointed at farmland, not the berm.
@@ -75,6 +77,7 @@ The result was completely confounded by moisture. The scene pair spanned 150 day
 ![Rule 3 at Alsen. Left, Sentinel-2 true color for reference. Centre, a raw two-date Sentinel-1 difference over a rainy 150-day pair reads change across the whole scene. Right, the PWTT over a 12-month reference period puts a bright linear signal on the berm. The ring marks the berm crossing.](figures/rule3-raw-vs-pwtt.png){#fig-rule3}
 
 **4. Check VV/VH divergence first.** 
+
 *Problem*: Across the razing AOIs (1.2, 1.3), reporting 41 razed farming communities, VV showed a broad decrease over nearly the whole area. Max |z| reached only 1.1. VH stayed flat by comparison. A uniform, AOI-wide VV shift looked like it could be widespread damage. It wasn't.
 
 What happened was a moisture confound, not scattered razing. The AOI spans a dry-to-wet seasonal transition, and VV is far more sensitive to soil-surface dielectric change than VH. Since authentic structural damage should move VH as well as VV, a VV-only shift is a signature of ambient moisture, not destruction. The broad VV decrease was pointed at seasonal drift, not the 41 reported razing sites.
@@ -82,7 +85,8 @@ What happened was a moisture confound, not scattered razing. The AOI spans a dry
 *Solution*: VV is sensitive to soil moisture. VH is sensitive to volume scattering, like vegetation canopy or rubble texture. A uniform VV-dominant shift with flat VH points to moisture drift, not damage. Real structural change should move VH too, often more than VV. Check cross-polarization (VH) along with co-polarization (VV) divergences before trusting any raw cluster's direction.
 
 ### Verifying your results
-**5. Test the raster's peak, not the reported point.** 
+**5. Test the raster's peak, not the reported point.**
+
 *Problem*: We first tested Alsen (1.1) at its only documented coordinate, the reported village node. The result was null. VV read p = 0.12. VH read p = 0.06. This contradicted an earlier positive finding at the same site.
 
 Our AOIs had drifted. The village node was the only documented coordinate for Alsen, but we had failed to verify the node coordinate matched the coordinates associated with the original positive result. Since PWTT's own smoothing can shift a sharp peak away from a reported coordinate, the null was pointed at the wrong 150 m circle, instead of evidence disproving the berm signal.
@@ -90,6 +94,7 @@ Our AOIs had drifted. The village node was the only documented coordinate for Al
 *Solution*: We computed the T_smoothed raster over a 500 m search radius around the reported point. The real peak sat 480 m away. Testing there instead yielded: VV t = +6.76, p = 0.0015. VH t = +6.99, p = 0.0001. The same drift recurred at El Daein (1.4; 200–280 m) and Kanan (2.1; 453 m). Our default point buffer is 150 m, matching PWTT's own largest smoothing kernel. Always locate the actual peak first. Widen the buffer only for a disclosed reason, like an unresolved multi-candidate geocode.
 
 **6. Visually crosscheck SAR before reporting.** 
+
 *Problem*: At Shalakhna, our top-ranked SAR coherence cell showed energy_z = +7.3. It looked like the strongest signal in the case. It ended up being a no-data gap at a tile edge, not authentic ground content. At Abu Shouk, a separate cluster read as a bombardment signal. 
 
 The cluster, in fact, was a vegetation trend north of the camp, unrelated to the shelling.  Since a coherence ratio is unstable wherever both eigenvalues are near zero, a cloud edge, a no-data gap, and an AOI clip boundary all produce the same spuriously high gradient energy an authentic edge does. Neither cell was flagged by cloud classification, so checking that alone would have missed both. The top-ranked cell was pointed at a tile seam, not ground truth. 
