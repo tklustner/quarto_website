@@ -11,7 +11,7 @@ about:
 
 <p class="featured-header">Featured — Michoacán & Guerrero</p>
 
-![](charts/assets/mich_guer_binned_road_proximity.png)
+![](/charts/assets/mich_guer_binned_road_proximity.png)
 
 *"Because civilians heavily depend on this limited infrastructure, violently contesting it is lucrative for armed groups."*<br>
 *[Read the full paper](/papers/mich_guer.html)*

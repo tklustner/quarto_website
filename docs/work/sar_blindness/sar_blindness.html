@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Tim Klustner">
+<meta name="dcterms.date" content="2026-08-28">
+
+<title>SAR Blindness: Wet Soil, Small Footprints – TK</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0e0253f69ad5e6f8bdad49b7f61db11c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">TK</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../papers/index.html"> 
+<span class="menu-text">Papers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../charts/index.html"> 
+<span class="menu-text">Data Visualizations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../work/index.html"> 
+<span class="menu-text">Work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../services/index.html"> 
+<span class="menu-text">Services</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SAR Blindness: Wet Soil, Small Footprints</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tim Klustner </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 28, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="executive-summary" class="level2">
+<h2 class="anchored" data-anchor-id="executive-summary">Executive summary</h2>
+<p>We sought berms in the desert. The reports said they were there, 31 km of newly-built earthen walls encircling El Fasher city (North Darfur, Sudan). The reports specify the date construction began on the berms (9 May 2025), how long the 22 km “semi-circle” segment took to complete (9 May–19 August 2025), that a gap remains around Al-Salaam IDP camp and that it is shrinking <span class="citation" data-cites="yalehrl2025">(<a href="#ref-yalehrl2025" role="doc-biblioref">Yale School of Public Health, Humanitarian Research Lab 2025</a>)</span>. The berms help the paramilitary group Rapid Support Forces (RSF) create a “literal kill box” around the city. We aimed two satellite sensors – synthetic aperture radar (SAR; Sentinel-1) and multispectral optical (Sentinel-2) – at El Fasher. At 10 m optical resolution, the berms appear as thin dark lines (<a href="#fig-alsen-berm" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<div id="fig-alsen-berm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-alsen-berm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/alsen-berm-composite.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alsen-berm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The Alsen berm segment before and after construction (Sentinel-1 and Sentinel-2, 1–31 July 2025). Optical true color, then SAR VV, then SAR VH. Before over after. The berm (circled) presents as a thin dark line in the optical panel and a bright line in SAR VV, where the fresh earthwork roughens the surface. The razed villages along its route read as dark patches.
+</figcaption>
+</figure>
+</div>
+<p>SAR is touted as the gold standard in open-access change-detection (CD), particularly change caused by violence <span class="citation" data-cites="ballinger2025">(<a href="#ref-ballinger2025" role="doc-biblioref">Ballinger 2025</a>)</span>. Combined with access to Very High Resolution (VHR) satellite imagery unavailable to the public, SAR is a centerpiece of CD methods in conflict zones, from Mariupol to Gaza <span class="citation" data-cites="dietrich2025 ballinger2025">(<a href="#ref-dietrich2025" role="doc-biblioref">Dietrich et al. 2025</a>; <a href="#ref-ballinger2025" role="doc-biblioref">Ballinger 2025</a>)</span>. Distinguishing disrupted earth from desert is surely plausible.</p>
+<p>We ran the same underlying SAR data through five different methods: raw differencing, baseline normalization, significance testing, multi-scale resampling, and texture analysis. Only the fifth, the Pixel-Wise T-Test (PWTT) of <span class="citation" data-cites="ballinger2025">Ballinger (<a href="#ref-ballinger2025" role="doc-biblioref">2025</a>)</span>, produced a statistically-defensible positive.</p>
+<p>A second case set, Myanmar’s Sagaing Region, retests the footprint problem against three airstrike locations. Two returned nulls. The third was unresolved.</p>
+<p>The combined case sets underscore two crucial shortcomings of SAR for CD: - <strong>Confounded by soil moisture.</strong> When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event <span class="citation" data-cites="wagner1998 stanyer2025">(<a href="#ref-wagner1998" role="doc-biblioref">Wagner 1998</a>; <a href="#ref-stanyer2025" role="doc-biblioref">Stanyer et al. 2025</a>)</span>. - <strong>Lower sensitivity to single-structure damage.</strong> SAR needs a wide, contiguous footprint to register CD. Single buildings, however they are constructed, rarely separate from background noise during testing <span class="citation" data-cites="aimaiti2022">(<a href="#ref-aimaiti2022" role="doc-biblioref">Aimaiti et al. 2022</a>)</span>.</p>
+<p>The CD method below relies solely on open Sentinel-1 and Sentinel-2 data. We detail the systematic signal processing and verification problems encountered in implementing this purely sensor-based method.</p>
+<div id="tbl-cases" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Case metadata – El Fasher (Sudan) and Sagaing (Myanmar)
+</figcaption>
+<div aria-describedby="tbl-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 1%">
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 10%">
+<col style="width: 23%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Country / adm1 / adm2</th>
+<th>AOI</th>
+<th>Active-violence window</th>
+<th>Violence type</th>
+<th>Reference and inference periods / n</th>
+<th>SAR reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1</td>
+<td>Sudan / North Darfur / Al Fasher</td>
+<td>Alsen berm crossing, El Fasher</td>
+<td>14–24 Jul 2025</td>
+<td>Berm/earthwork construction</td>
+<td>12 mo pre / 1 mo post; ref_n = 15, inf_n = 5</td>
+<td>VV t = +6.76, df = 4.55, p = 0.0015; VH t = +6.99, df = 8.97, p = 0.0001</td>
+</tr>
+<tr class="even">
+<td>1.2</td>
+<td>Sudan / North Darfur / Al Fasher</td>
+<td>Kobbei, El Fasher</td>
+<td>31 Mar–12 Jun 2024</td>
+<td>Arson/razing of compounds</td>
+<td>12 mo pre / 1 mo post; inf_n = 2</td>
+<td>VV t = −3.44, df = 2.2, p = 0.066; VH t = −2.61, df = 1.8, p = 0.132</td>
+</tr>
+<tr class="odd">
+<td>1.3</td>
+<td>Sudan / North Darfur / Al Fasher</td>
+<td>Naivasha Market, Abu Shouk IDP camp</td>
+<td>30 Aug–10 Sep 2025</td>
+<td>Artillery shelling</td>
+<td>12 mo pre / 1 mo post; inf_n = 2</td>
+<td>VV t = +0.23, df = 3.4, p = 0.832; VH t = +0.42, df = 3.6, p = 0.697</td>
+</tr>
+<tr class="even">
+<td>1.4</td>
+<td>Sudan / East Darfur / Ad Du’ayn</td>
+<td>El Daein Teaching Hospital</td>
+<td>20–21 Mar 2026</td>
+<td>Aerial bombing</td>
+<td>8 mo pre / 2 mo post; ref_n = 15, inf_n = 5</td>
+<td>VV t = +0.75, df = 9.4, p = 0.469; VH t = +0.85, df = 9.5, p = 0.416</td>
+</tr>
+<tr class="odd">
+<td>2.1</td>
+<td>Myanmar / Sagaing / Tamu</td>
+<td>Kanan (church/school/houses)</td>
+<td>7 Jan 2024</td>
+<td>Airstrike</td>
+<td>8 mo pre / 2 mo post; ref_n = 20/18 (ASC/DESC), inf_n = 5/4</td>
+<td>At raster peak: VV t = −2.41/−2.85, p = 0.0414/0.0331; VH ns</td>
+</tr>
+<tr class="even">
+<td>2.2</td>
+<td>Myanmar / Sagaing / Kawlin</td>
+<td>Nan Khan</td>
+<td>9 Apr 2025</td>
+<td>Airstrike</td>
+<td>8 mo pre / 2 mo post; ref_n = 12/11 (ASC/DESC), inf_n = 4/5</td>
+<td>VV t = −0.84/−0.58, p = 0.4255/0.5757</td>
+</tr>
+<tr class="odd">
+<td>2.3</td>
+<td>Myanmar / Sagaing / Shwebo</td>
+<td>Oe Htein Kwin school</td>
+<td>12 May 2025</td>
+<td>Airstrike</td>
+<td>8 mo pre / 2 mo post; ref_n = 23/15 (ASC/DESC), inf_n = 5/4</td>
+<td>VV t = +1.40/+1.88, p = 0.2089/0.1261</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p><strong>Note.</strong> RIWs vary in some cases (12 mo / 1 mo vs.&nbsp;8 mo / 2 mo) so cases’ image density are roughly equivalent. We used the image density from our only positive CD identification, Alsen’s 12 mo / 1 mo RIW – reference images ≈ 15, inference images ≈ 5 – as a minimum-viable window for producing a positive SAR reading. For example, El Daein (1.4) and the three Myanmar case sites (2.1–2.3) met this ref_n ≈ 15, inf_n ≈ 5 threshold using an 8 mo / 2 mo RIW.</p>
+</blockquote>
+</section>
+<section id="method" class="level2">
+<h2 class="anchored" data-anchor-id="method">Method</h2>
+<p>The method below uses only open Sentinel-1 and Sentinel-2 data: no VHR, no in-country contacts, no on-the-ground corroboration. Without those external cross-checks, mistaken readings needed to be caught and corrected in the investigative procedure itself. Each of the six rules corresponds to a specific mistake we made in our case set analyses.</p>
+<section id="before-you-start" class="level3">
+<h3 class="anchored" data-anchor-id="before-you-start">Before you start</h3>
+<p><strong>1. Test your track for recent image density.</strong></p>
+<p><em>Problem</em>: For the Naivasha market bombardment (1.3), we initially pulled available scenes from 2016 to August 2025 without checking whether the temporal distribution of scenes was skewed. “Skewed” understates the problem: track 65 descending contains 25–31 scenes from 2016 to 2021, followed by a complete gap in 2022–23, and sparse 1–3 annual scenes since 2023.</p>
+<p>We only caught this problem when building the reference period, which gave n = 3 SAR scenes total in the 12 months prior to the start of shelling. This scene sparsity left degrees of freedom df = 2: a t-distribution so fat-tailed that even the inference period shift barely cleared p &lt; 0.05. The reference period reading could not be distinguished from background at all.</p>
+<p><em>Solution</em>: We built a standalone check <code>--track-density</code> that runs before any initial data pull. <code>--track-density</code> reports scene count, longest interior gap, and percentage of AOI covered, for the exact AOI and RIW in question. Retrospective calculations for Naivasha’s own track are noted in the above paragraph. If an AOI’s reference period includes fewer than ~10 scenes, or if the reference period contains a data gap over 90 days, stop before running a statistical test.</p>
+<p><strong>2. Geocode in three layers.</strong> <em>Problem</em>: For the berm waypoints (1.1), our first geocoding pass used Nominatim, the open-access standard for name-to-coordinate search. Nominatim failed to return results for four villages – Golo, Tomnana, Umm Dalil, and Gileidit – named in English as berm waypoints in HRL reports. Rural, village-scale settlements in Sudan are simply not indexed by English-language name. Separately, at El Daein (1.4), OSM recorded exactly one hospital node for the entire town, versus 240 nodes in Khartoum.</p>
+<p><em>Solution</em>: We proactively implemented a three-layer geocoding process to handle thinly indexed placenames:</p>
+<ol type="a">
+<li><p>Overpass raw-tag query for placenames: when a Nominatim placename search returns empty, it triggers an Overpass raw-tag query, more expansive than Nominatim’s indexed search. In 1.1, the Overpass raw-tag layer recovered all four villages’ coordinates missing from Nominatim.</p></li>
+<li><p>HDX P-code administrative polygons for verifying coordinates: checking geocoded coordinates against HDX-verified polygons guards against a wrong-locality match that a simple name search alone cannot catch, which matters in areas where a single name might simultaneously refer to a territory, city, and village depending on context.</p></li>
+<li><p>Second independent source for corroborating coordinates: the single hospital node extracted via OSM for El Daein was checked against a Mapcarta open-access coordinate pair for the same-named hospital. The Mapcarta coordinate landed 75 m from the OSM node, independently corroborating what was a thin single source.</p></li>
+</ol>
+</section>
+<section id="running-your-tests" class="level3">
+<h3 class="anchored" data-anchor-id="running-your-tests">Running your tests</h3>
+<p><strong>3. Never diff raw dates.</strong> <em>Problem</em>: At Alsen (1.1), our first SAR test differenced two dates directly, skipping the reference period. This approach produced what appeared to be a positive CD identification: an arbitrary point with no reported feature nearby shows a difference 30x the AOI’s background standard deviation. Were this result in fact corroborated, it would have undoubtedly entered the analysis as a remarkable positive result.</p>
+<p>The result was completely confounded by moisture. The scene pair spanned 150 days and 242.5 mm of rainfall, a full wet-season onset. Since raw SAR backscatter is more sensitive to soil moisture than the optical channels used elsewhere in this project <span class="citation" data-cites="wagner1998 stanyer2025">(<a href="#ref-wagner1998" role="doc-biblioref">Wagner 1998</a>; <a href="#ref-stanyer2025" role="doc-biblioref">Stanyer et al. 2025</a>)</span>, the berm’s CD signature was swamped out by seasonal field-to-fallow changes. The 30x difference result was pointed at farmland, not the berm.</p>
+<p><em>Solution</em>: We rebuilt the SAR channel using a multi-image reference distribution (<code>reference_collection</code>). This approach works because many reference scenes give a real estimate of normal variation, not one arbitrarily-timed “before” snapshot that a single rainy week can distort. Rerunning <code>reference_collection</code> on the same 1.1 AOI, the false positive disappeared. The optical-verified berm location, even isolated from this false-positive, returned no signal to the SAR channel. Any raw two-date SAR statistic is insufficient for verification on its own (<a href="#fig-rule3" class="quarto-xref">Figure&nbsp;2</a>).</p>
+<div id="fig-rule3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rule3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/rule3-raw-vs-pwtt.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rule3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Rule 3 at Alsen. Left, Sentinel-2 true color for reference. Centre, a raw two-date Sentinel-1 difference over a rainy 150-day pair reads change across the whole scene. Right, the PWTT over a 12-month reference period puts a bright linear signal on the berm. The ring marks the berm crossing.
+</figcaption>
+</figure>
+</div>
+<p><strong>4. Check VV/VH divergence first.</strong> <em>Problem</em>: Across the razing AOIs (1.2, 1.3), reporting 41 razed farming communities, VV showed a broad decrease over nearly the whole area. Max |z| reached only 1.1. VH stayed flat by comparison. A uniform, AOI-wide VV shift looked like it could be widespread damage. It wasn’t.</p>
+<p>What happened was a moisture confound, not scattered razing. The AOI spans a dry-to-wet seasonal transition, and VV is far more sensitive to soil-surface dielectric change than VH. Since authentic structural damage should move VH as well as VV, a VV-only shift is a signature of ambient moisture, not destruction. The broad VV decrease was pointed at seasonal drift, not the 41 reported razing sites.</p>
+<p><em>Solution</em>: VV is sensitive to soil moisture. VH is sensitive to volume scattering, like vegetation canopy or rubble texture. A uniform VV-dominant shift with flat VH points to moisture drift, not damage. Real structural change should move VH too, often more than VV. Check cross-polarization (VH) along with co-polarization (VV) divergences before trusting any raw cluster’s direction.</p>
+</section>
+<section id="verifying-your-results" class="level3">
+<h3 class="anchored" data-anchor-id="verifying-your-results">Verifying your results</h3>
+<p><strong>5. Test the raster’s peak, not the reported point.</strong> <em>Problem</em>: We first tested Alsen (1.1) at its only documented coordinate, the reported village node. The result was null. VV read p = 0.12. VH read p = 0.06. This contradicted an earlier positive finding at the same site.</p>
+<p>Our AOIs had drifted. The village node was the only documented coordinate for Alsen, but we had failed to verify the node coordinate matched the coordinates associated with the original positive result. Since PWTT’s own smoothing can shift a sharp peak away from a reported coordinate, the null was pointed at the wrong 150 m circle, instead of evidence disproving the berm signal.</p>
+<p><em>Solution</em>: We computed the T_smoothed raster over a 500 m search radius around the reported point. The real peak sat 480 m away. Testing there instead yielded: VV t = +6.76, p = 0.0015. VH t = +6.99, p = 0.0001. The same drift recurred at El Daein (1.4; 200–280 m) and Kanan (2.1; 453 m). Our default point buffer is 150 m, matching PWTT’s own largest smoothing kernel. Always locate the actual peak first. Widen the buffer only for a disclosed reason, like an unresolved multi-candidate geocode.</p>
+<p><strong>6. Visually crosscheck SAR before reporting.</strong> <em>Problem</em>: At Shalakhna, our top-ranked SAR coherence cell showed energy_z = +7.3. It looked like the strongest signal in the case. It ended up being a no-data gap at a tile edge, not authentic ground content. At Abu Shouk, a separate cluster read as a bombardment signal.</p>
+<p>The cluster, in fact, was a vegetation trend north of the camp, unrelated to the shelling. Since a coherence ratio is unstable wherever both eigenvalues are near zero, a cloud edge, a no-data gap, and an AOI clip boundary all produce the same spuriously high gradient energy an authentic edge does. Neither cell was flagged by cloud classification, so checking that alone would have missed both. The top-ranked cell was pointed at a tile seam, not ground truth.</p>
+<p><em>Solution</em>: We added two AOI-wide gates. A valid-fraction gate excludes cells below 0.95 real pixels, catching cloud and no-data boundaries. An energy z-score gate excludes cells with near-zero gradient energy, where a coherence ratio becomes unstable. Both cases were re-checked by eye against the optical image before either was trusted. Don’t trust a ranked cell or peak without a visual crosscheck first. A statistic can falsely rank a measurement artifact above an authentic signal.</p>
+</section>
+</section>
+<section id="footprint-size-predicts-detection-failure" class="level2">
+<h2 class="anchored" data-anchor-id="footprint-size-predicts-detection-failure">Footprint size predicts detection failure</h2>
+<div id="tbl-footprint" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-footprint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Footprint size, precipitation, and SAR results by case
+</figcaption>
+<div aria-describedby="tbl-footprint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 25%">
+<col style="width: 16%">
+<col style="width: 18%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Site</th>
+<th>Footprint</th>
+<th>Rainfall (inference period)</th>
+<th>SAR result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1</td>
+<td>Alsen (berm), Sudan</td>
+<td>Wide earthwork (19.3 km)</td>
+<td>105.5 mm</td>
+<td><strong>Positive</strong>, p &lt; 0.01 (+3.5/+3.7 dB)</td>
+</tr>
+<tr class="even">
+<td>1.2</td>
+<td>Kobbei (razing), Sudan</td>
+<td>Compound cluster</td>
+<td>37.5 mm</td>
+<td>Directional, underpowered (inf_n = 2); combined p = 0.018</td>
+</tr>
+<tr class="odd">
+<td>1.3</td>
+<td>Abu Shouk (market bombing), Sudan</td>
+<td>Building</td>
+<td>24.3 mm</td>
+<td>Null (real cluster = moisture, not damage)</td>
+</tr>
+<tr class="even">
+<td>1.4</td>
+<td>El Daein (hospital), Sudan</td>
+<td>Single building</td>
+<td>11.4 mm</td>
+<td>Null, well-powered (+0.4 dB)</td>
+</tr>
+<tr class="odd">
+<td>2.1</td>
+<td>Kanan (church/school/houses), Myanmar</td>
+<td>Single building</td>
+<td>19.6 mm</td>
+<td>Null at reported point; unresolved at peak (453 m off)</td>
+</tr>
+<tr class="even">
+<td>2.2</td>
+<td>Nan Khan (houses), Myanmar</td>
+<td>Single building</td>
+<td>320.6 mm</td>
+<td>Null</td>
+</tr>
+<tr class="odd">
+<td>2.3</td>
+<td>Oe Htein Kwin (school), Myanmar †</td>
+<td>Single building</td>
+<td>330.1 mm</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>† The only site with confirmed meteorological denial (an authentic, cloud-fraction-verified monsoon blackout). All other sites present primarily political/access denial mechanisms.</p>
+</blockquote>
+<p>Building footprint size predicted the outcome across all seven sites (<a href="#tbl-footprint" class="quarto-xref">Table&nbsp;2</a>, <a href="#fig-footprint" class="quarto-xref">Figure&nbsp;3</a>). Alsen and Kobbei (wide-footprint, compound-cluster) presented authentic or borderline-authentic. No single-building footprint was positively detected, regardless of country, actor, or construction type.</p>
+<div id="fig-footprint" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-footprint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/footprint-vs-shift.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-footprint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Measured SAR shift against footprint size, all seven sites. The single-structure sites sit inside the reference-period noise floor. Kobbei’s compound cluster and the Alsen earthwork clear it. Fill indicates the outcome. Outline style indicates structure type, dotted through solid as the footprint grows. Footprint extent is approximate and the single-structure sites are spread on the x-axis for legibility. Shift is the largest absolute dB change across track and band at the tested coordinate.
+</figcaption>
+</figure>
+</div>
+<section id="detection-floor" class="level3">
+<h3 class="anchored" data-anchor-id="detection-floor">Detection floor</h3>
+<p>Four single-building tests, run at Alsen’s sample sizes (ref_n ≈ 12–23, inf_n ≈ 4–5), produced shifts of 0.3–1.1 dB. El Daein, Nan Khan, and Oe Htein Kwin nulled, while Kanan is unresolved.</p>
+<p>A null has two meanings. A test is <strong>underpowered</strong> when the sample is too small to separate an authentic effect from noise. An authentic change may be present but buried in reference-period scatter, and the null says nothing. It is <strong>powered but negative</strong> when the measured effect is itself near zero, not just non-significant, suggesting the absence of an effect. The p-value alone does not tell them apart.</p>
+<p>These four are the second kind. Alsen, an independently confirmed change run through the same pipeline at the same sample size, shifts 3.5–3.7 dB. A test too weak to catch a shift that size would scatter its estimates around the true value, not push them to near zero at three unrelated sites in two countries. More reference scenes only tighten the noise band. They cannot draw meaning from a near-zero estimate. The limit is footprint size, not sample size.</p>
+<p><strong>In your own cases.</strong> Match every SAR null to a positive control: an independently confirmed same-type change, using the same analysis pipeline, with a comparable sample size to your target cases. Then judge the target null by its measured shift from the reference-period mean, not its p-value. Near zero and well below the control is an authentic negative. A sizable fraction of the control without significance is underpowered, and more scenes or a wider AOI may help.</p>
+<blockquote class="blockquote">
+<p><strong>Note.</strong> Nan Khan’s inference window carried 320.6 mm of rainfall, nearly as much as Oe Htein Kwin’s confirmed-monsoon 330.1 mm; Nan Khan was initially selected as the case set’s dry-season comparison site. Its null could reflect the footprint floor, an authentic moisture confound of its own, or both.</p>
+</blockquote>
+</section>
+</section>
+<section id="limitations-and-open-questions" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-open-questions">Limitations and open questions</h2>
+<ul>
+<li>This project presents SAR calibration evidence for a small positive-control case set (7 tests) with specific soil-moisture and built environment characteristics, rather than a generalizable profile.</li>
+<li><strong>10 m resolution ceiling in dense fabric.</strong> Visual crosscheck at 30 m resolution often cannot resolve a candidate either way.</li>
+<li><strong>Typology confounded with footprint.</strong> Kobbei (vernacular, wider) was detected; El Daein (formal, small) was not. The relevant missing test here was for wide-footprint formal construction.</li>
+<li>Resolving Kanan (2.1) requires VHR this project does not use.</li>
+<li>A wider-footprint East Darfur event remains untested.</li>
+</ul>
+</section>
+<section id="what-this-means" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-means">What this means</h2>
+<p>Across two case sets, open SAR returned one clear positive from seven events. This low detection rate is a fact about SAR’s limitations at these footprints and sample sizes, not a result about the ground. The investigated events happened. Where open SAR is the only instrument with coverage, its silence is not evidence of absence and must not be treated as such.</p>
+<p>Given the soil-moisture and building footprint confounds demonstrated above, two checks are worth doing before using SAR for CD: is optical truly blocked by weather (not just hard to reach) and how big is the damaged area.</p>
+<p>Single buildings never show up in this project’s SAR data, no matter their construction. A contiguous 19.3 km earthwork did. If SAR detects nothing, check what it measured: how many images, their distribution between wet and dry seasons, and long temporal gaps in coverage. SAR coverage over much of Sudan, including the capital Khartoum, was blacked out between August 2022 and April 2025, from the end of the ESA’s Sentinel-1B mission to the start of Sentinel-1C. In Sudan in this period, ACLED recorded at least 28,700 people killed and 12 million forcibly displaced. Within the blackout swath, open-access SAR imagery captures exactly zero instances of this violence.</p>
+</section>
+<section id="appendix-data-and-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-data-and-parameters">Appendix: Data and parameters</h2>
+<dl>
+<dt>Platform</dt>
+<dd>
+Google Earth Engine, accessed August 2026.
+</dd>
+<dt>SAR</dt>
+<dd>
+<code>COPERNICUS/S1_GRD</code>. IW mode, VV + VH, C-band. GEE-provided: border and thermal noise removed, calibrated to σ⁰, terrain-corrected via SRTM. Values in dB.
+</dd>
+<dt>Optical</dt>
+<dd>
+<code>COPERNICUS/S2_SR_HARMONIZED</code>.
+</dd>
+<dt>Rainfall</dt>
+<dd>
+<code>UCSB-CHG/CHIRPS/DAILY</code> v2.0. AOI-mean, pass to pass.
+</dd>
+<dt>Terrain and water</dt>
+<dd>
+SRTM 30 m and JRC Global Surface Water.
+</dd>
+<dt>Pair selection</dt>
+<dd>
+Before and after must share orbit pass (ASC/DESC) and relative orbit (track). A mismatch hard-fails rather than crossing tracks.
+</dd>
+<dt>Analysis scale</dt>
+<dd>
+10 m, the S1 GRD nominal.
+</dd>
+<dt>Speckle filter</dt>
+<dd>
+5 × 5 square focal median, per scene, before aggregation.
+</dd>
+<dt>PWTT</dt>
+<dd>
+Welch’s t per orbit × polarization. T = max(|t|). T_smoothed is the mean of T and T convolved at 50, 100, and 150 m with circular kernels.
+</dd>
+<dt>Reference and inference windows</dt>
+<dd>
+Per case (<a href="#tbl-cases" class="quarto-xref">Table&nbsp;1</a>). Default 12 mo / 1 mo.
+</dd>
+<dt>Point statistics</dt>
+<dd>
+150 m buffer. Centred on the T_smoothed raster peak where rule 5 applies (1.1, 2.1), otherwise on the geocoded point.
+</dd>
+</dl>
+<p><strong>Per-case parameters (<a href="#tbl-params" class="quarto-xref">Table&nbsp;3</a>).</strong> The coordinate is the point at which the statistic in <a href="#tbl-cases" class="quarto-xref">Table&nbsp;1</a> was measured, at the buffer shown. Windows follow <a href="#tbl-cases" class="quarto-xref">Table&nbsp;1</a>: the reference period is the 8 or 12 months ending at the start of the active-violence window, the inference period the 1 or 2 months from its end. El Fasher (1.1–1.3) and El Daein (1.4) have descending-only Sentinel-1 coverage, so T reduces to a single-track |t| there. The Sagaing sites (2.1–2.3) combine one ascending and one descending track.</p>
+<div id="tbl-params" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-params-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Per-case tested coordinate, point buffer, and Sentinel-1 track
+</figcaption>
+<div aria-describedby="tbl-params-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 63%">
+<col style="width: 5%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tested coordinate (lat, lon)</th>
+<th>Buffer</th>
+<th>Orbit · relative orbit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1</td>
+<td>13.653180, 25.242255 (PWTT peak, 480 m from the Alsen village node)</td>
+<td>150 m</td>
+<td>descending · 138</td>
+</tr>
+<tr class="even">
+<td>1.2</td>
+<td>13.878884, 24.897446 (Yale HRL Annex F)</td>
+<td>150 m</td>
+<td>descending · 138</td>
+</tr>
+<tr class="odd">
+<td>1.3</td>
+<td>13.671500, 25.350100 (Abu Shouk camp, Naivasha Market)</td>
+<td>150 m</td>
+<td>descending · 65</td>
+</tr>
+<tr class="even">
+<td>1.4</td>
+<td>11.463105, 26.125466 (OSM hospital node; Mapcarta 11.4633, 26.1261 agrees)</td>
+<td>150 m</td>
+<td>descending · 65</td>
+</tr>
+<tr class="odd">
+<td>2.1</td>
+<td>23.801313, 94.141196 (PWTT peak, 453 m from the geocoded church)</td>
+<td>150 m</td>
+<td>ascending · 143, descending · 4</td>
+</tr>
+<tr class="even">
+<td>2.2</td>
+<td>23.998392, 95.888142 (Bellingcat geolocation)</td>
+<td>150 m</td>
+<td>ascending · 70, descending · 106</td>
+</tr>
+<tr class="odd">
+<td>2.3</td>
+<td>22.650500, 95.208400 (school, between OSM’s Oe Htein Kwin North and South)</td>
+<td>150 m</td>
+<td>ascending · 143, descending · 106</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-aimaiti2022" class="csl-entry" role="listitem">
+Aimaiti, Yusupujiang, Christina Sanon, Magaly Koch, Laurie G. Baise, and Babak Moaveni. 2022. <span>“War Related Building Damage Assessment in <span>Kyiv</span>, <span>Ukraine</span>, Using <span>Sentinel-1</span> Radar and <span>Sentinel-2</span> Optical Images.”</span> <em>Remote Sensing</em> 14 (24): 6239. <a href="https://doi.org/10.3390/rs14246239">https://doi.org/10.3390/rs14246239</a>.
+</div>
+<div id="ref-ballinger2025" class="csl-entry" role="listitem">
+Ballinger, Ollie. 2025. <span>“Open Access Battle Damage Detection via <span>Pixel-Wise</span> <span>T-Test</span> on <span>Sentinel-1</span> Imagery.”</span> <em>Remote Sensing of Environment</em> 331: 115025. <a href="https://doi.org/10.1016/j.rse.2025.115025">https://doi.org/10.1016/j.rse.2025.115025</a>.
+</div>
+<div id="ref-dietrich2025" class="csl-entry" role="listitem">
+Dietrich, Olivier, Torben Peters, Vivien Sainte Fare Garnot, et al. 2025. <em>An Open-Source Tool for Mapping War Destruction at Scale in <span>Ukraine</span> Using <span>Sentinel-1</span> Time Series</em>. <a href="https://doi.org/10.48550/arXiv.2406.02506">https://doi.org/10.48550/arXiv.2406.02506</a>.
+</div>
+<div id="ref-stanyer2025" class="csl-entry" role="listitem">
+Stanyer, Claire, Irene Seco-Rizo, Clement Atzberger, and Belen Marti-Cardona. 2025. <span>“Soil Texture, Soil Moisture, and <span>Sentinel-1</span> Backscattering: Towards the Retrieval of <span>Field-Scale</span> Soil Hydrological Properties.”</span> <em>Remote Sensing</em> 17 (3): 542. <a href="https://doi.org/10.3390/rs17030542">https://doi.org/10.3390/rs17030542</a>.
+</div>
+<div id="ref-wagner1998" class="csl-entry" role="listitem">
+Wagner, Wolfgang. 1998. <span>“Soil Moisture Retrieval from <span>ERS</span> Scatterometer Data.”</span> Geowissenschaftliche Mitteilungen, Heft 49, Vienna University of Technology.
+</div>
+<div id="ref-yalehrl2025" class="csl-entry" role="listitem">
+Yale School of Public Health, Humanitarian Research Lab. 2025. <em><span>RSF</span> <span>Wall-In</span> <span class="nocase">El-Fasher’s</span> Population to Prevent Escape</em>. Yale School of Public Health. <a href="https://ysph.yale.edu/download-file/a26839f2-c18c-43ab-a892-6a777e836f76/">https://ysph.yale.edu/download-file/a26839f2-c18c-43ab-a892-6a777e836f76/</a>.
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('click', () => {
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+            position:fixed; top:0; left:0; width:100%; height:100%;
+            background:rgba(0,0,0,0.85); display:flex;
+            align-items:center; justify-content:center;
+            z-index:9999; cursor:zoom-out;
+        `;
+            const enlarged = document.createElement('img');
+            enlarged.src = img.src;
+            enlarged.style.cssText = `max-width:90%; max-height:90vh; object-fit:contain;`;
+            overlay.appendChild(enlarged);
+            overlay.addEventListener('click', () => overlay.remove());
+            document.body.appendChild(overlay);
+        });
+    });
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

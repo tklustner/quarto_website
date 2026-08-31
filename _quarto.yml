@@ -2,7 +2,13 @@ project:
   type: website
   output-dir: docs
   resources:
-    - charts/assets/convenio_map.html
+    # charts/assets/ is the single shared figure store. Every page (papers,
+    # charts, home) references it as /charts/assets/x.png (root-absolute), so a
+    # moved page cannot silently 404 a figure. A per-paper figures/ folder
+    # (see PUBLISHING.md) holds figures unique to one paper; a figure shown on
+    # the Data Visualizations page is promoted here and both refs point at it.
+    - charts/assets
+    - CNAME
 
 website:
   title: "TK"
@@ -15,7 +21,7 @@ website:
       - href: charts/index.qmd # path uses original 'charts' name for URL stability; 
                                # scope expanded to include maps, stats models 
         text: Data Visualizations
-      - href: work.qmd
+      - href: work/index.qmd
         text: Work
       - href: services/index.qmd
         text: Services
@@ -36,4 +42,8 @@ format:
 
 
 execute:
-  freeze: auto          
+  # Tripwire, not a cache: the site is prose-only, no executable code chunks
+  # (see PUBLISHING.md). With none, `true` is a no-op. If a real {r}/{python}
+  # chunk is ever added, `quarto render` then fails until _freeze/ is populated
+  # deliberately, instead of silently executing and breaking on a fresh clone.
+  freeze: true

@@ -25,13 +25,13 @@ Importantly, violence along these corridors cannot be explained by local socioec
 
 *Figure 1: Federal Highway Proximity & Cartel Conflict Intensity in Michoacán and Guerrero (2018–2025)*
 
-![](../charts/assets/mich_guer_binned_road_proximity.png)
+![](/charts/assets/mich_guer_binned_road_proximity.png)
 *Clusters of elevated violence align with chokepoint corridors such as MEX 93D in Acapulco and Chilpancingo, MEX 15 from Zamora to Morelia, and MEX 51 near Taxco.*
 
 Figure 1 highlights the different logics used by armed groups in Michoacán and Guerrero, highlighting both operational capacity and strategic aims. In Guerrero, conflict events cluster tightly along federal highways exploited by fragmented actors seeking to control chokepoints and extract rents. These chokepoints– often narrow road corridors or transit junctions– are strategic because they concentrate civilian and commercial movement into predictable spaces. While they are especially attractive to lower-capacity groups, asserting control over them still requires a minimal level of coordination, firepower, or intimidation. This makes chokepoints ideal targets for actors who lack the resources to hold[^12] territory but possess just enough capacity to project power intermittently and extract value from state infrastructure.
 
 *Figure 2: Civilian-Targeting Events by Actor Type and Road Proximity (2018–2025)* 
-![](../charts/assets/actor_by_road_proximity_top3.png)
+![](/charts/assets/actor_by_road_proximity_top3.png)
 *Unidentified Armed Groups and Gangs commit the vast majority of civilian-targeting events near federal roads. Over 90% of their attacks occur within 1km of highways.*
 
 Conversely, Michoacán experiences a wider-ranging  pattern of violence, particularly in the western Tierra Caliente, where conflict density remains high even far from major roads. This suggests that violence there stems not only from mobility-enabled targeting but from sustained territorial contestation by larger, more organized groups. These actors seek control over resource-rich zones– including[^5] major avocado-producing municipalities– and attempt[^13] to steer local governance. While Guerrero’s violence may respond to chokepoint-focused interventions, Michoacán’s dynamics reflect entrenched armed governance and require deeper, systemic state re-engagement to dismantle these structures and reassert legitimate authority.
@@ -48,7 +48,7 @@ As shown in Figure 3, these actors were responsible for over 97% of civilian-dir
 
 *Figure 3: Directed network graph of armed actor interactions in Michoacán and Guerrero (2018–2025)*
 
-![](../charts/assets/mich_guer_directional_network.png)
+![](/charts/assets/mich_guer_directional_network.png)
 *Node size corresponds to attack frequency; edge width reflects the number of events initiated by the source node. Unidentified Armed Groups and Gangs account for over 97% of civilian-targeting events, rarely engaging state forces or rival cartels– highlighting their opportunistic use of contested infrastructure and avoidance of high-capacity confrontation.*
 
 

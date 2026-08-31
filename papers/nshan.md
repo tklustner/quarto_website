@@ -30,7 +30,7 @@ In North Shan and elsewhere, both the Tatmadaw and EAOs have leveraged[^30] the 
 
 *Figure 1: Conflict Concentrations and Opium Growing Zones in North Shan State (2018–2025)*
 
-![](../charts/assets/nshan_static_grid.png)
+![](/charts/assets/nshan_static_grid.png)
 
 **III. Opium, Conflict, and Territorial Control**
 
@@ -40,7 +40,7 @@ The roughly 19% decrease in cultivation zone-adjacent conflict (from 35.4% in 20
 
 *Figure 2: Fatality-Scaled Conflict Events & Fatality Rates in North Shan State (2018-2025)*
 
-![](../charts/assets/nshan_clipped_gif.gif)
+![](/charts/assets/nshan_clipped_gif.gif)
 
 **IV. Operation 1027 and the Surge in Conflict Lethality**
 
@@ -48,7 +48,7 @@ In this context, the October 2023 launch of Operation 1027 by the Three Brotherh
 
 *Figure 3: Conflict Events & Fatalities in North Shan State (2018-2025)*
 
-![](../charts/assets/nshan_conflict_trends_2018-2025.png)
+![](/charts/assets/nshan_conflict_trends_2018-2025.png)
 
 While Figure 3 shows conflict events spiked following the 2021 coup, Figure 4 indicates violence in North Shan became consistently lethal only beginning in 2023. Fatalities per event nearly doubled between 2021 and 2022, reaching nearly one fatality per event through 2024– a striking escalation from the pre-2022 baseline of 43%. Operation 1027, reflected in the sharp spike in conflict incidents at the end of 2024, marked a turning point: EAOs adopted advanced battlefield tactics, including drone strikes[^36] and coordinated offensives, overwhelming many Tatmadaw positions.
 
@@ -56,7 +56,7 @@ In response, the Tatmadaw resorted[^37] to indiscriminate airstrikes, artillery 
 
 *Figure 4: Shifts in Conflict Tactics and Lethality in North Shan State (2018–2025)*
 
-![](../charts/assets/nshan_conflict_tactics.png)
+![](/charts/assets/nshan_conflict_tactics.png)
 
 Event analysis disaggregated by actor (Figure 5) suggests that the Tatmadaw’s increasing reliance on ordnance attacks is the primary driver of this lethality surge. Since 2022, fatalities per military ordnance event have risen more than tenfold, crossing the threshold of one death per attack. In contrast, opposition forces’ ordnance lethality has declined slightly over the same period, even amid their expanded 2024 offensives– a divergence that underscores the Tatmadaw’s escalating disregard for civilian life.
 
@@ -64,7 +64,7 @@ These developments have devastated civilian communities. As Operation 1027 force
 
 *Figure 5: Ordnance Attack Share and Fatalities by Actor, North Shan State (2022–2025)*
 
-![](../charts/assets/nshan_ordnance_dyad_stackedBar.png)
+![](/charts/assets/nshan_ordnance_dyad_stackedBar.png)
 
 
 **V. Opium Production and Conflict in North Shan State: Dynamics and Responses**
@@ -75,7 +75,7 @@ As a result, smallholder farmers remain trapped between entrenched poverty and i
 
 *Figure 6: Opium Cultivation Cycle, Namkham township (2022–2024)*
 
-![](../charts/assets/nshan_ndvi_tc.png)
+![](/charts/assets/nshan_ndvi_tc.png)
 
 In Figure 6, Hex 12 (Namkham), controlled[^45] by the TNLA as of early 2024, March imagery shows minimal evidence of new opium clearing, contrasting sharply with the previous year’s harvest patterns. By comparison, Hex 162, located just 10 kilometers away and also near Namkham, displays persistent light-toned patches characteristic of active opium harvesting despite a nominal transition to anti-regime control. This divergence suggests that halting opium production requires more than just military victories: it depends on whether new authorities actively disrupt narcotics economies and offer viable alternatives. Where anti-narcotic interventions and livelihood support were prioritized, as in Hex 12, opium cultivation collapsed; where such efforts were absent or delayed, as in Hex 162, production continued largely unabated. This reinforces the argument that improving food security and supporting alternative crops– particularly rice– could begin to shift local incentives away from poppy production and dismantle one of the core economic pillars sustaining Myanmar’s borderland conflicts.
 
@@ -90,7 +90,7 @@ Opium production in Namkham township, near the Chinese border, underscores the d
 
 *Figure 7: Conflict and Opium Cultivation Hotspots: Diverging Patterns in Kutkai, Lashio, and Namkham (2023–2024)*
 
-![](../charts/assets/nshan_bivariate_hotspots.png)
+![](/charts/assets/nshan_bivariate_hotspots.png)
 
 While opium production almost certainly contributes to financing conflict in Myanmar, the spatial relationship between production and violence is far from clear-cut. With cultivation concentrated in high-elevation, rugged areas that complicate sustained military operations, opium production and conflict are increasingly segregated phenomena. Moreover, opium’s declining profitability and severe social costs mean that armed groups tolerating or promoting poppy cultivation risk alienating popular support– a critical resource for sustaining insurgency. Myanmar may lead the world in opium production, but many producers and their communities are far from enthusiastic participants. In short, opium production in North Shan appears less entrenched, and more vulnerable to strategic economic interventions like crop substitution and market reforms, than is often portrayed.
 

@@ -27,7 +27,7 @@ Three analytical steps operationalize the divergence detection logic. First, a c
 
 *Figure 1: Provincial Patterns of Precipitation, Cultivation & Enforcement: 2022-2025*
 
-![](../charts/assets/afg_precip_enforcement_5prov.png)
+![](/charts/assets/afg_precip_enforcement_5prov.png)
 
 **IV. Helmand: Enforcement Coherence & Compliance**
 
@@ -43,7 +43,7 @@ Unique among the five provinces in the panel, Badakhshan's cultivation area has 
 
 *Figure 2: Province-level change in cultivation area, Afghanistan Opium Survey 2025 (UNODC)*
 
-![](../charts/assets/afg_unodc_prov_cultivation.png)
+![](/charts/assets/afg_unodc_prov_cultivation.png)
 *UNODC's 2024–25 provincial change map codes Helmand and Badakhshan identically at –10%. The divergence detection analysis suggests these represent structurally different outcomes.*
 
 

@@ -16,7 +16,7 @@ Leveraging ACLED[^acled] event data (2018-2025), Hansen Global Forest Change[^ha
 
 *Figure 1: Violent Conflict, Palm Oil Infrastructure & Cooperative Land Presence: Bajo Aguán Valley (Jan 2018-May 2025)*
 
-![](../charts/assets/bajo_aguan_static_map.png)
+![](/charts/assets/bajo_aguan_static_map.png)
 
 *Cluster radius proportional to event count within 2km. Corporación Dinant finca and palm oil mill locations georeferenced from CAO audit documentation and satellite imagery. Cooperative finca boundaries represent dissolved buffers around known campesino cooperative land claims. Conflict density is highest in Tocoa municipality (n=171), with secondary clustering along the Dinant operational corridor between Sonaguera and Bonito Oriental. Cooperative land presence concentrates in the Quebrada de Arena–Bonito Oriental corridor, where Dinant infrastructure and conflict events spatially overlap.*
 
@@ -35,7 +35,7 @@ The 2009 coup galvanized disparate civil groups to organized resistance. MUCA be
 
 *Figure 2: Land Clearing Resumed After Resistance Had Already Disappeared*
 
-![](../charts/assets/bajo_aguan_divergence.png)
+![](/charts/assets/bajo_aguan_divergence.png)
 *Peasant/MUCA resistance events fall to near-zero following the Convenio; forest loss rebounds to 2021 peak levels by 2025.*
 
 **III. Method**
@@ -69,7 +69,7 @@ Cruz Tomé's case was not exceptional. Plataforma Agraria recorded 12 campesino 
 
 *Figure 4: Dry Years Don't Explain Rising Abandonment*
 
-![](../charts/assets/aguan_mechanism.png)
+![](/charts/assets/aguan_mechanism.png)
 *Abandonment rises sharply from 2021 onward; 2023–2024 below-mean precipitation does not account for the abandonment trend, ruling out drought as a primary driver.*
 
 
