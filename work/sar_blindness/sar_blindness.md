@@ -66,6 +66,7 @@ b. HDX P-code administrative polygons for verifying coordinates: checking geocod
 c. Second independent source for corroborating coordinates: the single hospital node extracted via OSM for El Daein was checked against a Mapcarta open-access coordinate pair for the same-named hospital. The Mapcarta coordinate landed 75 m from the OSM node, independently corroborating what was a thin single source.
 
 ### Running your tests
+
 **3. Never diff raw dates.** 
 
 *Problem*: At Alsen (1.1), our first SAR test differenced two dates directly, skipping the reference period. This approach produced what appeared to be a positive CD identification: an arbitrary point with no reported feature nearby shows a difference 30x the AOI's background standard deviation. Were this result in fact corroborated, it would have undoubtedly entered the analysis as a remarkable positive result.
@@ -85,6 +86,7 @@ What happened was a moisture confound, not scattered razing. The AOI spans a dry
 *Solution*: VV is sensitive to soil moisture. VH is sensitive to volume scattering, like vegetation canopy or rubble texture. A uniform VV-dominant shift with flat VH points to moisture drift, not damage. Real structural change should move VH too, often more than VV. Check cross-polarization (VH) along with co-polarization (VV) divergences before trusting any raw cluster's direction.
 
 ### Verifying your results
+
 **5. Test the raster's peak, not the reported point.**
 
 *Problem*: We first tested Alsen (1.1) at its only documented coordinate, the reported village node. The result was null. VV read p = 0.12. VH read p = 0.06. This contradicted an earlier positive finding at the same site.
