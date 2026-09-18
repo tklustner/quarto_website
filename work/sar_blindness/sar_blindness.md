@@ -18,7 +18,9 @@ We ran the same underlying SAR data through five different methods: raw differen
 A second case set, Myanmar's Sagaing Region, retests the footprint problem against three airstrike locations. Two returned nulls. The third was unresolved.
 
 The combined case sets underscore two crucial shortcomings of SAR for CD:
+
 - **Confounded by soil moisture.** When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event [@wagner1998; @stanyer2025]. 
+
 - **Lower sensitivity to single-structure damage.** SAR needs a wide, contiguous footprint to register CD. Single buildings, however they are constructed, rarely separate from background noise during testing [@aimaiti2022].
 
 The CD method below relies solely on open Sentinel-1 and Sentinel-2 data. We detail the systematic signal processing and verification problems encountered in implementing this purely sensor-based method. 
