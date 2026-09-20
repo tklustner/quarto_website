@@ -14,4 +14,7 @@ designed for low-resource conflict contexts.
 **[SAR Blindness: Wet Soil, Small Footprints](sar_blindness/sar_blindness.html)**<br>
 Why open-access radar missed 31 km of newly-built siege walls, and what its silence does and does not prove.
 
+**[The War-Risk Screen: Two Ways the Coast Lies](war_risk_check/war_risk_check.html)**<br>
+Screens out false SAR structural damage leads with minimal open imagery, cutting costs of real-time verification by 88%.
+
 ---
