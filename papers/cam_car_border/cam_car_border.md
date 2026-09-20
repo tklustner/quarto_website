@@ -13,7 +13,7 @@ The N10 highway in Cameroon runs 329 kilometers northeast, linking the capital Y
 
 People have migrated to the East Region fleeing political violence in CAR since at least 1960 [@ngoune2026]. In 2013, Séléka forces carried out the fifth coup in CAR's 66-year history, deposing President François Bozizé while stimulating opposition from "anti-balaka" factions. Gado emerged in March 2014 as temporary accommodation for some 17,600 Central Africans on a 55-hectare site; Lolo, 10,000 on 60. In 2014, more than 130,000 people arrived in total across the East Region [@new_hum_2014]. In CAR, fighting between factions of primarily-Muslim Séléka and primarily-Christian anti-balaka forces persists, despite 12 years of United Nations peacekeeping operations (MINUSCA) [@minusca].
 
-![Orientation map of the Cameroon–Central African Republic border area in Cameroon's East Region, showing the N10 highway and the Gado-Badzéré and Lolo refugee camps.](figures/cam_car_orientation.jpg){#fig-orientation}
+![Orientation map of the Cameroon – Central African Republic border area in Cameroon's East Region, showing the N10 highway and the Gado-Badzéré and Lolo refugee camps.](figures/cam_car_orientation.jpg){#fig-orientation}
 
 People living in Gado and Lolo have developed a diversified economy during their indefinite displacement. Of 220 Gado and Lolo respondents in a November 2020 survey, 67 (30.5%) reported agriculture or livestock-keeping as their primary livelihood. Another 35 (15.9%) were engaged in small trades (petits métiers), and 29 (13.2%) in commerce or trading. Eight respondents (3.6%) worked paid positions in camp health clinics or on camp committees. Cassava, the dominant crop, is increasingly processed and sold at market; likewise for cooking firewood. Whatever land and water the corridor may offer, people are already using it to get by [@tiomo_kamdem_2023].
 
@@ -35,7 +35,7 @@ Particularly dry years mean more and longer walking for women and girls: a 10% p
 
 Since 2018, forest-loss and precipitation trend reversals have tracked in the same direction in 6 of the last 8 years near the N10, and 5 of 8 near Lolo. This dynamic is consistent with a mechanism where precipitation enables opportunistic land conversion when rainfall is more abundant, not less.
 
-![Process-tracing chart comparing the timing of year-over-year trend reversals in forest loss, precipitation, and displacement near the N10 road and Lolo camp, 2018-2025.](figures/process_tracing_reversal_diagnostic.png){#fig-reversal-diagnostic}
+![Process-tracing chart comparing the timing of year-over-year trend reversals in forest loss, precipitation, and displacement near the N10 road and Lolo camp, 2018-2025.](/charts/assets/cam_car_border_reversal_diagnostic.png){#fig-reversal-diagnostic}
 
 Refugee camps are known to concentrate land degradation nearby. Elsewhere, degradation effects fall off about five kilometers from camp boundaries [@dampha_salemi_polasky_2022]. On this evidence, squeezed land in the corridor should likewise concentrate near Gado and Lolo camps. It does (see @fig-distance-decay below). The N10 road turns out to matter more.
 
@@ -55,7 +55,7 @@ The decreasing land-squeeze at camp fringes shown in @fig-distance-decay does no
 
 Population growth cannot, however, explain concentrated land degradation around the N10. Between 2015-2025, population within 2 km of the N10 grew slower than the corridor average (30.6% vs. 32.2%), while population near Gado and Lolo camps grew 1.2 to 1.6 times faster [@worldpop_road]. Degradation concentrates at the road even when population does not.
 
-![Distance-decay chart showing the share of meaningfully squeezed land by distance from the N10 road versus from Gado and Lolo camps, out to 15 km.](figures/distance_decay_squeeze.png){#fig-distance-decay}
+![Distance-decay chart showing the share of meaningfully squeezed land by distance from the N10 road versus from Gado and Lolo camps, out to 15 km.](/charts/assets/cam_car_border_distance_decay.png){#fig-distance-decay}
 
 ## Institutional Context
 

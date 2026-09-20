@@ -1,9 +1,21 @@
 ---
 title: "Data Visualizations"
 ---
-<!-- Note: directory named 'charts/' (original scope); 
+<!-- Note: directory named 'charts/' (original scope);
      now serves as data viz hub (charts, maps, models) -->
-     
+
+## Satellite Imagery
+
+**Can free satellite radar and optical imagery confirm a single airstrike's damage? Ras Isa oil terminal, Yemen (11–23 April 2025)**<br>
+*Optical + SAR VV/VH before/after composite · From: [The War-Risk Screen](../work/war_risk_check/war_risk_check.html)*
+
+![](/charts/assets/war_risk_check_r1_tank_composite.png)
+
+**What does a naive SAR change-detection scan actually return? Ras Isa oil terminal, Yemen (11–23 April 2025)**<br>
+*Raw damage-proxy heuristic across the full AOI · From: [The War-Risk Screen](../work/war_risk_check/war_risk_check.html)*
+
+![](/charts/assets/war_risk_check_naive_scan.png)
+
 ## Animated
 
 **Does conflict track opium cultivation or transit routes? North Shan (2018–2025)**<br>
@@ -54,6 +66,16 @@ title: "Data Visualizations"
 *Directional actor network · From: [Infrastructure of Violence in Michoacán & Guerrero](../papers/mich_guer.html)*
 
 ![](/charts/assets/mich_guer_directional_network.png)
+
+**Does land degradation concentrate near refugee camps, or near the road? Cameroon-CAR border corridor**<br>
+*Distance-decay analysis, N10 highway vs. Gado/Lolo camps · From: [Displacement & Land Pressure in Cameroon-CAR Borderlands](../papers/cam_car_border/cam_car_border.html)*
+
+![](/charts/assets/cam_car_border_distance_decay.png)
+
+**Do rainfall reversals predict land-conversion reversals? N10 corridor and Lolo camp (2018–2025)**<br>
+*Process-tracing timing diagnostic · From: [Displacement & Land Pressure in Cameroon-CAR Borderlands](../papers/cam_car_border/cam_car_border.html)*
+
+![](/charts/assets/cam_car_border_reversal_diagnostic.png)
 
 ## Models
 

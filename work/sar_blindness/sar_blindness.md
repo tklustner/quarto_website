@@ -7,7 +7,7 @@ bibliography: references.bib
 
 ## Executive summary
 
-We sought berms in the desert. The reports said they were there, 31 km of newly-built earthen walls encircling El Fasher city (North Darfur, Sudan). The reports specify the date construction began on the berms (9 May 2025), how long the 22 km "semi-circle" segment took to complete (9 May–19 August 2025), that a gap remains around Al-Salaam IDP camp and that it is shrinking [@yalehrl2025]. The berms help the paramilitary group Rapid Support Forces (RSF) create a "literal kill box" around the city. We aimed two satellite sensors – synthetic aperture radar (SAR; Sentinel-1) and multispectral optical (Sentinel-2) – at El Fasher. At 10 m optical resolution, the berms appear as thin dark lines (@fig-alsen-berm).
+We sought berms in the desert. The reports said they were there, 31 km of newly-built earthen walls encircling El Fasher city (North Darfur, Sudan). The reports specify the date construction began on the berms (9 May 2025), how long the 22 km "semi-circle" segment took to complete (9 May –19 August 2025), that a gap remains around Al-Salaam IDP camp and that it is shrinking [@yalehrl2025]. The berms help the paramilitary group Rapid Support Forces (RSF) create a "literal kill box" around the city. We aimed two satellite sensors – synthetic aperture radar (SAR; Sentinel-1) and multispectral optical (Sentinel-2) – at El Fasher. At 10 m optical resolution, the berms appear as thin dark lines (@fig-alsen-berm).
 
 ![The Alsen berm segment before and after construction (Sentinel-1 and Sentinel-2, 1–31 July 2025). Optical true color, then SAR VV, then SAR VH. Before over after. The berm (circled) presents as a thin dark line in the optical panel and a bright line in SAR VV, where the fresh earthwork roughens the surface. The razed villages along its route read as dark patches.](figures/alsen-berm-composite.png){#fig-alsen-berm}
 
@@ -19,18 +19,17 @@ A second case set, Myanmar's Sagaing Region, retests the footprint problem again
 
 The combined case sets underscore two crucial shortcomings of SAR for CD:
 
-- **Confounded by soil moisture.** When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event [@wagner1998; @stanyer2025]. 
+- **Confounded by soil moisture.** When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event [@wagner1998; @stanyer2025].
 
 - **Lower sensitivity to single-structure damage.** SAR needs a wide, contiguous footprint to register CD. Single buildings, however they are constructed, rarely separate from background noise during testing [@aimaiti2022].
 
-The CD method below relies solely on open Sentinel-1 and Sentinel-2 data. We detail the systematic signal processing and verification problems encountered in implementing this purely sensor-based method. 
-
+The CD method below relies solely on open Sentinel-1 and Sentinel-2 data. We detail the systematic signal processing and verification problems encountered in implementing this purely sensor-based method.
 
 | #   | Country / adm1 / adm2            | AOI                                 | Active-violence window | Violence type               | Reference and inference periods / n                         | SAR reading                                                              |
 | --- | -------------------------------- | ----------------------------------- | ---------------------- | --------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------ |
 | 1.1 | Sudan / North Darfur / Al Fasher | Alsen berm crossing, El Fasher      | 14–24 Jul 2025         | Berm/earthwork construction | 12 mo pre / 1 mo post; ref_n = 15, inf_n = 5                | VV t = +6.76, df = 4.55, p = 0.0015; VH t = +6.99, df = 8.97, p = 0.0001 |
-| 1.2 | Sudan / North Darfur / Al Fasher | Kobbei, El Fasher                   | 31 Mar–12 Jun 2024     | Arson/razing of compounds   | 12 mo pre / 1 mo post; inf_n = 2                            | VV t = −3.44, df = 2.2, p = 0.066; VH t = −2.61, df = 1.8, p = 0.132     |
-| 1.3 | Sudan / North Darfur / Al Fasher | Naivasha Market, Abu Shouk IDP camp | 30 Aug–10 Sep 2025     | Artillery shelling          | 12 mo pre / 1 mo post; inf_n = 2                            | VV t = +0.23, df = 3.4, p = 0.832; VH t = +0.42, df = 3.6, p = 0.697     |
+| 1.2 | Sudan / North Darfur / Al Fasher | Kobbei, El Fasher                   | 31 Mar –12 Jun 2024     | Arson/razing of compounds   | 12 mo pre / 1 mo post; inf_n = 2                            | VV t = −3.44, df = 2.2, p = 0.066; VH t = −2.61, df = 1.8, p = 0.132     |
+| 1.3 | Sudan / North Darfur / Al Fasher | Naivasha Market, Abu Shouk IDP camp | 30 Aug –10 Sep 2025     | Artillery shelling          | 12 mo pre / 1 mo post; inf_n = 2                            | VV t = +0.23, df = 3.4, p = 0.832; VH t = +0.42, df = 3.6, p = 0.697     |
 | 1.4 | Sudan / East Darfur / Ad Du'ayn  | El Daein Teaching Hospital          | 20–21 Mar 2026         | Aerial bombing              | 8 mo pre / 2 mo post; ref_n = 15, inf_n = 5                 | VV t = +0.75, df = 9.4, p = 0.469; VH t = +0.85, df = 9.5, p = 0.416     |
 | 2.1 | Myanmar / Sagaing / Tamu         | Kanan (church/school/houses)        | 7 Jan 2024             | Airstrike                   | 8 mo pre / 2 mo post; ref_n = 20/18 (ASC/DESC), inf_n = 5/4 | At raster peak: VV t = −2.41/−2.85, p = 0.0414/0.0331; VH ns             |
 | 2.2 | Myanmar / Sagaing / Kawlin       | Nan Khan                            | 9 Apr 2025             | Airstrike                   | 8 mo pre / 2 mo post; ref_n = 12/11 (ASC/DESC), inf_n = 4/5 | VV t = −0.84/−0.58, p = 0.4255/0.5757                                    |
@@ -38,24 +37,23 @@ The CD method below relies solely on open Sentinel-1 and Sentinel-2 data. We det
 
 : Case metadata – El Fasher (Sudan) and Sagaing (Myanmar) {#tbl-cases}
 
-> **Note.** RIWs vary in some cases (12 mo / 1 mo vs. 8 mo / 2 mo) so cases' image density are roughly equivalent. We used the image density from our only positive CD identification, Alsen's 12 mo / 1 mo RIW – reference images ≈ 15, inference images ≈ 5 – as a minimum-viable window for producing a positive SAR reading. For example, El Daein (1.4) and the three Myanmar case sites (2.1–2.3) met this ref_n ≈ 15, inf_n ≈ 5 threshold using an 8 mo / 2 mo RIW. 
+> **Note.** RIWs vary in some cases (12 mo / 1 mo vs. 8 mo / 2 mo) so cases' image density are roughly equivalent. We used the image density from our only positive CD identification, Alsen's 12 mo / 1 mo RIW – reference images ≈ 15, inference images ≈ 5 – as a minimum-viable window for producing a positive SAR reading. For example, El Daein (1.4) and the three Myanmar case sites (2.1–2.3) met this ref_n ≈ 15, inf_n ≈ 5 threshold using an 8 mo / 2 mo RIW.
 
 ## Method
 
-The method below uses only open Sentinel-1 and Sentinel-2 data: no VHR, no in-country contacts, no on-the-ground corroboration. Without those external cross-checks, mistaken readings needed to be caught and corrected in the investigative procedure itself. Each of the six rules corresponds to a specific mistake we made in our case set analyses. 
+The method below uses only open Sentinel-1 and Sentinel-2 data: no VHR, no in-country contacts, no on-the-ground corroboration. Without those external cross-checks, mistaken readings needed to be caught and corrected in the investigative procedure itself. Each of the six rules corresponds to a specific mistake we made in our case set analyses.
 
 ### Before you start
 
-**1. Test your track for recent image density.** 
+**1. Test your track for recent image density.**
 
-*Problem*: For the Naivasha market bombardment (1.3), we initially pulled available scenes from 2016 to August 2025 without checking whether the temporal distribution of scenes was skewed. "Skewed" understates the problem: track 65 descending contains 25–31 scenes from 2016 to 2021, followed by a complete gap in 2022–23, and sparse 1–3 annual scenes since 2023. 
+*Problem*: For the Naivasha market bombardment (1.3), we initially pulled available scenes from 2016 to August 2025 without checking whether the temporal distribution of scenes was skewed. "Skewed" understates the problem: track 65 descending contains 25–31 scenes from 2016 to 2021, followed by a complete gap in 2022–23, and sparse 1–3 annual scenes since 2023.
 
 We only caught this problem when building the reference period, which gave n = 3 SAR scenes total in the 12 months prior to the start of shelling. This scene sparsity left degrees of freedom df = 2: a t-distribution so fat-tailed that even the inference period shift barely cleared p < 0.05. The reference period reading could not be distinguished from background at all.
 
-*Solution*: We built a standalone check `--track-density` that runs before any initial data pull. `--track-density` reports scene count, longest interior gap, and percentage of AOI covered, for the exact AOI and RIW in question. Retrospective calculations for Naivasha's own track are noted in the above paragraph. If an AOI's reference period includes fewer than ~10 scenes, or if the reference period contains a data gap over 90 days, stop before running a statistical test. 
+*Solution*: We built a standalone check `--track-density` that runs before any initial data pull. `--track-density` reports scene count, longest interior gap, and percentage of AOI covered, for the exact AOI and RIW in question. Retrospective calculations for Naivasha's own track are noted in the above paragraph. If an AOI's reference period includes fewer than ~10 scenes, or if the reference period contains a data gap over 90 days, stop before running a statistical test.
 
-
-**2. Geocode in three layers.** 
+**2. Geocode in three layers.**
 
 *Problem*: For the berm waypoints (1.1), our first geocoding pass used Nominatim, the open-access standard for name-to-coordinate search. Nominatim failed to return results for four villages – Golo, Tomnana, Umm Dalil, and Gileidit – named in English as berm waypoints in HRL reports. Rural, village-scale settlements in Sudan are simply not indexed by English-language name. Separately, at El Daein (1.4), OSM recorded exactly one hospital node for the entire town, versus 240 nodes in Khartoum.
 
@@ -69,7 +67,7 @@ c. Second independent source for corroborating coordinates: the single hospital 
 
 ### Running your tests
 
-**3. Never diff raw dates.** 
+**3. Never diff raw dates.**
 
 *Problem*: At Alsen (1.1), our first SAR test differenced two dates directly, skipping the reference period. This approach produced what appeared to be a positive CD identification: an arbitrary point with no reported feature nearby shows a difference 30x the AOI's background standard deviation. Were this result in fact corroborated, it would have undoubtedly entered the analysis as a remarkable positive result.
 
@@ -79,7 +77,7 @@ The result was completely confounded by moisture. The scene pair spanned 150 day
 
 ![Rule 3 at Alsen. Left, Sentinel-2 true color for reference. Centre, a raw two-date Sentinel-1 difference over a rainy 150-day pair reads change across the whole scene. Right, the PWTT over a 12-month reference period puts a bright linear signal on the berm. The ring marks the berm crossing.](figures/rule3-raw-vs-pwtt.png){#fig-rule3}
 
-**4. Check VV/VH divergence first.** 
+**4. Check VV/VH divergence first.**
 
 *Problem*: Across the razing AOIs (1.2, 1.3), reporting 41 razed farming communities, VV showed a broad decrease over nearly the whole area. Max |z| reached only 1.1. VH stayed flat by comparison. A uniform, AOI-wide VV shift looked like it could be widespread damage. It wasn't.
 
@@ -97,11 +95,11 @@ Our AOIs had drifted. The village node was the only documented coordinate for Al
 
 *Solution*: We computed the T_smoothed raster over a 500 m search radius around the reported point. The real peak sat 480 m away. Testing there instead yielded: VV t = +6.76, p = 0.0015. VH t = +6.99, p = 0.0001. The same drift recurred at El Daein (1.4; 200–280 m) and Kanan (2.1; 453 m). Our default point buffer is 150 m, matching PWTT's own largest smoothing kernel. Always locate the actual peak first. Widen the buffer only for a disclosed reason, like an unresolved multi-candidate geocode.
 
-**6. Visually crosscheck SAR before reporting.** 
+**6. Visually crosscheck SAR before reporting.**
 
-*Problem*: At Shalakhna, our top-ranked SAR coherence cell showed energy_z = +7.3. It looked like the strongest signal in the case. It ended up being a no-data gap at a tile edge, not authentic ground content. At Abu Shouk, a separate cluster read as a bombardment signal. 
+*Problem*: At Shalakhna, our top-ranked SAR coherence cell showed energy_z = +7.3. It looked like the strongest signal in the case. It ended up being a no-data gap at a tile edge, not authentic ground content. At Abu Shouk, a separate cluster read as a bombardment signal.
 
-The cluster, in fact, was a vegetation trend north of the camp, unrelated to the shelling.  Since a coherence ratio is unstable wherever both eigenvalues are near zero, a cloud edge, a no-data gap, and an AOI clip boundary all produce the same spuriously high gradient energy an authentic edge does. Neither cell was flagged by cloud classification, so checking that alone would have missed both. The top-ranked cell was pointed at a tile seam, not ground truth. 
+The cluster, in fact, was a vegetation trend north of the camp, unrelated to the shelling. Since a coherence ratio is unstable wherever both eigenvalues are near zero, a cloud edge, a no-data gap, and an AOI clip boundary all produce the same spuriously high gradient energy an authentic edge does. Neither cell was flagged by cloud classification, so checking that alone would have missed both. The top-ranked cell was pointed at a tile seam, not ground truth.
 
 *Solution*: We added two AOI-wide gates. A valid-fraction gate excludes cells below 0.95 real pixels, catching cloud and no-data boundaries. An energy z-score gate excludes cells with near-zero gradient energy, where a coherence ratio becomes unstable. Both cases were re-checked by eye against the optical image before either was trusted. Don't trust a ranked cell or peak without a visual crosscheck first. A statistic can falsely rank a measurement artifact above an authentic signal.
 
@@ -147,7 +145,7 @@ These four are the second kind. Alsen, an independently confirmed change run thr
 
 ## What this means
 
-Across two case sets, open SAR returned one clear positive from seven events. This low detection rate is a fact about SAR's limitations at these footprints and sample sizes, not a result about the ground. The investigated events happened. Where open SAR is the only instrument with coverage, its silence is not evidence of absence and must not be treated as such. 
+Across two case sets, open SAR returned one clear positive from seven events. This low detection rate is a fact about SAR's limitations at these footprints and sample sizes, not a result about the ground. The investigated events happened. Where open SAR is the only instrument with coverage, its silence is not evidence of absence and must not be treated as such.
 
 Given the soil-moisture and building footprint confounds demonstrated above, two checks are worth doing before using SAR for CD: is optical truly blocked by weather (not just hard to reach) and how big is the damaged area.
 
@@ -155,39 +153,38 @@ Single buildings never show up in this project's SAR data, no matter their const
 
 ## Appendix: Data and parameters
 
-
 Platform
-:   Google Earth Engine, accessed August 2026.
+: Google Earth Engine, accessed August 2026.
 
 SAR
-:   `COPERNICUS/S1_GRD`. IW mode, VV + VH, C-band. GEE-provided: border and thermal noise removed, calibrated to σ⁰, terrain-corrected via SRTM. Values in dB.
+: `COPERNICUS/S1_GRD`. IW mode, VV + VH, C-band. GEE-provided: border and thermal noise removed, calibrated to σ⁰, terrain-corrected via SRTM. Values in dB.
 
 Optical
-:   `COPERNICUS/S2_SR_HARMONIZED`.
+: `COPERNICUS/S2_SR_HARMONIZED`.
 
 Rainfall
-:   `UCSB-CHG/CHIRPS/DAILY` v2.0. AOI-mean, pass to pass.
+: `UCSB-CHG/CHIRPS/DAILY` v2.0. AOI-mean, pass to pass.
 
 Terrain and water
-:   SRTM 30 m and JRC Global Surface Water.
+: SRTM 30 m and JRC Global Surface Water.
 
 Pair selection
-:   Before and after must share orbit pass (ASC/DESC) and relative orbit (track). A mismatch hard-fails rather than crossing tracks.
+: Before and after must share orbit pass (ASC/DESC) and relative orbit (track). A mismatch hard-fails rather than crossing tracks.
 
 Analysis scale
-:   10 m, the S1 GRD nominal.
+: 10 m, the S1 GRD nominal.
 
 Speckle filter
-:   5 × 5 square focal median, per scene, before aggregation.
+: 5 × 5 square focal median, per scene, before aggregation.
 
 PWTT
-:   Welch's t per orbit × polarization. T = max(\|t\|). T_smoothed is the mean of T and T convolved at 50, 100, and 150 m with circular kernels.
+: Welch's t per orbit × polarization. T = max(\|t\|). T_smoothed is the mean of T and T convolved at 50, 100, and 150 m with circular kernels.
 
 Reference and inference windows
-:   Per case (@tbl-cases). Default 12 mo / 1 mo.
+: Per case (@tbl-cases). Default 12 mo / 1 mo.
 
 Point statistics
-:   150 m buffer. Centred on the T_smoothed raster peak where rule 5 applies (1.1, 2.1), otherwise on the geocoded point.
+: 150 m buffer. Centred on the T_smoothed raster peak where rule 5 applies (1.1, 2.1), otherwise on the geocoded point.
 
 **Per-case parameters (@tbl-params).** The coordinate is the point at which the statistic in @tbl-cases was measured, at the buffer shown. Windows follow @tbl-cases: the reference period is the 8 or 12 months ending at the start of the active-violence window, the inference period the 1 or 2 months from its end. El Fasher (1.1–1.3) and El Daein (1.4) have descending-only Sentinel-1 coverage, so T reduces to a single-track \|t\| there. The Sagaing sites (2.1–2.3) combine one ascending and one descending track.
 

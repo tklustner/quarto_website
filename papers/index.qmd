@@ -4,22 +4,22 @@ title: "Papers"
 
 ## Working Papers
 
+**[Displacement & Land Pressure in Cameroon-CAR Borderlands](cam_car_border/cam_car_border.html)**<br>
+Why land degradation in a forced displacement corridor concentrates around a highway, not human settlements.
+
 **[Land Use, Coercion & Resistance in Bajo Aguán](honduras.html)**<br>
-How the absence– not presence– of organized resistance measures the depth of coercive land control.
+Calculating the extent of coercive agroindustrial land control by measuring the absence of organized resistance.
 
 **[Detecting Coercion Without Visible Enforcement: Evidence from Afghanistan's Opium Ban](afg.html)** <br>
-Spatial triangulation methodology for identifying compliance under threat using satellite and cultivation data.
+Identifying the degree of coerced compliance with satellite and cultivation data.
 
 **[Infrastructure of Violence in Michoacán & Guerrero](mich_guer.html)**<br>
-How cartel violence follows transit corridors; road networks as conflict infrastructure.
+How transit corridors drive cartel violence; road networks as conflict infrastructure.
 
 **[Conflict, Opium & Territorial Control in North Shan](nshan.html)**<br>
 Why armed groups increasingly target transit routes over opium cultivation zones.
 
-**[COMING SOON-Conflict, Deforestation & Mining in South Kivu](skivu.html)**<br>
-Mine proximity predicts conflict risk, but only when roads are present.
-
-**[Displacement & Land Pressure in Cameroon-CAR Borderlands](cam_car_border/cam_car_border.html)**<br>
-Land degradation in a refugee corridor concentrates at the highway, not the camps.
+<!-- **[COMING SOON-Conflict, Deforestation & Mining in South Kivu](skivu.html)**<br>
+Mine proximity predicts conflict risk, but only with roads nearby. -->
 
 ---

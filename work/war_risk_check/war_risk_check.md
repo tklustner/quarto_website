@@ -17,7 +17,7 @@ What, if anything, can synthetic aperture radar (SAR) tell us about the ground e
 
 Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur strictly before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event.
 
-![Ras Isa oil terminal and its surrounding peninsula, 9 April 2025 (Sentinel-2 true color, 10 km radius), before the 17 April strike: the terminal, its marine jetties, and vessel traffic in the anchorage.](figures/ras-isa-facility-context.png){#fig-context-wide width="100%"}
+![Ras Isa oil terminal and its surrounding peninsula, 9 April 2025 (Sentinel-2 true color, 10 km radius), before the 17 April strike: the terminal, its marine jetties, and vessel traffic in the anchorage.](/charts/assets/war_risk_check_ras_isa_context.png){#fig-context-wide width="100%"}
 
 ## Information Environment
 
@@ -37,11 +37,11 @@ What follows instead is the War-Risk Screen. It is a replicable three-step check
 
 A simple SAR scan of backscatter changes at the terminal before and after 17 April (@fig-naive-scan) returns backscatter increases clustering inland of the northernmost quays (R1) and continuing southeast along the waterline (Quay base, Mooring point). More concentrated backscatter increases are observed at two points along the refining facility's southern wall (Dot 1, Dot 2). A sixth coordinate (Dune) was selected for investigation because of its unusual shape, evident from pre-bombing optical context (@fig-overview).
 
-![The same raw damage-proxy heuristic (R=after, G=B=before), before any correction, over the wider AOI, 11–23 April 2025 (Sentinel-1 VH, DESCENDING). R1, Dot 1, and Dot 2 are the heuristic's own redness peaks. The dune and quay base are marked for comparison. Mooring point (~790 m east of quay base) is a further redness peak, beside two vessel-shaped streaks. An orange moored vessel visible in the optical record 9 Apr is gone by 24 Apr. Most of these redness peaks are false leads.](figures/ras-isa-naive-scan.png){#fig-naive-scan width="100%"}
+![The same raw damage-proxy heuristic (R=after, G=B=before), before any correction, over the wider AOI, 11–23 April 2025 (Sentinel-1 VH, DESCENDING). R1, Dot 1, and Dot 2 are the heuristic's own redness peaks. The dune and quay base are marked for comparison. Mooring point (~790 m east of quay base) is a further redness peak, beside two vessel-shaped streaks. An orange moored vessel visible in the optical record 9 Apr is gone by 24 Apr. Most of these redness peaks are false leads.](/charts/assets/war_risk_check_naive_scan.png){#fig-naive-scan width="100%"}
 
 At first blush, this initial analysis seems to generate multiple fruitful leads on which to spend time and resources. These clusters are made more appealing because they present as plausible location targets for the 17 April bombing, just inland of quays and along the refining facility structure. In fact, only one of the five naive backscatter increase clusters proves plausible: the fuel storage tanks at coordinate R1 (@fig-r1-tank).
 
-![R1, a storage tank at the Ras Isa terminal, before and after the 17 April 2025 strike (Sentinel-1 and Sentinel-2, 11–23 April 2025). Optical true color, then SAR VV, then SAR VH. Before over after. The tank (ringed) shows no visible optical change at 10 m resolution, but both SAR bands brighten at the same point in the after row (VV +2.38 dB, VH +3.66 dB): new irregular debris where a smooth tank surface previously stood.](figures/r1-tank-composite.png){#fig-r1-tank width="100%"}
+![R1, a storage tank at the Ras Isa terminal, before and after the 17 April 2025 strike (Sentinel-1 and Sentinel-2, 11–23 April 2025). Optical true color, then SAR VV, then SAR VH. Before over after. The tank (ringed) shows no visible optical change at 10 m resolution, but both SAR bands brighten at the same point in the after row (VV +2.38 dB, VH +3.66 dB): new irregular debris where a smooth tank surface previously stood.](/charts/assets/war_risk_check_r1_tank_composite.png){#fig-r1-tank width="100%"}
 
 Three outcomes emerge from these six candidates. A moving vehicle generates a false lead, water or featureless land erases a true one, and only a site exposed to neither preserves a trustworthy signal.
 
