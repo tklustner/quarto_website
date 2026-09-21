@@ -11,7 +11,7 @@ Why land degradation in a forced displacement corridor concentrates around a hig
 Calculating the extent of coercive agroindustrial land control by measuring the absence of organized resistance.
 
 **[Detecting Coercion Without Visible Enforcement: Evidence from Afghanistan's Opium Ban](afg.html)** <br>
-Identifying the degree of coerced compliance with satellite and cultivation data.
+Evaluating whether observed compliance is coerced using satellite and cultivation data.
 
 **[Infrastructure of Violence in Michoacán & Guerrero](mich_guer.html)**<br>
 How transit corridors drive cartel violence; road networks as conflict infrastructure.
