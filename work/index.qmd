@@ -5,16 +5,18 @@ title: "Work"
 ## Systems
 
 **[SMS-to-Map Pipeline](https://github.com/tklustner/sms-mapper-overview.git)**  
-**March 2026:**
+**March 2026**
 Real-time field report ingestion and mapping system. CQRS + event-driven architecture,
 designed for low-resource conflict contexts.
 
 ## Methods
 
-**[SAR Blindness: Wet Soil, Small Footprints](sar_blindness/sar_blindness.html)**<br>
-Why open-access radar missed 31 km of newly-built siege walls, and what its silence does and does not prove.
+**[SAR Blindness: Wet Soil, Small Footprints](sar_blindness/sar_blindness.html)**  
+**August 2026**
+Why open-access SAR radar missed 31 km of newly-built siege walls, and what can be done to increase detection capacity for small-footprint structures.
 
-**[The War-Risk Screen: Two Ways the Coast Lies](war_risk_check/war_risk_check.html)**<br>
+**[The War-Risk Screen: Two Ways the Coast Lies](war_risk_check/war_risk_check.html)**  
+**September 2026**
 Screens out false SAR structural damage leads with minimal open imagery, cutting costs of real-time verification by 88%.
 
 ---
