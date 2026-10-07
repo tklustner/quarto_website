@@ -7,7 +7,7 @@ about:
 
 # Tim Klustner
 
-<p class="description">Conflict geographer crowdsourcing ground truth. Running SAR calibration experiments in Taganga, Colombia. </p>
+<p class="description">Conflict geographer detecting coercion where actors can manipulate the record. Running SAR calibration experiments in Taganga, Colombia.</p>
 
 <p class="featured-header">Featured – The War-Risk Screen</p>
 
