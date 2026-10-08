@@ -270,7 +270,7 @@ Figure&nbsp;6: The dune (ringed), same dates and sensor pair. Optical and SAR bo
 </div>
 <ul>
 <li><strong>Vehicles move → generate false leads.</strong> Mooring point (maritime) and Dot 1/Dot 2 (wheeled, at a road junction outside the compound gate) are adjacent to areas with high vehicle traffic. Vehicle presence generally returns strong backscatter. At the Mooring point, the optical record shows the vessel present before and absent after (<a href="#fig-mooring-quay" class="quarto-xref">Figure&nbsp;5</a>). Dot 2 shows a significant negative VV shift (t = −3.07, p = 0.0235). While this change is consistent with an image pair where wheeled traffic was present before and absent after, no optical image pair at 10 m resolution shows the vehicles themselves. Dot 1 is not significant (VV p = 0.1917).</li>
-<li><strong>Low-backscatter terrains → erase true leads.</strong> Quay base (maritime waterline) and the inland dune (bare, featureless terrain, low mean damage-proxy brightness 5.9/255) are adjacent to areas of near-zero backscatter (<a href="#fig-mooring-quay" class="quarto-xref">Figure&nbsp;5</a>, <a href="#fig-dune" class="quarto-xref">Figure&nbsp;6</a>). Water and bare sand generally return weak, unstable backscatter. The Quay base’s backscatter shift exceeds the sensor’s noise floor in the post-bombing inference image; optical imagery ruled out the dune before statistical testing.</li>
+<li><strong>Low-backscatter terrains → erase true leads.</strong> Quay base (maritime waterline) and the inland dune (bare, featureless terrain, low mean damage-proxy brightness 5.9/255) are adjacent to areas of near-zero backscatter (<a href="#fig-mooring-quay" class="quarto-xref">Figure&nbsp;5</a>, <a href="#fig-dune" class="quarto-xref">Figure&nbsp;6</a>). Water and bare sand generally return weak, unstable backscatter. The Quay base’s backscatter shift does not exceed the sensor’s noise floor in the post-bombing inference image; optical imagery ruled out the dune before statistical testing.</li>
 <li><strong>Over 100 m inland → preserve trustworthy leads.</strong> R1 (fuel storage tanks) sits 201 m from mapped water (<a href="#tbl-water" class="quarto-xref">Table&nbsp;3</a>), outside both the port’s vehicle-traffic corridors and the AOI’s near-zero-backscatter terrain. Built structures generally return strong, stable backscatter. R1’s shift clears the noise floor, with both VV and VH bands returning statistically significant backscatter increases post-bombing.</li>
 </ul>
 <div id="tbl-cases" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -410,13 +410,13 @@ Table&nbsp;2: Per-case tested coordinate, point buffer, and Sentinel-1 track
 </tr>
 <tr class="even">
 <td>1.2</td>
-<td>15.214730, 42.648350 (<code>damage_proxy_vh.png</code> redness peak)</td>
+<td>15.214730, 42.648350 (damage-proxy VH redness peak)</td>
 <td>150 m</td>
 <td>descending · 6</td>
 </tr>
 <tr class="odd">
 <td>1.3</td>
-<td>15.214550, 42.652460 (<code>damage_proxy_vh.png</code> redness peak)</td>
+<td>15.214550, 42.652460 (damage-proxy VH redness peak)</td>
 <td>150 m</td>
 <td>descending · 6</td>
 </tr>
@@ -434,7 +434,7 @@ Table&nbsp;2: Per-case tested coordinate, point buffer, and Sentinel-1 track
 </tr>
 <tr class="even">
 <td>1.6</td>
-<td>15.233717, 42.639300 (<code>damage_proxy_vh.png</code> redness peak, computed 2026-09-19)</td>
+<td>15.233717, 42.639300 (damage-proxy VH redness peak, computed 2026-09-19)</td>
 <td>n/a – visual/optical check only, not point-tested</td>
 <td>descending · 6</td>
 </tr>
