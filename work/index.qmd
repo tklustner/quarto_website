@@ -11,7 +11,7 @@ designed for low-resource conflict contexts.
 
 ## Methods
 
-**[The War-Risk Screen: Two Ways the Coast Lies](war_risk_check/war_risk_check.html)**  
+**[The war-risk screen: Gleaning signal from noise in maritime conflict shipping](war_risk_check/war_risk_check.html)**  
 **September 2026** <br>
 Screens out false SAR structural damage leads with minimal open imagery, cutting costs of real-time verification by 88%.
 

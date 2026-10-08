@@ -1,35 +1,36 @@
 ---
-title: "The War-Risk Screen: Two Ways the Coast Lies"
+title: "The war-risk screen: Gleaning signal from noise in maritime conflict shipping"
 author: Tim Klustner
 date: 2026-09-18
 bibliography: references.bib
+csl: https://www.zotero.org/styles/nature
 ---
 
-## Executive summary
+## The Ras Isa case
 
-By 21:41 local time on 17 April 2025, four US airstrikes arrive at the Ras Isa oil terminal. Another ten follow into the next morning [@yemeni_archive2025]. Ras Isa is targeted for bombing, claims the US Central Command, to "eliminate this source of fuel" for the armed group Ansar Allah (the Houthis): sovereign over a third of territory in Yemen, three of four of its people [@ukho_yemen_cpin2025], and a global petroleum shipping chokepoint, the strait of Bab al-Mandab. The Al Hudaydah Health Office reports 80 people are killed, 150 wounded [@yemeni_archive2025]. A figure of 74 killed, 171 wounded circulates on al-Masiryah and Saba via the Houthi Ministry of Health [@yemeni_archive2025]. In documenting the bombing's aftermath, "most of the immediate visual evidence and victim reporting was sourced from Houthi-affiliated media outlets" [@yemeni_archive2025], in which burning vehicles, orange-vested rescue personnel, and limbs severed from human bodies are clearly visible.
+By 21:41 local time on 17 April 2025, four US airstrikes arrive at the Ras Isa oil terminal. Into the next morning another ten follow [@yemeni_archive2025]. Ras Isa is targeted for bombing, claims the US Central Command, to "eliminate this source of fuel" for the armed group Ansar Allah (the Houthis): sovereign over a third of Yemen's territory, three-quarters of its people [@ukho_yemen_cpin2025], and a global petroleum shipping chokepoint, the strait of Bab al-Mandab. The Al Hudaydah Health Office reports 80 people are killed, 150 wounded [@yemeni_archive2025]. A figure of 74 killed, 171 wounded circulates on al-Masiryah and Saba via the Houthi Ministry of Health [@yemeni_archive2025]. In documenting the bombing's aftermath, "most of the immediate visual evidence and victim reporting was sourced from Houthi-affiliated media outlets" [@yemeni_archive2025], whose imagery shows burning vehicles, orange-vested rescue personnel, and limbs severed from human bodies.
 
-What, if anything, can synthetic aperture radar (SAR) tell us about the ground effects of this particular attack on Ras Isa? The 17 April attack is only the first sortie against Ras Isa. The terminal is struck again nine days later, 25–26 April, and on 2, 4, and 5 May [@yemeni_archive2025], which makes distinguishing damage from any single event more difficult. The oil terminal also presents two characteristics that confound SAR analysis, in distinct directions:
+What, if anything, can synthetic aperture radar (SAR) tell us about the ground effects of this particular attack on Ras Isa? The 17 April attack is only the first sortie against Ras Isa. The terminal is struck again eight days later, 25–26 April, and on 2, 4, and 5 May [@yemeni_archive2025], which makes distinguishing damage from any single event more difficult. The oil terminal also presents two characteristics that confound SAR analysis, in distinct directions:
 
 - **Vessel traffic → false positives.** A departed ship's absence reads as "damage." The tankers *Rival* and *Akoya Gas* were docked pre-strike and left within a day [@yemeni_archive2025].
 
-- **Low-backscatter terrain → erases true positives.** Water and near-featureless ground both return weak, unstable backscatter, making near-water and bare-sand pixels almost indistinguishable from noise. This confound foils a conventional redness/cyanness damage proxy heuristic. 64.7% of the case AOI is near-water (within 100 m).
+- **Low-backscatter terrain → erases true positives.** Water and near-featureless ground both return weak, unstable backscatter, making near-water and bare-sand pixels almost indistinguishable from noise. This confound makes a conventional redness/cyanness damage proxy heuristic unreliable. 64.7% of the case AOI is near-water (within 100 m).
 
-Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur strictly before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event.
+Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event. Of the six, only R1, a storage tank 201 m from mapped water, passes the War-Risk screen described below.
 
-![Ras Isa oil terminal and its surrounding peninsula, 9 April 2025 (Sentinel-2 true color, 10 km radius), before the 17 April strike: the terminal, its marine jetties, and vessel traffic in the anchorage.](/charts/assets/war_risk_check_ras_isa_context.png){#fig-context-wide width="100%"}
+![Ras Isa oil terminal and its surrounding peninsula, 9 April 2025 (Sentinel-2 true color, 10 km radius), before the 17 April strike. The terminal, its marine jetties, and vessel traffic in the anchorage are visible.](/charts/assets/war_risk_check_ras_isa_context.png){#fig-context-wide width="100%"}
 
-## Information Environment
+## Information environment
 
-War-risk insurance premiums for shipping passing through conflict zones change based on specific reported incidents, like 17 April. With satellites taking between 5 and 12 days to return to a given location [@esa_sentinel1_facts; @esa_sentinel2_mission] before providing denser independent evidence on the authentic extent of structural damage, insurance estimates must rely on statements and evidence from self-interested parties intimately linked to the violent event itself.
+War-risk insurance premiums for shipping passing through conflict zones change in response to specific reported incidents, like 17 April. Satellites take between 5 and 12 days to return to a given location [@esa_sentinel1_facts; @esa_sentinel2_mission] before providing denser independent evidence on the authentic extent of structural damage, so insurance estimates must rely on statements and evidence from self-interested parties intimately linked to the violent event itself.
 
 US Central Command, for example, is unlikely to contradict Secretary of War Pete Hegseth's characterization, during a 26 March 2025 media appearance in Honolulu, Hawaii [@hegseth2025hawaii], of the "ongoing campaign against the Houthis" as "devastatingly effective." And little incentive exists for the "immediate visual evidence and victim reporting" of a party subject to aerial bombardment to disseminate reports about the people and structures *not* affected by the violence just experienced. The incentive structures between aggressor and aggrieved are not equivalent, yet in this "aftermath gap" their interpretations are by definition subjective and incomplete.
 
-War-risk insurance is concerned with risk to commodities, not people. The salient structure at Ras Isa to evaluate the risk to petroleum as a commodity – whether or not it reaches its destination – is the white circular tanks where transiting petroleum is stored.
+War-risk insurance is concerned with risk to commodities, not people. The salient structures at Ras Isa to evaluate the risk to petroleum as a commodity – whether or not it reaches its destination – are the white circular tanks where transiting petroleum is stored.
 
-A well-resourced analyst can close the aftermath gap using an Automatic Identification System (AIS) ship-tracking feed and Very High Resolution (VHR) optical satellite imagery. They might cross-reference vessel movements with documented bombing records and then evaluate by eye evidence of structural damage. Applying these paid tools to the 17 April Ras Isa case costs at least USD 8,600.
+A well-resourced analyst can close the aftermath gap using an Automatic Identification System (AIS) ship-tracking feed and Very High Resolution (VHR) optical satellite imagery. They might cross-reference vessel movements with documented bombing records and then inspect the imagery by eye for structural damage. Applying these paid tools to the 17 April Ras Isa case costs at least USD 8,600.
 
-What follows instead is the War-Risk Screen. It is a replicable three-step check, using entirely open Sentinel-1 and Sentinel-2 imagery, for distinguishing authentic structural damage signal from noise in marine-shipping information environments.
+What follows instead is the War-Risk screen. It is a replicable three-step check, using entirely open Sentinel-1 and Sentinel-2 imagery, for distinguishing authentic structural damage signal from noise in marine-shipping information environments.
 
 ## What the naive scan shows
 
@@ -41,16 +42,16 @@ A simple SAR scan of backscatter changes at the terminal before and after 17 Apr
 
 At first blush, this initial analysis seems to generate multiple fruitful leads on which to spend time and resources. These clusters are made more appealing because they present as plausible location targets for the 17 April bombing, just inland of quays and along the refining facility structure. In fact, only one of the five naive backscatter increase clusters proves plausible: the fuel storage tanks at coordinate R1 (@fig-r1-tank).
 
-![R1, a storage tank at the Ras Isa terminal, before and after the 17 April 2025 strike (Sentinel-1 and Sentinel-2, 11–23 April 2025). Optical true color, then SAR VV, then SAR VH. Before over after. Both SAR bands brighten at the same point in the after row (VV +2.38 dB, VH +3.66 dB): new irregular debris where a smooth tank surface previously stood.](/charts/assets/war_risk_check_r1_tank_composite.png){#fig-r1-tank width="100%"}
+![R1, a storage tank at the Ras Isa terminal, before and after the 17 April 2025 strike (Sentinel-1 and Sentinel-2, 11–23 April 2025). Optical true color, then SAR VV, then SAR VH. Before over after. Both SAR bands brighten at the same point in the after row (VV +2.38 dB, VH +3.66 dB). New irregular debris appears where a smooth tank surface previously stood.](/charts/assets/war_risk_check_r1_tank_composite.png){#fig-r1-tank width="100%"}
 
 Three outcomes emerge from these six candidates. A moving vehicle generates a false lead, while water or featureless land erases an authentic one; a site exposed to neither preserves a trustworthy signal.
 
-![Mooring point and Quay base (ringed), 11–23 April 2025. Each site's own optical panel, then its SAR VH panel, before over after. Mooring point: a vessel (orange hull) appears at the mooring in the before panel, gone by after: the naive scan's false-positive mechanism. Two unrelated vessels further along the quay stay moored in both dates. Quay base: optical and SAR both stay visually unchanged – here, near-zero backscatter is erasing a true lead, rather than producing a false one.](figures/ras-isa-mooring-quay.png){#fig-mooring-quay width="100%"}
+![Mooring point and Quay base (ringed), 11–23 April 2025. Each site's own optical panel, then its SAR VH panel, before over after. Mooring point. A vessel (orange hull) appears at the mooring in the before panel and is gone in the after panel. This is the naive scan's false-positive mechanism. Two unrelated vessels further along the quay stay moored in both dates. Quay base. Optical and SAR both stay visually unchanged. Here, near-zero backscatter erases a true lead instead of producing a false one.](figures/ras-isa-mooring-quay.png){#fig-mooring-quay width="100%"}
 
 ![The dune (ringed), same dates and sensor pair. Optical and SAR both stay visually unchanged, displaying the same low-backscatter-terrain mechanism as Quay base.](figures/ras-isa-dune.png){#fig-dune width="100%"}
 
-- **Vehicles move → generate false leads.** Mooring point (maritime) and Dot 1/Dot 2 (wheeled, at a road junction outside the compound gate) are adjacent to areas with high vehicle traffic. Vehicle presence generally returns strong backscatter. Both types of vehicles were recently absent in the post-bombing inference image isolating damage from 17 April (Dot 2: VV t = −3.07, p = 0.0235 – significant but negative; @fig-mooring-quay).
-- **Low-backscatter terrains → erase true leads.** Quay base (maritime waterline) and the inland dune (bare, featureless terrain, low mean damage-proxy brightness 5.9/255) are adjacent to areas of near-zero backscatter (@fig-mooring-quay, @fig-dune). Water and bare sand generally return weak, unstable backscatter. Neither location's backscatter shift exceeds the sensor's noise floor in the post-bombing inference image.
+- **Vehicles move → generate false leads.** Mooring point (maritime) and Dot 1/Dot 2 (wheeled, at a road junction outside the compound gate) are adjacent to areas with high vehicle traffic. Vehicle presence generally returns strong backscatter. At the Mooring point, the optical record shows the vessel present before and absent after (@fig-mooring-quay). Dot 2 shows a significant negative VV shift (t = −3.07, p = 0.0235). While this change is consistent with an image pair where wheeled traffic was present before and absent after, no optical image pair at 10 m resolution shows the vehicles themselves. Dot 1 is not significant (VV p = 0.1917).
+- **Low-backscatter terrains → erase true leads.** Quay base (maritime waterline) and the inland dune (bare, featureless terrain, low mean damage-proxy brightness 5.9/255) are adjacent to areas of near-zero backscatter (@fig-mooring-quay, @fig-dune). Water and bare sand generally return weak, unstable backscatter. The Quay base's backscatter shift exceeds the sensor's noise floor in the post-bombing inference image; optical imagery ruled out the dune before statistical testing.
 - **Over 100 m inland → preserve trustworthy leads.** R1 (fuel storage tanks) sits 201 m from mapped water (@tbl-water), outside both the port's vehicle-traffic corridors and the AOI's near-zero-backscatter terrain. Built structures generally return strong, stable backscatter. R1's shift clears the noise floor, with both VV and VH bands returning statistically significant backscatter increases post-bombing.
 
 | #   | AOI                            | Violence type                            | Reference and inference periods / n          | SAR reading                                                                                                   |
@@ -66,28 +67,28 @@ Three outcomes emerge from these six candidates. A moving vehicle generates a fa
 
 ## Method
 
-1. **Verify your anchoring AOI coordinate centers on an inland facility, not a marine transit area.** A port/terminal's listed coordinate is sometimes its offshore (on-water) anchorage. Centering here blankets the AOI in low-backscatter water, which reliably confounds SAR as discussed above. Cross-check your anchor coordinate against OSM Overpass tags (e.g., `man_made=storage_tank`, `landuse=industrial`), then run an independent distance check before starting testing. In Ras Isa, the independently-checked distance from Hodeidah is ~56 km, whereas the naive coordinate's distance is ~52 km.
-2. **Scan both your optical and SAR frames for connected-component blobs.** Not just the coordinate in question. A full-frame blob scan is what surfaces a genuine candidate. The optical context shows the tank outlines at R1 lost circularity between 9 and 24 April. Subsequent SAR analysis significance per orbit/band Welch's t-test [@ballinger2025]: VV +2.38 dB, t = 4.33, p = 0.0214; VH +3.66 dB, t = 5.46, p = 0.0107; Stouffer z = 3.43, p = 0.0006.
-3. **Check the optical record for a vessel before trusting a near-shore blob.** A moored-then-departed vessel produces a change blob up to ~60,000 m² along a jetty line. An eye-test for ship presence or absence on your optical before/after scenes is sufficient, no statistical test required.
+1. **Verify your anchoring AOI coordinate centers on an inland facility, not a marine transit area.** A port/terminal's listed coordinate is sometimes its offshore (on-water) anchorage. Centering here fills the AOI with low-backscatter water, which reliably confounds SAR as discussed above. Cross-check your anchor coordinate against OSM Overpass tags (e.g., `man_made=storage_tank`, `landuse=industrial`), then run an independent distance check against reported distances from a nearby city before starting testing. Expect sources to differ. In Ras Isa, the naive coordinate is ~52 km from Hodeidah and the independently checked distance is ~56 km. Reuters reported ~55 km on the day of the strike [@reuters_ras_isa2025], and later reports give 57–60 km [@yemeni_archive2025].
+2. **Scan both your optical and SAR frames for connected-component blobs.** Not just the coordinate in question. A full-frame blob scan is what surfaces an authentic candidate. At R1, the optical tank outlines lose circularity between 9 and 24 April. The screen checks optical candidates for SAR backscatter changes with a per-orbit, per-band Welch's t-test [@ballinger2025]: VV +2.38 dB, t = +4.33, p = 0.0214; VH +3.66 dB, t = +5.46, p = 0.0107; Stouffer z = +3.43, p = 0.0006.
+3. **Check the optical record for a vessel before trusting a near-shore blob.** A moored-then-departed vessel produces a change blob up to ~60,000 m² along a jetty line. An eye test for ship presence or absence on your optical before/after scenes is sufficient, no statistical test required. Look for a hull present in the before scene and absent in the after scene, as at the Mooring point (@fig-mooring-quay).
 
 ## Limitations and open questions
 
-The War-Risk Screen is designed to help infer structural damage candidates using a single before and after scene pair (n = 2). As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the Screen as used in the Ras Isa case:
+The War-Risk screen is designed to help infer structural damage candidates using a single before and after image pair (n = 2). Statistical tests use n = 3. As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the screen as used in the Ras Isa case:
 
-- **Only one SAR flight track covers AOI.** 4 ASCENDING annual scenes (ref_n = 1 inside 150 m buffer), compared to DESCENDING's 64 annual scenes.
-- **Cannot confirm or reject candidates by itself.** Single track with no independent third-source corroboration cannot be decisive. That said, R1 is corroborated as a candidate, presenting a backscatter increase at p < 0.05 for both VV and VH bands. Conversely, discarded candidates (e.g., Gate junction) cannot be decisively ruled out as undamaged.
+- **Only one SAR flight track covers the AOI.** 4 ASCENDING annual scenes (ref_n = 1 inside 150 m buffer), compared to DESCENDING's 64 annual scenes.
+- **Cannot confirm or reject candidates by itself.** A single track with no independent third-source corroboration cannot be decisive. That said, R1 is supported as a candidate, presenting a backscatter increase at p < 0.05 for both VV and VH bands. Conversely, discarded candidates (e.g., gate junction) cannot be decisively ruled out as undamaged.
 
 ## What this means
 
-For rapid-assessment outlets and underwriters making near-real-time decisions about maritime risk with limited information, the War-Risk Screen enables tentative vetting of shipping-related structural damage with minimal open data. For those with access to commercial VHR, it narrows candidate locations across an AOI to the ones worth a costly tasking. The objective is not that its candidates survive further scrutiny, but that this scrutiny is correctly directed.
+For rapid-assessment outlets and underwriters making near-real-time decisions about maritime risk with limited information, the War-Risk screen enables tentative vetting of shipping-related structural damage with minimal open data. For those with access to commercial VHR, it narrows candidate locations across an AOI to the ones worth a costly tasking. The objective is not that its candidates survive further scrutiny, but that this scrutiny is correctly directed.
 
-The estimated cost for the Ras Isa case without the Screen: USD 8,609.
+The estimated cost for the Ras Isa case without the screen: USD 8,609.
 
 - **VHR.** Planet SkySat's published Assured-tasking rate is USD 40/km², 25 km² minimum order [@observationdata_tasking2025]. A 113.1 km² initial pass (USD 4,524) plus four minimum-order zoomed tasks, one per coordinate (4 × 25 km² = 100 km², USD 4,000) ≈ USD 8,524.
 
 - **AIS.** Entry-tier commercial subscriptions start around USD 85/month (EUR 80) [@datadocked_pricing2026], often running on coastal receiver networks with thin open-water coverage. Genuine satellite-AIS access for a remote site like Ras Isa is enterprise-quote-only and not publicly priced. The total AIS cost is likely underestimated.
 
-**The War-Risk Screen cuts the cost for the same run by 88%.** The Screen replaces a costly AOI survey pass with VHR for free, while allowing open-source verification of vessel turnover, the job AIS would otherwise do. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).
+**The War-Risk screen cuts the cost for the same run by 88%.** The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).
 
 Given a 25 km² minimum order at USD 40/km², this single VHR task costs around USD 1,000.
 
@@ -95,11 +96,9 @@ Given a 25 km² minimum order at USD 40/km², this single VHR task costs around 
 
 **Tools, Method steps 1–3.**
 
-- **Overpass Turbo.** overpass-turbo.eu, `man_made=storage_tank`/`landuse=industrial` within ~2 km of the claimed point. Use any map tool's measure feature for the distance check.
+- **Overpass Turbo.** [overpass-turbo.eu](https://overpass-turbo.eu), `man_made=storage_tank`/`landuse=industrial` within ~2 km of the claimed point. Use any map tool's measure feature for the distance check.
 - **Connected-component labeling.** `scipy.ndimage.label` on the damage-proxy raster's redness channel (R − (G+B)/2), full AOI.
 - **Recent low-cloud Sentinel-2 true color.** Before/after, same coordinates, via Copernicus Browser or Google Earth Engine.
-
-All three are also one CLI run of this project's own open-source pipeline (`sar_damage_assessment`, `./damage_assess.sh`).
 
 | #   | Tested coordinate (lat, lon)                                                   | Buffer                                            | Orbit · relative orbit                                 |
 | --- | ------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------ |
@@ -121,7 +120,7 @@ All three are also one CLI run of this project's own open-source pipeline (`sar_
 | Dot 1         | 350 m                    |
 | Dune          | 552 m                    |
 
-: Distance from each tested coordinate to the nearest JRC Global Surface Water pixel (occurrence ≥ 5%) [@slagter2024]. Only Mooring point and Quay base fall inside this 100 m threshold. Dot 1, Dot 2, and the dune are well clear of mapped water, so their backscatter instability traces to general bare/featureless terrain. {#tbl-water}
+: Distance from each tested coordinate to the nearest JRC Global Surface Water pixel (occurrence ≥ 5%) [@slagter2024]. Only Mooring point and Quay base fall inside this 100 m threshold. Dot 1, Dot 2, and the dune are well clear of mapped water. The dots' VV backscatter decrease and optically-checked location are consistent with wheeled vehicle presence then absence; the dune's backscatter instability to its general bare/featureless terrain. {#tbl-water}
 
 ## References
 
