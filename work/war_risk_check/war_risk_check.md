@@ -16,7 +16,7 @@ What, if anything, can synthetic aperture radar (SAR) tell us about the ground e
 
 - **Low-backscatter terrain → erases true positives.** Water and near-featureless ground both return weak, unstable backscatter, making near-water and bare-sand pixels almost indistinguishable from noise. This confound makes a conventional redness/cyanness damage proxy heuristic unreliable. 64.7% of the case AOI is near-water (within 100 m).
 
-Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event. Of the six, only R1, a storage tank 201 m from mapped water, passes the war-risk screen described below.
+Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event. Of the six, only R1, a set of storage tanks 201 m from mapped water, passes the war-risk screen described below.
 
 ![Ras Isa oil terminal and its surrounding peninsula, 9 April 2025 (Sentinel-2 true color, 10 km radius), before the 17 April strike. The terminal, its marine jetties, and vessel traffic in the anchorage are visible.](/charts/assets/war_risk_check_ras_isa_context.png){#fig-context-wide width="100%"}
 
