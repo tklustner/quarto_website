@@ -13,7 +13,7 @@ designed for low-resource conflict contexts.
 
 **[The war-risk screen: Gleaning signal from noise in maritime conflict shipping](war_risk_check/war_risk_check.html)**  
 **September 2026** <br>
-Screens out false SAR structural damage leads with minimal open imagery, cutting costs of real-time verification by 88%.
+Screens out false SAR structural damage leads with minimal open imagery, cutting projected costs of real-time verification by 88%.
 
 **[SAR Blindness: Wet Soil, Small Footprints](sar_blindness/sar_blindness.html)**  
 **August 2026** <br>

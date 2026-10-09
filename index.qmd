@@ -9,7 +9,7 @@ about:
 
 <p class="description">Conflict geographer detecting coercion where actors can manipulate the record. Running SAR calibration experiments in Taganga, Colombia.</p>
 
-<p class="featured-header">Featured – The War-Risk Screen</p>
+<p class="featured-header">Featured – The war-risk screen</p>
 
 ![](/charts/assets/war_risk_check_ras_isa_context.png)
 

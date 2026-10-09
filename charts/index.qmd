@@ -7,12 +7,12 @@ title: "Data Visualizations"
 ## Satellite Imagery
 
 **Can free satellite radar and optical imagery confirm a single airstrike's damage? Ras Isa oil terminal, Yemen (11–23 April 2025)**<br>
-*Optical + SAR VV/VH before/after composite · From: [The War-Risk Screen](../work/war_risk_check/war_risk_check.html)*
+*Optical + SAR VV/VH before/after composite · From: [The war-risk screen](../work/war_risk_check/war_risk_check.html)*
 
 ![](/charts/assets/war_risk_check_r1_tank_composite.png)
 
 **What does a naive SAR change-detection scan actually return? Ras Isa oil terminal, Yemen (11–23 April 2025)**<br>
-*Raw damage-proxy heuristic across the full AOI · From: [The War-Risk Screen](../work/war_risk_check/war_risk_check.html)*
+*Raw damage-proxy heuristic across the full AOI · From: [The war-risk screen](../work/war_risk_check/war_risk_check.html)*
 
 ![](/charts/assets/war_risk_check_naive_scan.png)
 
