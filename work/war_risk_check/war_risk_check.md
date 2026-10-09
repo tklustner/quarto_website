@@ -16,7 +16,7 @@ What, if anything, can synthetic aperture radar (SAR) tell us about the ground e
 
 - **Low-backscatter terrain → erases true positives.** Water and near-featureless ground both return weak, unstable backscatter, making near-water and bare-sand pixels almost indistinguishable from noise. This confound makes a conventional redness/cyanness damage proxy heuristic unreliable. 64.7% of the case AOI is near-water (within 100 m).
 
-Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event. Of the six, only R1, a storage tank 201 m from mapped water, passes the War-Risk screen described below.
+Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event. Of the six, only R1, a storage tank 201 m from mapped water, passes the war-risk screen described below.
 
 ![Ras Isa oil terminal and its surrounding peninsula, 9 April 2025 (Sentinel-2 true color, 10 km radius), before the 17 April strike. The terminal, its marine jetties, and vessel traffic in the anchorage are visible.](/charts/assets/war_risk_check_ras_isa_context.png){#fig-context-wide width="100%"}
 
@@ -30,7 +30,7 @@ War-risk insurance is concerned with risk to commodities, not people. The salien
 
 A well-resourced analyst can close the aftermath gap using an Automatic Identification System (AIS) ship-tracking feed and Very High Resolution (VHR) optical satellite imagery. They might cross-reference vessel movements with documented bombing records and then inspect the imagery by eye for structural damage. Applying these paid tools to the 17 April Ras Isa case costs at least USD 8,600.
 
-What follows instead is the War-Risk screen. It is a replicable three-step check, using entirely open Sentinel-1 and Sentinel-2 imagery, for distinguishing authentic structural damage signal from noise in marine-shipping information environments.
+What follows instead is the war-risk screen. It is a replicable three-step check, using entirely open Sentinel-1 and Sentinel-2 imagery, for distinguishing authentic structural damage signal from noise in marine-shipping information environments.
 
 ## What the naive scan shows
 
@@ -73,14 +73,14 @@ Three outcomes emerge from these six candidates. A moving vehicle generates a fa
 
 ## Limitations and open questions
 
-The War-Risk screen is designed to help infer structural damage candidates using a single before and after image pair (n = 2). Statistical tests use n = 3. As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the screen as used in the Ras Isa case:
+The war-risk screen is designed to help infer structural damage candidates using a single before and after image pair (n = 2). Statistical tests use n = 3. As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the screen as used in the Ras Isa case:
 
 - **Only one SAR flight track covers the AOI.** 4 ASCENDING annual scenes (ref_n = 1 inside 150 m buffer), compared to DESCENDING's 64 annual scenes.
 - **Cannot confirm or reject candidates by itself.** A single track with no independent third-source corroboration cannot be decisive. That said, R1 is supported as a candidate, presenting a backscatter increase at p < 0.05 for both VV and VH bands. Conversely, discarded candidates (e.g., gate junction) cannot be decisively ruled out as undamaged.
 
 ## What this means
 
-For rapid-assessment outlets and underwriters making near-real-time decisions about maritime risk with limited information, the War-Risk screen enables tentative vetting of shipping-related structural damage with minimal open data. For those with access to commercial VHR, it narrows candidate locations across an AOI to the ones worth a costly tasking. The objective is not that its candidates survive further scrutiny, but that this scrutiny is correctly directed.
+For rapid-assessment outlets and underwriters making near-real-time decisions about maritime risk with limited information, the war-risk screen enables tentative vetting of shipping-related structural damage with minimal open data. For those with access to commercial VHR, it narrows candidate locations across an AOI to the ones worth a costly tasking. The objective is not that its candidates survive further scrutiny, but that this scrutiny is correctly directed.
 
 The estimated cost for the Ras Isa case without the screen: USD 8,609.
 
@@ -88,7 +88,7 @@ The estimated cost for the Ras Isa case without the screen: USD 8,609.
 
 - **AIS.** Entry-tier commercial subscriptions start around USD 85/month (EUR 80),[@datadocked_pricing2026] often running on coastal receiver networks with thin open-water coverage. Genuine satellite-AIS access for a remote site like Ras Isa is enterprise-quote-only and not publicly priced. The total AIS cost is likely underestimated.
 
-**The War-Risk screen cuts the cost for the same run by 88%.** The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).
+**The war-risk screen cuts the projected cost for the same run by 88%.** The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).
 
 Given a 25 km² minimum order at USD 40/km², this single VHR task costs around USD 1,000.
 
@@ -100,14 +100,14 @@ Given a 25 km² minimum order at USD 40/km², this single VHR task costs around 
 - **Connected-component labeling.** `scipy.ndimage.label` on the damage-proxy raster's redness channel (R − (G+B)/2), full AOI.
 - **Recent low-cloud Sentinel-2 true color.** Before/after, same coordinates, via Copernicus Browser or Google Earth Engine.
 
-| #   | Tested coordinate (lat, lon)                                                   | Buffer                                            | Orbit · relative orbit                                 |
-| --- | ------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------ |
-| 1.1 | 15.247410, 42.616510 (OSM `man_made=storage_tank`)                             | 150 m                                             | descending · 6                                         |
-| 1.2 | 15.214730, 42.648350 (damage-proxy VH redness peak)                            | 150 m                                             | descending · 6                                         |
-| 1.3 | 15.214550, 42.652460 (damage-proxy VH redness peak)                            | 150 m                                             | descending · 6                                         |
-| 1.4 | 15.234747, 42.631878 (pier shore-anchor, coordinate supplied)                  | 150 m                                             | descending · 6                                         |
-| 1.5 | 15.240000, 42.621500 (box centroid, visual scan only)                          | ~2.0 km box, not 150 m                            | ascending · 116 (visual export only, not point-tested) |
-| 1.6 | 15.233717, 42.639300 (damage-proxy VH redness peak, computed 2026-09-19)       | n/a – visual/optical check only, not point-tested | descending · 6                                         |
+| #   | Tested coordinate (lat, lon)                                             | Buffer                                            | Orbit · relative orbit                                 |
+| --- | ------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------ |
+| 1.1 | 15.247410, 42.616510 (OSM `man_made=storage_tank`)                       | 150 m                                             | descending · 6                                         |
+| 1.2 | 15.214730, 42.648350 (damage-proxy VH redness peak)                      | 150 m                                             | descending · 6                                         |
+| 1.3 | 15.214550, 42.652460 (damage-proxy VH redness peak)                      | 150 m                                             | descending · 6                                         |
+| 1.4 | 15.234747, 42.631878 (pier shore-anchor, coordinate supplied)            | 150 m                                             | descending · 6                                         |
+| 1.5 | 15.240000, 42.621500 (box centroid, visual scan only)                    | ~2.0 km box, not 150 m                            | ascending · 116 (visual export only, not point-tested) |
+| 1.6 | 15.233717, 42.639300 (damage-proxy VH redness peak, computed 2026-09-19) | n/a – visual/optical check only, not point-tested | descending · 6                                         |
 
 : Per-case tested coordinate, point buffer, and Sentinel-1 track {#tbl-params}
 

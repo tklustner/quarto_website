@@ -193,7 +193,7 @@ div.csl-indent {
 <li><p><strong>Vessel traffic → false positives.</strong> A departed ship’s absence reads as “damage.” The tankers <em>Rival</em> and <em>Akoya Gas</em> were docked pre-strike and left within a day.<span class="citation" data-cites="yemeni_archive2025"><sup><a href="#ref-yemeni_archive2025" role="doc-biblioref">1</a></sup></span></p></li>
 <li><p><strong>Low-backscatter terrain → erases true positives.</strong> Water and near-featureless ground both return weak, unstable backscatter, making near-water and bare-sand pixels almost indistinguishable from noise. This confound makes a conventional redness/cyanness damage proxy heuristic unreliable. 64.7% of the case AOI is near-water (within 100 m).</p></li>
 </ul>
-<p>Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event. Of the six, only R1, a storage tank 201 m from mapped water, passes the War-Risk screen described below.</p>
+<p>Six coordinates, corresponding to different features of Ras Isa and its surrounds, are examined for evidence of structural damage generated during the night of 17 April. Both Sentinel-1 (SAR; 12–24 April) and Sentinel-2 (optical; 9–24 April) image pairs occur before the second wave of bombings on 25–26 April, in order to infer directly about the 17 April event. Of the six, only R1, a storage tank 201 m from mapped water, passes the war-risk screen described below.</p>
 <div id="fig-context-wide" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-context-wide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -211,7 +211,7 @@ Figure&nbsp;1: Ras Isa oil terminal and its surrounding peninsula, 9 April 2025 
 <p>US Central Command, for example, is unlikely to contradict Secretary of War Pete Hegseth’s characterization, during a 26 March 2025 media appearance in Honolulu, Hawaii,<span class="citation" data-cites="hegseth2025hawaii"><sup><a href="#ref-hegseth2025hawaii" role="doc-biblioref">5</a></sup></span> of the “ongoing campaign against the Houthis” as “devastatingly effective.” And little incentive exists for the “immediate visual evidence and victim reporting” of a party subject to aerial bombardment to disseminate reports about the people and structures <em>not</em> affected by the violence just experienced. The incentive structures between aggressor and aggrieved are not equivalent, yet in this “aftermath gap” their interpretations are by definition subjective and incomplete.</p>
 <p>War-risk insurance is concerned with risk to commodities, not people. The salient structures at Ras Isa to evaluate the risk to petroleum as a commodity – whether or not it reaches its destination – are the white circular tanks where transiting petroleum is stored.</p>
 <p>A well-resourced analyst can close the aftermath gap using an Automatic Identification System (AIS) ship-tracking feed and Very High Resolution (VHR) optical satellite imagery. They might cross-reference vessel movements with documented bombing records and then inspect the imagery by eye for structural damage. Applying these paid tools to the 17 April Ras Isa case costs at least USD 8,600.</p>
-<p>What follows instead is the War-Risk screen. It is a replicable three-step check, using entirely open Sentinel-1 and Sentinel-2 imagery, for distinguishing authentic structural damage signal from noise in marine-shipping information environments.</p>
+<p>What follows instead is the war-risk screen. It is a replicable three-step check, using entirely open Sentinel-1 and Sentinel-2 imagery, for distinguishing authentic structural damage signal from noise in marine-shipping information environments.</p>
 </section>
 <section id="what-the-naive-scan-shows" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-naive-scan-shows">What the naive scan shows</h2>
@@ -355,7 +355,7 @@ Table&nbsp;1: Case metadata – Ras Isa oil terminal (Yemen)
 </section>
 <section id="limitations-and-open-questions" class="level2">
 <h2 class="anchored" data-anchor-id="limitations-and-open-questions">Limitations and open questions</h2>
-<p>The War-Risk screen is designed to help infer structural damage candidates using a single before and after image pair (n = 2). Statistical tests use n = 3. As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the screen as used in the Ras Isa case:</p>
+<p>The war-risk screen is designed to help infer structural damage candidates using a single before and after image pair (n = 2). Statistical tests use n = 3. As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the screen as used in the Ras Isa case:</p>
 <ul>
 <li><strong>Only one SAR flight track covers the AOI.</strong> 4 ASCENDING annual scenes (ref_n = 1 inside 150 m buffer), compared to DESCENDING’s 64 annual scenes.</li>
 <li><strong>Cannot confirm or reject candidates by itself.</strong> A single track with no independent third-source corroboration cannot be decisive. That said, R1 is supported as a candidate, presenting a backscatter increase at p &lt; 0.05 for both VV and VH bands. Conversely, discarded candidates (e.g., gate junction) cannot be decisively ruled out as undamaged.</li>
@@ -363,13 +363,13 @@ Table&nbsp;1: Case metadata – Ras Isa oil terminal (Yemen)
 </section>
 <section id="what-this-means" class="level2">
 <h2 class="anchored" data-anchor-id="what-this-means">What this means</h2>
-<p>For rapid-assessment outlets and underwriters making near-real-time decisions about maritime risk with limited information, the War-Risk screen enables tentative vetting of shipping-related structural damage with minimal open data. For those with access to commercial VHR, it narrows candidate locations across an AOI to the ones worth a costly tasking. The objective is not that its candidates survive further scrutiny, but that this scrutiny is correctly directed.</p>
+<p>For rapid-assessment outlets and underwriters making near-real-time decisions about maritime risk with limited information, the war-risk screen enables tentative vetting of shipping-related structural damage with minimal open data. For those with access to commercial VHR, it narrows candidate locations across an AOI to the ones worth a costly tasking. The objective is not that its candidates survive further scrutiny, but that this scrutiny is correctly directed.</p>
 <p>The estimated cost for the Ras Isa case without the screen: USD 8,609.</p>
 <ul>
 <li><p><strong>VHR.</strong> Planet SkySat’s published Assured-tasking rate is USD 40/km², 25 km² minimum order.<span class="citation" data-cites="observationdata_tasking2025"><sup><a href="#ref-observationdata_tasking2025" role="doc-biblioref">8</a></sup></span> A 113.1 km² initial pass (USD 4,524) plus four minimum-order zoomed tasks, one per coordinate (4 × 25 km² = 100 km², USD 4,000) ≈ USD 8,524.</p></li>
 <li><p><strong>AIS.</strong> Entry-tier commercial subscriptions start around USD 85/month (EUR 80),<span class="citation" data-cites="datadocked_pricing2026"><sup><a href="#ref-datadocked_pricing2026" role="doc-biblioref">9</a></sup></span> often running on coastal receiver networks with thin open-water coverage. Genuine satellite-AIS access for a remote site like Ras Isa is enterprise-quote-only and not publicly priced. The total AIS cost is likely underestimated.</p></li>
 </ul>
-<p><strong>The War-Risk screen cuts the cost for the same run by 88%.</strong> The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).</p>
+<p><strong>The war-risk screen cuts the projected cost for the same run by 88%.</strong> The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).</p>
 <p>Given a 25 km² minimum order at USD 40/km², this single VHR task costs around USD 1,000.</p>
 </section>
 <section id="appendix-data-and-parameters" class="level2">
@@ -389,9 +389,9 @@ Table&nbsp;2: Per-case tested coordinate, point buffer, and Sentinel-1 track
 <table class="caption-top table">
 <colgroup>
 <col style="width: 1%">
-<col style="width: 42%">
-<col style="width: 26%">
-<col style="width: 29%">
+<col style="width: 40%">
+<col style="width: 27%">
+<col style="width: 30%">
 </colgroup>
 <thead>
 <tr class="header">
