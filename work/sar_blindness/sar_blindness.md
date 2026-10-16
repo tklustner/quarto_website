@@ -3,15 +3,16 @@ title: "SAR blindness: Wet soil, small footprints"
 author: Tim Klustner
 date: 2026-08-28
 bibliography: references.bib
+csl: https://www.zotero.org/styles/nature
 ---
 
 ## Executive summary
 
-We sought berms in the desert. The reports said they were there, 31 km of newly-built earthen walls encircling El Fasher city (North Darfur, Sudan). The reports specify the date construction began on the berms (9 May 2025), how long the 22 km "semi-circle" segment took to complete (9 May –19 August 2025), that a gap remains around Al-Salaam IDP camp and that it is shrinking [@yalehrl2025]. The berms help the paramilitary group Rapid Support Forces (RSF) create a "literal kill box" around the city. We aimed two satellite sensors – synthetic aperture radar (SAR; Sentinel-1) and multispectral optical (Sentinel-2) – at El Fasher. At 10 m optical resolution, the berms appear as thin dark lines (@fig-alsen-berm).
+We sought berms in the desert. The reports said they were there, 31 km of newly-built earthen walls encircling El Fasher city (North Darfur, Sudan). The reports specify the date construction began on the berms (9 May 2025), how long the 22 km "semi-circle" segment took to complete (9 May –19 August 2025), that a gap remains around Al-Salaam IDP camp and that it is shrinking.[@yalehrl2025] The berms help the paramilitary group Rapid Support Forces (RSF) create a "literal kill box" around the city. We aimed two satellite sensors – synthetic aperture radar (SAR; Sentinel-1) and multispectral optical (Sentinel-2) – at El Fasher. At 10 m optical resolution, the berms appear as thin dark lines (@fig-alsen-berm).
 
 ![The Alsen berm segment before and after construction (Sentinel-1 and Sentinel-2, 1–31 July 2025). Optical true color, then SAR VV, then SAR VH. Before over after. The berm (circled) presents as a thin dark line in the optical panel and a bright line in SAR VV, where the fresh earthwork roughens the surface. The razed villages along its route read as dark patches.](figures/alsen-berm-composite.png){#fig-alsen-berm}
 
-SAR is touted as the gold standard in open-access change-detection (CD), particularly change caused by violence [@ballinger2025]. Combined with access to Very High Resolution (VHR) satellite imagery unavailable to the public, SAR is a centerpiece of CD methods in conflict zones, from Mariupol to Gaza [@dietrich2025; @ballinger2025]. Distinguishing disrupted earth from desert is surely plausible.
+SAR is touted as the gold standard in open-access change-detection (CD), particularly change caused by violence.[@ballinger2025] Combined with access to Very High Resolution (VHR) satellite imagery unavailable to the public, SAR is a centerpiece of CD methods in conflict zones, from Mariupol to Gaza.[@dietrich2025; @ballinger2025] Distinguishing disrupted earth from desert is surely plausible.
 
 We ran the same underlying SAR data through five different methods: raw differencing, baseline normalization, significance testing, multi-scale resampling, and texture analysis. Only the fifth, the Pixel-Wise T-Test (PWTT) of @ballinger2025, produced a statistically-defensible positive.
 
@@ -19,9 +20,9 @@ A second case set, Myanmar's Sagaing Region, retests the footprint problem again
 
 The combined case sets underscore two crucial shortcomings of SAR for CD:
 
-- **Confounded by soil moisture.** When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event [@wagner1998; @stanyer2025].
+- **Confounded by soil moisture.** When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event.[@wagner1998; @stanyer2025]
 
-- **Lower sensitivity to single-structure damage.** SAR needs a wide, contiguous footprint to register CD. Single buildings, however they are constructed, rarely separate from background noise during testing [@aimaiti2022].
+- **Lower sensitivity to single-structure damage.** SAR needs a wide, contiguous footprint to register CD. Single buildings, however they are constructed, rarely separate from background noise during testing.[@aimaiti2022]
 
 The CD method below relies solely on open Sentinel-1 and Sentinel-2 data. We detail the systematic signal processing and verification problems encountered in implementing this purely sensor-based method.
 
@@ -71,7 +72,7 @@ c. Second independent source for corroborating coordinates: the single hospital 
 
 *Problem*: At Alsen (1.1), our first SAR test differenced two dates directly, skipping the reference period. This approach produced what appeared to be a positive CD identification: an arbitrary point with no reported feature nearby shows a difference 30x the AOI's background standard deviation. Were this result in fact corroborated, it would have undoubtedly entered the analysis as a remarkable positive result.
 
-The result was completely confounded by moisture. The scene pair spanned 150 days and 242.5 mm of rainfall, a full wet-season onset. Since raw SAR backscatter is more sensitive to soil moisture than the optical channels used elsewhere in this project [@wagner1998; @stanyer2025], the berm's CD signature was swamped out by seasonal field-to-fallow changes. The 30x difference result was pointed at farmland, not the berm.
+The result was completely confounded by moisture. The scene pair spanned 150 days and 242.5 mm of rainfall, a full wet-season onset. Since raw SAR backscatter is more sensitive to soil moisture than the optical channels used elsewhere in this project,[@wagner1998; @stanyer2025] the berm's CD signature was swamped out by seasonal field-to-fallow changes. The 30x difference result was pointed at farmland, not the berm.
 
 *Solution*: We rebuilt the SAR channel using a multi-image reference distribution (`reference_collection`). This approach works because many reference scenes give a real estimate of normal variation, not one arbitrarily-timed "before" snapshot that a single rainy week can distort. Rerunning `reference_collection` on the same 1.1 AOI, the false positive disappeared. The optical-verified berm location, even isolated from this false-positive, returned no signal to the SAR channel. Any raw two-date SAR statistic is insufficient for verification on its own (@fig-rule3).
 
