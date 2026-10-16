@@ -39,7 +39,7 @@ The 2009 coup galvanized disparate civil groups to organized resistance. MUCA be
 
 **III. Method**
 
-In information environments like Bajo Aguán, aggregate statistics are vulnerable to systematic manipulation by coercive actors. Detecting this type of manipulation is possible by tracking divergences between independent data types and sources. ACLED[@acled] event data filtered to land-based violence in Bajo Aguán (2018-2025) captures overt, observed violence. Hansen Global Forest Change[@hansen_gfc] (2017-2025) measures total forest loss in the valley. Sentinel-2[@sentinel2] (2017-2025) satellite imagery proxies abandoned smallholdings (ha) by flagging smallholder-coded plots[^ndvi] with two years of sub-threshold NDVI data. CHIRPS[@chirps] (2019-2025) precipitation data isolates the role of climatic variation on land use. Independent reporting including Criterio,[@criterio_intervencion] CESPAD,[@cespad_emergencia] and Contracorriente[@contracorriente_falta] provides sociopolitical context.
+In information environments like Bajo Aguán, aggregate statistics are vulnerable to systematic manipulation by coercive actors. Detecting this type of manipulation is possible by tracking divergences between independent data types and sources. ACLED[@acled] event data filtered to land-based violence in Bajo Aguán (2018-2025) captures overt, observed violence. Hansen Global Forest Change[@hansen_gfc] (2017-2025) measures total forest loss in the valley. Sentinel-2[@sentinel2] (2017-2025) satellite imagery proxies abandoned smallholdings (ha) by flagging smallholder-coded plots with two consecutive years of sub-threshold NDVI data (NDVI < 0.6, coefficient of variation < 0.15). CHIRPS[@chirps] (2019-2025) precipitation data isolates the role of climatic variation on land use. Independent reporting including Criterio,[@criterio_intervencion] CESPAD,[@cespad_emergencia] and Contracorriente[@contracorriente_falta] provides sociopolitical context.
 
 The 2022 Convenio signing is the timeline's central discontinuity: an imposed new legal baseline against which post-Convenio behavior is measured. All three signals – violent conflict, resistance presence, and forest loss rates – are measured against a 2017-2021 pre-intervention baseline. Two divergence signals are salient.
 
@@ -94,10 +94,6 @@ Plataforma Agraria has already filed denunciations naming Juan Carlos Lezama as 
 *On the State's Own Record:*
 
 The Comisión de Seguridad Agraria was constituted in June 2023 excluding human rights institutions from its composition. In its first year it oversaw 27 violent evictions.[@cespad_comision] This record is not an argument for reforming the Comisión. It is evidence that the state's agrarian security apparatus has functioned as an enforcement mechanism for displacement rather than against it. Like the CAO audit and MC-50-14, the Comisión's eviction record is obligated self-documentation. Advocates should leverage this documentation as evidence for inter-American accountability organs that operate outside Honduran state jurisdiction. Taken together, these three records – IFC non-compliance, a decade of unimplemented precautionary measures, and 27 state-supervised evictions in the Comisión's first year – document a structural enforcement failure unexplainable by incapacity alone.
-
-[^ndvi]: Smallholder plots defined as parcels with two consecutive
-years of sub-threshold NDVI data (NDVI < 0.6, coefficient of
-variance < 0.15), derived from Sentinel-2 surface reflectance imagery.
 
 ## References
 
