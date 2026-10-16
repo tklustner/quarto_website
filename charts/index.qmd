@@ -24,14 +24,14 @@ title: "Data Visualizations"
 ![](/charts/assets/nshan_clipped_gif.gif)
 
 **Where does violence concentrate relative to infrastructure? South Kivu (2018–2024)**<br>
-*Fatality-scaled event map · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+*Fatality-scaled event map · From: [Conflict, deforestation & mining in South Kivu](../papers/skivu.html)*
 
 ![](/charts/assets/skivu_map_chart_TL.gif)
 
 ## Maps
 
 **Where do mineral extraction sites overlap with conflict? South Kivu (2013–2024)**<br>
-*Aggregated event density + extraction sites · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+*Aggregated event density + extraction sites · From: [Conflict, deforestation & mining in South Kivu](../papers/skivu.html)*
 
 ![](/charts/assets/skivu_mineral_extraction_map.png)
 
@@ -41,12 +41,12 @@ title: "Data Visualizations"
 ![](/charts/assets/mich_guer_binned_road_proximity.png)
 
 **How do international transit routes mediate conflict exposure? East Africa**<br>
-*Corridor mapping · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+*Corridor mapping · From: [Conflict, deforestation & mining in South Kivu](../papers/skivu.html)*
 
 ![](/charts/assets/north_central_transit_corridors.png)
 
 **Does deforestation co-locate with conflict intensity? South Kivu (2018–2024)**<br>
-*Bivariate spatial analysis · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+*Bivariate spatial analysis · From: [Conflict, deforestation & mining in South Kivu](../papers/skivu.html)*
 
 ![](/charts/assets/skivu_conflict_defor_bivariate.png)
 
@@ -80,12 +80,12 @@ title: "Data Visualizations"
 ## Models
 
 **How well do Monte Carlo and logistic regression predict conflict intensity? South Kivu (2018-2024)**<br>
-*Side-by-side model comparison · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+*Side-by-side model comparison · From: [Conflict, deforestation & mining in South Kivu](../papers/skivu.html)*
 
 ![](/charts/assets/skivu_MC_LogReg_sideBySide.png)
 
 **Does road proximity amplify mine proximity's effect on conflict risk? South Kivu (2018-2024)**<br>
-*GAM interaction term · From: [Conflict, Deforestation & Mining in South Kivu](../papers/skivu.html)*
+*GAM interaction term · From: [Conflict, deforestation & mining in South Kivu](../papers/skivu.html)*
 
 ![](/charts/assets/skivu_roadMines_interaction_scatter.png)
 
