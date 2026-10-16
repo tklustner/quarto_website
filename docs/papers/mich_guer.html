@@ -9,7 +9,7 @@
 <meta name="author" content="Tim Klustner">
 <meta name="dcterms.date" content="2025-06-30">
 
-<title>Mapping the Infrastructure of Violence in Michoacán and Guerrero – TK</title>
+<title>Mapping the infrastructure of violence in Michoacán and Guerrero – TK</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,7 +25,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -136,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mapping the Infrastructure of Violence in Michoacán and Guerrero</h1>
+<h1 class="title">Mapping the infrastructure of violence in Michoacán and Guerrero</h1>
 </div>
 
 
@@ -166,57 +186,85 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><strong>I. Executive Summary</strong></p>
-<p>On 15 May 2025, in Acapulco de Juárez, Guerrero, unidentified gunmen shot and killed<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> José Carlos González, a local journalist who managed a Facebook page documenting municipal corruption and abuses of state power. The victim, previously targeted for death in 2023, wore a mask in public for fear of reprisal. His murder, carried out in Acapulco’s city center near Federal Highway MEX 95D, reflects a striking broader pattern: in Michoacán and Guerrero, specific federal road corridors have emerged as consistent hotspots for civilian targeting by armed groups.</p>
+<p>On 15 May 2025, in Acapulco de Juárez, Guerrero, unidentified gunmen shot and killed<span class="citation" data-cites="cpj2025gonzalez"><sup><a href="#ref-cpj2025gonzalez" role="doc-biblioref">1</a></sup></span> José Carlos González, a local journalist who managed a Facebook page documenting municipal corruption and abuses of state power. The victim, previously targeted for death in 2023, wore a mask in public for fear of reprisal. His murder, carried out in Acapulco’s city center near Federal Highway MEX 95D, reflects a striking broader pattern: in Michoacán and Guerrero, specific federal road corridors have emerged as consistent hotspots for civilian targeting by armed groups.</p>
 <p>Roads like the one where González was killed have long held strategic value in Mexico’s conflict ecosystem. For powerful cartels, federal highways are essential arteries in transnational trafficking routes, linking rural production zones, ports, and border crossings into coherent supply chains. For smaller, less structured armed groups, these roads offer more immediate payoffs: dense, target-rich zones where they can extract short-term rents, assert territorial presence, and exploit civilians with minimal interference.</p>
 <p>To better understand the interplay of violence and infrastructure proximity, this analysis combines over 15,000 conflict events from ACLED (2018–2025) with federal road networks in Michoacán and Guerrero. Spatial clustering reveals three specific corridors where risk of violence is systemically elevated: Carretera Cuernavaca-Chilpancingo on MEX 93D near Chilpancingo, Avenida Cuauhtémoc feeding into MEX 93D near Acapulco, and Calle Periférico Sur on MEX 51 near Taxco. Conflict events within 1km of these road sections occur nearly five times more often than in other areas.</p>
-<p>While proximity to roads alone does not explain all variation in conflict (as indicated by a low R² value in regression analysis), these corridors concentrate a disproportionate share of violence, particularly from unidentified armed groups and gangs.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> These actors, distinct from major cartels, inordinately target civilians and operate in fragmented, low-governance environments near infrastructure: areas they perceive as high-return targets and where even less-capable groups can assert control and extract gains.</p>
-<p>These unidentified armed groups include <em>huachicoleros<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>–</em> fuel thieves whose objectives inherently depend on proximity to infrastructure. Unlike other groups, their targeting patterns may reflect logistical opportunism rather than territorial control or civilian suppression.</p>
-<p>The roads exploited by these smaller groups serve as tactical chokepoints<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> shaped by economic exigencies – such as the need<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> to move agricultural products quickly – rugged<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> terrain, and a history of incendiary<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> state interventions. Because civilians heavily depend on this limited infrastructure, violently contesting it is lucrative for armed groups.</p>
+<p>While proximity to roads alone does not explain all variation in conflict (as indicated by a low R² value in regression analysis), these corridors concentrate a disproportionate share of violence, particularly from unidentified armed groups and gangs.<span class="citation" data-cites="acled_mexico_method"><sup><a href="#ref-acled_mexico_method" role="doc-biblioref">2</a></sup></span> These actors, distinct from major cartels, inordinately target civilians and operate in fragmented, low-governance environments near infrastructure: areas they perceive as high-return targets and where even less-capable groups can assert control and extract gains.</p>
+<p>These unidentified armed groups include <em>huachicoleros<span class="citation" data-cites="animalpolitico2025huachicol"><sup><a href="#ref-animalpolitico2025huachicol" role="doc-biblioref">3</a></sup></span>–</em> fuel thieves whose objectives inherently depend on proximity to infrastructure. Unlike other groups, their targeting patterns may reflect logistical opportunism rather than territorial control or civilian suppression.</p>
+<p>The roads exploited by these smaller groups serve as tactical chokepoints<span class="citation" data-cites="guo2017spatial"><sup><a href="#ref-guo2017spatial" role="doc-biblioref">4</a></sup></span> shaped by economic exigencies – such as the need<span class="citation" data-cites="erickson2022avocados"><sup><a href="#ref-erickson2022avocados" role="doc-biblioref">5</a></sup></span> to move agricultural products quickly – rugged<span class="citation" data-cites="velazquez2009participatory"><sup><a href="#ref-velazquez2009participatory" role="doc-biblioref">6</a></sup></span> terrain, and a history of incendiary<span class="citation" data-cites="feldmann2019migration"><sup><a href="#ref-feldmann2019migration" role="doc-biblioref">7</a></sup></span> state interventions. Because civilians heavily depend on this limited infrastructure, violently contesting it is lucrative for armed groups.</p>
 <p><strong>II. Actor Typology &amp; Targeting Behavior</strong></p>
-<p>Importantly, violence along these corridors cannot be explained by local socioeconomic conditions or by the value of regional crops – including Michoacán’s nearly $3 billion<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> avocado industry.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> Areas with high avocado production or marginalization levels do not consistently correspond with elevated conflict. Instead, proximity to federal roads- especially those near land and maritime transit hubs – emerges as the most reliable spatial predictor of violence. These highways serve as both logistical nodes and lucrative revenue streams, particularly along trafficking routes and coastal corridors tied to fentanyl<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> and other synthetic<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> drug flows.</p>
+<p>Importantly, violence along these corridors cannot be explained by local socioeconomic conditions or by the value of regional crops – including Michoacán’s nearly $3 billion<span class="citation" data-cites="unav_avocado"><sup><a href="#ref-unav_avocado" role="doc-biblioref">8</a></sup></span> avocado industry.<span class="citation" data-cites="usda2024avocado"><sup><a href="#ref-usda2024avocado" role="doc-biblioref">9</a></sup></span> Areas with high avocado production or marginalization levels do not consistently correspond with elevated conflict. Instead, proximity to federal roads- especially those near land and maritime transit hubs – emerges as the most reliable spatial predictor of violence. These highways serve as both logistical nodes and lucrative revenue streams, particularly along trafficking routes and coastal corridors tied to fentanyl<span class="citation" data-cites="pergolizzi2021fentanyl"><sup><a href="#ref-pergolizzi2021fentanyl" role="doc-biblioref">10</a></sup></span> and other synthetic<span class="citation" data-cites="albores2023fentanyl"><sup><a href="#ref-albores2023fentanyl" role="doc-biblioref">11</a></sup></span> drug flows.</p>
 <p><em>Figure 1: Federal Highway Proximity &amp; Cartel Conflict Intensity in Michoacán and Guerrero (2018–2025)</em></p>
 <p><img src="../charts/assets/mich_guer_binned_road_proximity.png" class="img-fluid"> <em>Clusters of elevated violence align with chokepoint corridors such as MEX 93D in Acapulco and Chilpancingo, MEX 15 from Zamora to Morelia, and MEX 51 near Taxco.</em></p>
-<p>Figure 1 highlights the different logics used by armed groups in Michoacán and Guerrero, highlighting both operational capacity and strategic aims. In Guerrero, conflict events cluster tightly along federal highways exploited by fragmented actors seeking to control chokepoints and extract rents. These chokepoints – often narrow road corridors or transit junctions – are strategic because they concentrate civilian and commercial movement into predictable spaces. While they are especially attractive to lower-capacity groups, asserting control over them still requires a minimal level of coordination, firepower, or intimidation. This makes chokepoints ideal targets for actors who lack the resources to hold<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> territory but possess just enough capacity to project power intermittently and extract value from state infrastructure.</p>
+<p>Figure 1 highlights the different logics used by armed groups in Michoacán and Guerrero, highlighting both operational capacity and strategic aims. In Guerrero, conflict events cluster tightly along federal highways exploited by fragmented actors seeking to control chokepoints and extract rents. These chokepoints – often narrow road corridors or transit junctions – are strategic because they concentrate civilian and commercial movement into predictable spaces. While they are especially attractive to lower-capacity groups, asserting control over them still requires a minimal level of coordination, firepower, or intimidation. This makes chokepoints ideal targets for actors who lack the resources to hold<span class="citation" data-cites="bozcali2024corridors"><sup><a href="#ref-bozcali2024corridors" role="doc-biblioref">12</a></sup></span> territory but possess just enough capacity to project power intermittently and extract value from state infrastructure.</p>
 <p><em>Figure 2: Civilian-Targeting Events by Actor Type and Road Proximity (2018–2025)</em> <img src="../charts/assets/actor_by_road_proximity_top3.png" class="img-fluid"> <em>Unidentified Armed Groups and Gangs commit the vast majority of civilian-targeting events near federal roads. Over 90% of their attacks occur within 1km of highways.</em></p>
-<p>Conversely, Michoacán experiences a wider-ranging pattern of violence, particularly in the western Tierra Caliente, where conflict density remains high even far from major roads. This suggests that violence there stems not only from mobility-enabled targeting but from sustained territorial contestation by larger, more organized groups. These actors seek control over resource-rich zones – including<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> major avocado-producing municipalities – and attempt<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> to steer local governance. While Guerrero’s violence may respond to chokepoint-focused interventions, Michoacán’s dynamics reflect entrenched armed governance and require deeper, systemic state re-engagement to dismantle these structures and reassert legitimate authority.</p>
+<p>Conversely, Michoacán experiences a wider-ranging pattern of violence, particularly in the western Tierra Caliente, where conflict density remains high even far from major roads. This suggests that violence there stems not only from mobility-enabled targeting but from sustained territorial contestation by larger, more organized groups. These actors seek control over resource-rich zones – including<span class="citation" data-cites="erickson2022avocados"><sup><a href="#ref-erickson2022avocados" role="doc-biblioref">5</a></sup></span> major avocado-producing municipalities – and attempt<span class="citation" data-cites="gutierrez2014good"><sup><a href="#ref-gutierrez2014good" role="doc-biblioref">13</a></sup></span> to steer local governance. While Guerrero’s violence may respond to chokepoint-focused interventions, Michoacán’s dynamics reflect entrenched armed governance and require deeper, systemic state re-engagement to dismantle these structures and reassert legitimate authority.</p>
 <p>Figure 2 underscores this distinction. It shows that over 90% of civilian-targeting attacks by Unidentified Armed Groups and Gangs occur within 1km of federal roads, reinforcing the idea that Guerrero’s violence is driven by opportunistic actors leveraging chokepoints. While these groups lack the capacity to hold large areas, they can still project coercive power over key infrastructure with limited resources.</p>
 <p>Roads like MEX 93D serve not only as trafficking corridors but also as routinized channels where civilians – forced to use state infrastructure to work, travel, or trade – endure heightened exposure to extortion, ambush, and assault. In areas with weak institutional presence, chokepoints become perilous not because they are manageable, but because their predictability enables fragmented actors to exert pressure and carry out coercive actions with minimal effort and maximal tactical payoff.</p>
 <p><strong>III. Actor Interactions &amp; Tactical Economies</strong></p>
 <p>While some municipalities reflect conflict dynamics on the high-capacity end of the criminal spectrum, much of the surrounding violence is driven by less-organized groups operating in low-governance zones. These actors rarely engage state forces or rival cartels, relying instead on opportunistic violence against civilians to assert presence and gain territorial purchase. The network analysis below shows that Unidentified Armed Groups and Gangs are responsible for the overwhelming share of civilian-directed attacks across Michoacán and Guerrero.</p>
-<p>As shown in Figure 3, these actors were responsible for over 97% of civilian-directed violence between 2018–2025– consistent<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> with low-capacity tactics in accessible, high-traffic areas. In contrast, larger cartels such as CJNG and Los Viagras are more likely to confront one another or state forces directly, reflecting more organized and resource-intensive modes of conflict. This distinction reinforces the spatial trends observed in Guerrero: violence along road corridors is not merely a function of infrastructure, but of actor type and the tactical logic of groups exploiting chokepoints without needing to hold territory.</p>
+<p>As shown in Figure 3, these actors were responsible for over 97% of civilian-directed violence between 2018–2025– consistent<span class="citation" data-cites="lessing2015logics"><sup><a href="#ref-lessing2015logics" role="doc-biblioref">14</a></sup></span> with low-capacity tactics in accessible, high-traffic areas. In contrast, larger cartels such as CJNG and Los Viagras are more likely to confront one another or state forces directly, reflecting more organized and resource-intensive modes of conflict. This distinction reinforces the spatial trends observed in Guerrero: violence along road corridors is not merely a function of infrastructure, but of actor type and the tactical logic of groups exploiting chokepoints without needing to hold territory.</p>
 <p><em>Figure 3: Directed network graph of armed actor interactions in Michoacán and Guerrero (2018–2025)</em></p>
 <p><img src="../charts/assets/mich_guer_directional_network.png" class="img-fluid"> <em>Node size corresponds to attack frequency; edge width reflects the number of events initiated by the source node. Unidentified Armed Groups and Gangs account for over 97% of civilian-targeting events, rarely engaging state forces or rival cartels – highlighting their opportunistic use of contested infrastructure and avoidance of high-capacity confrontation.</em></p>
 <p><strong>IV. Policy Implications</strong></p>
 <p>The spatial and actor-based distinctions in violence patterns underscores the need for geographically differentiated strategies. In Guerrero, where violence clusters tightly along road corridors and is primarily driven by low-capacity, unidentified actors, interventions must address the opportunistic nature of conflict. Violence here is shaped less by long-term territorial ambition than by short-term extractive actions made possible by weak institutional presence. Enhancing routine or community highway monitoring, increasing civilian patrol visibility, and visibly fortifying key chokepoints could help disrupt patterns of ambush, extortion, and civilian targeting that flourish in these permissive environments.</p>
-<p>In contrast, Michoacán faces a different challenge: sustained, strategic violence carried out by entrenched cartels with the capacity and intent to impose territorial governance. These actors engage in calculated campaigns against rivals and state forces alike, often seeking control over high-value resource zones and critical infrastructure. In these contexts, tactical enforcement alone is insufficient. Restoring political legitimacy in Michoacán will require rebuilding rural administrative capacity, dismantling parallel governance structures, and expanding the reach of public services into areas long<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> dominated by armed control.</p>
-<p>Broadening the scope of responses to include non-military approaches is essential to meaningfully address the systemic drivers of cartel recruitment and to place this threat to Mexico’s social, economic, and political stability in proper context. One recent model suggests<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> that cutting recruitment in half could reduce violence by as much as 25% by 2027, highlighting the tangible impact of preventative versus punitive-focused strategies.</p>
+<p>In contrast, Michoacán faces a different challenge: sustained, strategic violence carried out by entrenched cartels with the capacity and intent to impose territorial governance. These actors engage in calculated campaigns against rivals and state forces alike, often seeking control over high-value resource zones and critical infrastructure. In these contexts, tactical enforcement alone is insufficient. Restoring political legitimacy in Michoacán will require rebuilding rural administrative capacity, dismantling parallel governance structures, and expanding the reach of public services into areas long<span class="citation" data-cites="lessing2015logics"><sup><a href="#ref-lessing2015logics" role="doc-biblioref">14</a></sup></span> dominated by armed control.</p>
+<p>Broadening the scope of responses to include non-military approaches is essential to meaningfully address the systemic drivers of cartel recruitment and to place this threat to Mexico’s social, economic, and political stability in proper context. One recent model suggests<span class="citation" data-cites="prietocuriel2023cartel"><sup><a href="#ref-prietocuriel2023cartel" role="doc-biblioref">15</a></sup></span> that cutting recruitment in half could reduce violence by as much as 25% by 2027, highlighting the tangible impact of preventative versus punitive-focused strategies.</p>
 <p>As violence across both states increasingly converges around infrastructure, the ability to secure and govern chokepoints may ultimately determine whether the state or nonstate actors shape the rules of movement, trade, and authority in southern Mexico.</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-cpj2025gonzalez" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Committee to Protect Journalists. <a href="https://cpj.org/2025/05/mexican-journalist-jose-carlos-gonzalez-shot-dead-in-acapulco/">Mexican journalist <span>José Carlos González</span> shot dead in <span>Acapulco</span></a>. (2025).</div>
+</div>
+<div id="ref-acled_mexico_method" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">ACLED. <a href="https://acleddata.com/knowledge-base/acled-methodology-and-coding-decisions-around-political-violence-and-demonstrations-in-mexico/"><span>ACLED</span> methodology and coding decisions around political violence and demonstrations in <span>Mexico</span></a>.</div>
+</div>
+<div id="ref-animalpolitico2025huachicol" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Animal Político. <a href="https://animalpolitico.com/analisis/invitades/diez-bandas-huachicol-mexico">Las 10 bandas de huachicol más importantes de <span>México</span></a>. (2025).</div>
+</div>
+<div id="ref-guo2017spatial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Guo, W., Lu, X., Mosquera Doñate, G. &amp; Johnson, S. <a href="https://arxiv.org/abs/1604.01693">The spatial ecology of war and peace</a>. (2017).</div>
+</div>
+<div id="ref-erickson2022avocados" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Erickson, M. &amp; Owen, L. <em>Blood Avocados? <span>Trade</span> Liberalization and Cartel Violence in <span>Mexico</span></em>. <a href="https://bpb-us-e1.wpmucdn.com/sites.uw.edu/dist/0/7926/files/2022/10/Blood_avocados_2022.pdf">https://bpb-us-e1.wpmucdn.com/sites.uw.edu/dist/0/7926/files/2022/10/Blood_avocados_2022.pdf</a> (2022).</div>
+</div>
+<div id="ref-velazquez2009participatory" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><span class="nocase">Velázquez, A. <em>et al.</em></span> <a href="https://doi.org/10.1016/j.apgeog.2008.11.001">Building participatory landscape-based conservation alternatives: A case study of <span>Michoacán</span>, <span>Mexico</span></a>. <em>Applied Geography</em> <strong>29</strong>, 513–526 (2009).</div>
+</div>
+<div id="ref-feldmann2019migration" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Feldmann, A. E., Bada, X. &amp; Schütze, S. <em>New Migration Patterns in the <span>Americas</span>: Challenges for the 21st Century</em>. (Palgrave Macmillan, 2019). doi:<a href="https://doi.org/10.1007/978-3-319-89384-6">10.1007/978-3-319-89384-6</a>.</div>
+</div>
+<div id="ref-unav_avocado" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Global Affairs and Strategic Studies, University of Navarra. <a href="https://en.unav.edu/web/global-affairs/mexican-cartels-profit-from-the-avocado-boom-the-star-fruit-in-the-us">Mexican cartels profit from the avocado boom, the star fruit in the <span>US</span></a>.</div>
+</div>
+<div id="ref-usda2024avocado" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">USDA Foreign Agricultural Service. <em>Avocado Annual: <span>Mexico</span></em>. <a href="https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Avocado%20Annual_Mexico%20City_Mexico_MX2024-0018.pdf">https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Avocado%20Annual_Mexico%20City_Mexico_MX2024-0018.pdf</a> (2024).</div>
+</div>
+<div id="ref-pergolizzi2021fentanyl" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Pergolizzi, J., Magnusson, P., LeQuang, J. A. K. &amp; Breve, F. Illicitly manufactured fentanyl entering the <span>United States</span>. <em>Cureus</em> <a href="https://doi.org/10.7759/cureus.17496">https://doi.org/10.7759/cureus.17496</a> (2021) doi:<a href="https://doi.org/10.7759/cureus.17496">10.7759/cureus.17496</a>.</div>
+</div>
+<div id="ref-albores2023fentanyl" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Albores-García, D. &amp; Cruz, S. L. Fentanyl and other new psychoactive synthetic opioids. Challenges to prevention and treatment. <em>Revista de Investigación Clínica</em> <a href="https://doi.org/10.24875/ric.23000109">https://doi.org/10.24875/ric.23000109</a> (2023) doi:<a href="https://doi.org/10.24875/ric.23000109">10.24875/ric.23000109</a>.</div>
+</div>
+<div id="ref-bozcali2024corridors" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Bozçalı, F. <a href="https://doi.org/10.1177/14634996241232755">Corridors of countersovereignty: Insurgency, smuggling, and post-nation-state politics in <span>Turkey</span>’s <span>Kurdish</span> highlands</a>. <em>Anthropological Theory</em> <strong>24</strong>, 325–343 (2024).</div>
+</div>
+<div id="ref-gutierrez2014good" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Gutiérrez-Romero, R. &amp; Oviedo León, M. <em>The Good, the Bad and the Ugly: The Socio-Economic Impact of Drug Cartels and Their Violence in <span>Mexico</span></em>. <a href="https://ddd.uab.cat/pub/worpap/2014/hdl_2072_2064/wpdea1407.pdf">https://ddd.uab.cat/pub/worpap/2014/hdl_2072_2064/wpdea1407.pdf</a> (2014).</div>
+</div>
+<div id="ref-lessing2015logics" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Lessing, B. <a href="https://doi.org/10.1177/0022002715587100">Logics of violence in criminal war</a>. <em>Journal of Conflict Resolution</em> <strong>59</strong>, 1486–1516 (2015).</div>
+</div>
+<div id="ref-prietocuriel2023cartel" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Prieto-Curiel, R., Campedelli, G. M. &amp; Hope, A. <a href="https://doi.org/10.1126/science.adh2888">Reducing cartel recruitment is the only way to lower violence in <span>Mexico</span></a>. <em>Science</em> <strong>381</strong>, 1312–1316 (2023).</div>
+</div>
+</div>
 
 
+</section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>https://cpj.org/2025/05/mexican-journalist-jose-carlos-gonzalez-shot-dead-in-acapulco/<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>https://acleddata.com/knowledge-base/acled-methodology-and-coding-decisions-around-political-violence-and-demonstrations-in-mexico/<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>https://animalpolitico.com/analisis/invitades/diez-bandas-huachicol-mexico<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>https://arxiv.org/pdf/1604.01693<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>https://bpb-us-e1.wpmucdn.com/sites.uw.edu/dist/0/7926/files/2022/10/Blood_avocados_2022.pdf<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>https://d1wqtxts1xzle7.cloudfront.net/50111015/Building_participatory_landscape-based_c20161104-30323-1doxf8e-libre.pdf?1478301437=&amp;response-content-disposition=inline%3B+filename%3DBuilding_participatory_landscape_based_c.pdf&amp;Expires=1751326251&amp;Signature=Pd83GbyU-q<sub>tiIhSm9bUaXdA9Xc8lkt2yRTXX1i</sub>myoXpqcNWE4RWYGFZiTYf21bUuLxkytBYziGu0UgVKZbbFU4zMRaRGNxccttH6wkX9Pt00wrzYZhfV6U7cSJDBLM2siU4f7<sub>qv-MbjIe83SWBeYQtvJEb6nFs77c4AkO3gw8tU1AAIpZVmRHyfY5CFl74BmTYRGAwEeAWTar-nGG</sub>EtjqEk<sub>m</sub>JqJ~4ER1JFTmUPoz9BdXAnEnlrguSNiHGdb3ZydUs1Zf3Ry3Y2DR93xulUI8pE3LOZ6UsAK1Aru8cS5DDT5DMh2nGOIWVwgpkzNLkssCGsGm4gV9NK4ZLs9w__&amp;Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>https://www.researchgate.net/profile/Stephanie-Schuetze/publication/330044143_New_Migration_Patterns_in_the_Americas_Challenges_for_the_21st_Century_Challenges_for_the_21st_Century/links/5d8097b6a6fdcc66b001faa4/New-Migration-Patterns-in-the-Americas-Challenges-for-the-21st-Century-Challenges-for-the-21st-Century.pdf#page=78<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>https://en.unav.edu/web/global-affairs/mexican-cartels-profit-from-the-avocado-boom-the-star-fruit-in-the-us<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Avocado%20Annual_Mexico%20City_Mexico_MX2024-0018.pdf<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>https://assets.cureus.com/uploads/review_article/pdf/61656/20240724-319105-uvdgya.pdf<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>https://www.scielo.org.mx/scielo.php?pid=S0034-83762023000300093&amp;script=sci_arttext&amp;tlng=en<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>https://journals.sagepub.com/doi/pdf/10.1177/14634996241232755<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>https://bpb-us-e1.wpmucdn.com/sites.uw.edu/dist/0/7926/files/2022/10/Blood_avocados_2022.pdf<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>https://ddd.uab.cat/pub/worpap/2014/hdl_2072_2064/wpdea1407.pdf<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>https://thepearsoninstitute.org/sites/default/files/2017-02/19.%20Lessing_Logics%20of%20violence.pdf#page=5.27<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p>https://thepearsoninstitute.org/sites/default/files/2017-02/19.%20Lessing_Logics%20of%20violence.pdf#page=5.27<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p>https://prowly-prod.s3.eu-west-1.amazonaws.com/uploads/43645/assets/584098/-277067de605212b135a9c5cc5dd142e4.pdf#page=5.58<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script>
     document.querySelectorAll('img').forEach(img => {
         img.addEventListener('click', () => {

@@ -9,7 +9,7 @@
 <meta name="author" content="Tim Klustner">
 <meta name="dcterms.date" content="2026-08-28">
 
-<title>SAR Blindness: Wet Soil, Small Footprints – TK</title>
+<title>SAR blindness: Wet soil, small footprints – TK</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -155,7 +156,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SAR Blindness: Wet Soil, Small Footprints</h1>
+<h1 class="title">SAR blindness: Wet soil, small footprints</h1>
 </div>
 
 
@@ -186,7 +187,7 @@ div.csl-indent {
 
 <section id="executive-summary" class="level2">
 <h2 class="anchored" data-anchor-id="executive-summary">Executive summary</h2>
-<p>We sought berms in the desert. The reports said they were there, 31 km of newly-built earthen walls encircling El Fasher city (North Darfur, Sudan). The reports specify the date construction began on the berms (9 May 2025), how long the 22 km “semi-circle” segment took to complete (9 May –19 August 2025), that a gap remains around Al-Salaam IDP camp and that it is shrinking <span class="citation" data-cites="yalehrl2025">(<a href="#ref-yalehrl2025" role="doc-biblioref">Yale School of Public Health, Humanitarian Research Lab 2025</a>)</span>. The berms help the paramilitary group Rapid Support Forces (RSF) create a “literal kill box” around the city. We aimed two satellite sensors – synthetic aperture radar (SAR; Sentinel-1) and multispectral optical (Sentinel-2) – at El Fasher. At 10 m optical resolution, the berms appear as thin dark lines (<a href="#fig-alsen-berm" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<p>We sought berms in the desert. The reports said they were there, 31 km of newly-built earthen walls encircling El Fasher city (North Darfur, Sudan). The reports specify the date construction began on the berms (9 May 2025), how long the 22 km “semi-circle” segment took to complete (9 May –19 August 2025), that a gap remains around Al-Salaam IDP camp and that it is shrinking.<span class="citation" data-cites="yalehrl2025"><sup><a href="#ref-yalehrl2025" role="doc-biblioref">1</a></sup></span> The berms help the paramilitary group Rapid Support Forces (RSF) create a “literal kill box” around the city. We aimed two satellite sensors – synthetic aperture radar (SAR; Sentinel-1) and multispectral optical (Sentinel-2) – at El Fasher. At 10 m optical resolution, the berms appear as thin dark lines (<a href="#fig-alsen-berm" class="quarto-xref">Figure&nbsp;1</a>).</p>
 <div id="fig-alsen-berm" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-alsen-berm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -197,13 +198,13 @@ Figure&nbsp;1: The Alsen berm segment before and after construction (Sentinel-1 
 </figcaption>
 </figure>
 </div>
-<p>SAR is touted as the gold standard in open-access change-detection (CD), particularly change caused by violence <span class="citation" data-cites="ballinger2025">(<a href="#ref-ballinger2025" role="doc-biblioref">Ballinger 2025</a>)</span>. Combined with access to Very High Resolution (VHR) satellite imagery unavailable to the public, SAR is a centerpiece of CD methods in conflict zones, from Mariupol to Gaza <span class="citation" data-cites="dietrich2025 ballinger2025">(<a href="#ref-dietrich2025" role="doc-biblioref">Dietrich et al. 2025</a>; <a href="#ref-ballinger2025" role="doc-biblioref">Ballinger 2025</a>)</span>. Distinguishing disrupted earth from desert is surely plausible.</p>
-<p>We ran the same underlying SAR data through five different methods: raw differencing, baseline normalization, significance testing, multi-scale resampling, and texture analysis. Only the fifth, the Pixel-Wise T-Test (PWTT) of <span class="citation" data-cites="ballinger2025">Ballinger (<a href="#ref-ballinger2025" role="doc-biblioref">2025</a>)</span>, produced a statistically-defensible positive.</p>
+<p>SAR is touted as the gold standard in open-access change-detection (CD), particularly change caused by violence.<span class="citation" data-cites="ballinger2025"><sup><a href="#ref-ballinger2025" role="doc-biblioref">2</a></sup></span> Combined with access to Very High Resolution (VHR) satellite imagery unavailable to the public, SAR is a centerpiece of CD methods in conflict zones, from Mariupol to Gaza.<span class="citation" data-cites="dietrich2025 ballinger2025"><sup><a href="#ref-ballinger2025" role="doc-biblioref">2</a>,<a href="#ref-dietrich2025" role="doc-biblioref">3</a></sup></span> Distinguishing disrupted earth from desert is surely plausible.</p>
+<p>We ran the same underlying SAR data through five different methods: raw differencing, baseline normalization, significance testing, multi-scale resampling, and texture analysis. Only the fifth, the Pixel-Wise T-Test (PWTT) of<span class="citation" data-cites="ballinger2025"><sup><a href="#ref-ballinger2025" role="doc-biblioref">2</a></sup></span>, produced a statistically-defensible positive.</p>
 <p>A second case set, Myanmar’s Sagaing Region, retests the footprint problem against three airstrike locations. Two returned nulls. The third was unresolved.</p>
 <p>The combined case sets underscore two crucial shortcomings of SAR for CD:</p>
 <ul>
-<li><p><strong>Confounded by soil moisture.</strong> When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event <span class="citation" data-cites="wagner1998 stanyer2025">(<a href="#ref-wagner1998" role="doc-biblioref">Wagner 1998</a>; <a href="#ref-stanyer2025" role="doc-biblioref">Stanyer et al. 2025</a>)</span>.</p></li>
-<li><p><strong>Lower sensitivity to single-structure damage.</strong> SAR needs a wide, contiguous footprint to register CD. Single buildings, however they are constructed, rarely separate from background noise during testing <span class="citation" data-cites="aimaiti2022">(<a href="#ref-aimaiti2022" role="doc-biblioref">Aimaiti et al. 2022</a>)</span>.</p></li>
+<li><p><strong>Confounded by soil moisture.</strong> When rain changes soil moisture, soil moisture changes what the radar sees. This means recent rain can appear identical to an authentic change event.<span class="citation" data-cites="wagner1998 stanyer2025"><sup><a href="#ref-wagner1998" role="doc-biblioref">4</a>,<a href="#ref-stanyer2025" role="doc-biblioref">5</a></sup></span></p></li>
+<li><p><strong>Lower sensitivity to single-structure damage.</strong> SAR needs a wide, contiguous footprint to register CD. Single buildings, however they are constructed, rarely separate from background noise during testing.<span class="citation" data-cites="aimaiti2022"><sup><a href="#ref-aimaiti2022" role="doc-biblioref">6</a></sup></span></p></li>
 </ul>
 <p>The CD method below relies solely on open Sentinel-1 and Sentinel-2 data. We detail the systematic signal processing and verification problems encountered in implementing this purely sensor-based method.</p>
 <div id="tbl-cases" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -328,7 +329,7 @@ Table&nbsp;1: Case metadata – El Fasher (Sudan) and Sagaing (Myanmar)
 <h3 class="anchored" data-anchor-id="running-your-tests">Running your tests</h3>
 <p><strong>3. Never diff raw dates.</strong></p>
 <p><em>Problem</em>: At Alsen (1.1), our first SAR test differenced two dates directly, skipping the reference period. This approach produced what appeared to be a positive CD identification: an arbitrary point with no reported feature nearby shows a difference 30x the AOI’s background standard deviation. Were this result in fact corroborated, it would have undoubtedly entered the analysis as a remarkable positive result.</p>
-<p>The result was completely confounded by moisture. The scene pair spanned 150 days and 242.5 mm of rainfall, a full wet-season onset. Since raw SAR backscatter is more sensitive to soil moisture than the optical channels used elsewhere in this project <span class="citation" data-cites="wagner1998 stanyer2025">(<a href="#ref-wagner1998" role="doc-biblioref">Wagner 1998</a>; <a href="#ref-stanyer2025" role="doc-biblioref">Stanyer et al. 2025</a>)</span>, the berm’s CD signature was swamped out by seasonal field-to-fallow changes. The 30x difference result was pointed at farmland, not the berm.</p>
+<p>The result was completely confounded by moisture. The scene pair spanned 150 days and 242.5 mm of rainfall, a full wet-season onset. Since raw SAR backscatter is more sensitive to soil moisture than the optical channels used elsewhere in this project,<span class="citation" data-cites="wagner1998 stanyer2025"><sup><a href="#ref-wagner1998" role="doc-biblioref">4</a>,<a href="#ref-stanyer2025" role="doc-biblioref">5</a></sup></span> the berm’s CD signature was swamped out by seasonal field-to-fallow changes. The 30x difference result was pointed at farmland, not the berm.</p>
 <p><em>Solution</em>: We rebuilt the SAR channel using a multi-image reference distribution (<code>reference_collection</code>). This approach works because many reference scenes give a real estimate of normal variation, not one arbitrarily-timed “before” snapshot that a single rainy week can distort. Rerunning <code>reference_collection</code> on the same 1.1 AOI, the false positive disappeared. The optical-verified berm location, even isolated from this false-positive, returned no signal to the SAR channel. Any raw two-date SAR statistic is insufficient for verification on its own (<a href="#fig-rule3" class="quarto-xref">Figure&nbsp;2</a>).</p>
 <div id="fig-rule3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -599,24 +600,24 @@ Table&nbsp;3: Per-case tested coordinate, point buffer, and Sentinel-1 track
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-aimaiti2022" class="csl-entry" role="listitem">
-Aimaiti, Yusupujiang, Christina Sanon, Magaly Koch, Laurie G. Baise, and Babak Moaveni. 2022. <span>“War Related Building Damage Assessment in <span>Kyiv</span>, <span>Ukraine</span>, Using <span>Sentinel-1</span> Radar and <span>Sentinel-2</span> Optical Images.”</span> <em>Remote Sensing</em> 14 (24): 6239. <a href="https://doi.org/10.3390/rs14246239">https://doi.org/10.3390/rs14246239</a>.
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-yalehrl2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Yale School of Public Health, Humanitarian Research Lab. <em><span>RSF</span> <span>Wall-In</span> <span class="nocase">El-Fasher’s</span> Population to Prevent Escape</em>. <a href="https://ysph.yale.edu/download-file/a26839f2-c18c-43ab-a892-6a777e836f76/">https://ysph.yale.edu/download-file/a26839f2-c18c-43ab-a892-6a777e836f76/</a> (2025).</div>
 </div>
 <div id="ref-ballinger2025" class="csl-entry" role="listitem">
-Ballinger, Ollie. 2025. <span>“Open Access Battle Damage Detection via <span>Pixel-Wise</span> <span>T-Test</span> on <span>Sentinel-1</span> Imagery.”</span> <em>Remote Sensing of Environment</em> 331: 115025. <a href="https://doi.org/10.1016/j.rse.2025.115025">https://doi.org/10.1016/j.rse.2025.115025</a>.
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Ballinger, O. <a href="https://doi.org/10.1016/j.rse.2025.115025">Open access battle damage detection via <span>Pixel-Wise</span> <span>T-Test</span> on <span>Sentinel-1</span> imagery</a>. <em>Remote Sensing of Environment</em> <strong>331</strong>, 115025 (2025).</div>
 </div>
 <div id="ref-dietrich2025" class="csl-entry" role="listitem">
-Dietrich, Olivier, Torben Peters, Vivien Sainte Fare Garnot, et al. 2025. <em>An Open-Source Tool for Mapping War Destruction at Scale in <span>Ukraine</span> Using <span>Sentinel-1</span> Time Series</em>. <a href="https://doi.org/10.48550/arXiv.2406.02506">https://doi.org/10.48550/arXiv.2406.02506</a>.
-</div>
-<div id="ref-stanyer2025" class="csl-entry" role="listitem">
-Stanyer, Claire, Irene Seco-Rizo, Clement Atzberger, and Belen Marti-Cardona. 2025. <span>“Soil Texture, Soil Moisture, and <span>Sentinel-1</span> Backscattering: Towards the Retrieval of <span>Field-Scale</span> Soil Hydrological Properties.”</span> <em>Remote Sensing</em> 17 (3): 542. <a href="https://doi.org/10.3390/rs17030542">https://doi.org/10.3390/rs17030542</a>.
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Dietrich, O. <em>et al.</em> An open-source tool for mapping war destruction at scale in <span>Ukraine</span> using <span>Sentinel-1</span> time series. (2025) doi:<a href="https://doi.org/10.48550/arXiv.2406.02506">10.48550/arXiv.2406.02506</a>.</div>
 </div>
 <div id="ref-wagner1998" class="csl-entry" role="listitem">
-Wagner, Wolfgang. 1998. <span>“Soil Moisture Retrieval from <span>ERS</span> Scatterometer Data.”</span> Geowissenschaftliche Mitteilungen, Heft 49, Vienna University of Technology.
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Wagner, W. Soil moisture retrieval from <span>ERS</span> scatterometer data. (Vienna University of Technology, 1998).</div>
 </div>
-<div id="ref-yalehrl2025" class="csl-entry" role="listitem">
-Yale School of Public Health, Humanitarian Research Lab. 2025. <em><span>RSF</span> <span>Wall-In</span> <span class="nocase">El-Fasher’s</span> Population to Prevent Escape</em>. Yale School of Public Health. <a href="https://ysph.yale.edu/download-file/a26839f2-c18c-43ab-a892-6a777e836f76/">https://ysph.yale.edu/download-file/a26839f2-c18c-43ab-a892-6a777e836f76/</a>.
+<div id="ref-stanyer2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Stanyer, C., Seco-Rizo, I., Atzberger, C. &amp; Marti-Cardona, B. <a href="https://doi.org/10.3390/rs17030542">Soil texture, soil moisture, and <span>Sentinel-1</span> backscattering: Towards the retrieval of <span>Field-Scale</span> soil hydrological properties</a>. <em>Remote Sensing</em> <strong>17</strong>, 542 (2025).</div>
+</div>
+<div id="ref-aimaiti2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Aimaiti, Y., Sanon, C., Koch, M., Baise, L. G. &amp; Moaveni, B. <a href="https://doi.org/10.3390/rs14246239">War related building damage assessment in <span>Kyiv</span>, <span>Ukraine</span>, using <span>Sentinel-1</span> radar and <span>Sentinel-2</span> optical images</a>. <em>Remote Sensing</em> <strong>14</strong>, 6239 (2022).</div>
 </div>
 </div>
 
