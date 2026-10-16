@@ -1,5 +1,5 @@
 ---
-title: "Displacement & Land Pressure in Cameroon-CAR Borderlands"
+title: "Displacement & land pressure in Cameroon-CAR borderlands"
 author: Tim Klustner
 date: 2026-08-20
 bibliography: references.bib

@@ -1,5 +1,5 @@
 ---
-title: "Conflict, Opium & Territorial Control in North Shan State"
+title: "Conflict, opium & territorial control in North Shan State"
 author: "Tim Klustner"
 date: 2025-06-01
 format: html

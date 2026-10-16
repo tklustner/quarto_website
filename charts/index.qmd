@@ -19,7 +19,7 @@ title: "Data Visualizations"
 ## Animated
 
 **Does conflict track opium cultivation or transit routes? North Shan (2018–2025)**<br>
-*Fatality-scaled hex grid animation · From: [Conflict, Opium & Territorial Control in North Shan](../papers/nshan.html)*
+*Fatality-scaled hex grid animation · From: [Conflict, opium & territorial control in North Shan](../papers/nshan.html)*
 
 ![](/charts/assets/nshan_clipped_gif.gif)
 
@@ -36,7 +36,7 @@ title: "Data Visualizations"
 ![](/charts/assets/skivu_mineral_extraction_map.png)
 
 **Does road proximity predict cartel violence? Michoacán & Guerrero (2018–2025)**<br>
-*Binned proximity analysis · From: [Infrastructure of Violence in Michoacán & Guerrero](../papers/mich_guer.html)*
+*Binned proximity analysis · From: [Infrastructure of violence in Michoacán & Guerrero](../papers/mich_guer.html)*
 
 ![](/charts/assets/mich_guer_binned_road_proximity.png)
 
@@ -53,27 +53,27 @@ title: "Data Visualizations"
 ## Charts
 
 **How did conflict tactics shift after the 2021 coup? North Shan (2018–2025)**<br>
-*Disaggregated event type over time · From: [Conflict, Opium & Territorial Control in North Shan](../papers/nshan.html)*
+*Disaggregated event type over time · From: [Conflict, opium & territorial control in North Shan](../papers/nshan.html)*
 
 ![](/charts/assets/nshan_conflict_tactics.png)
 
 **Did military and opposition ordnance lethality diverge post-coup? North Shan (2022–2025)**<br>
-*Stacked bar + fatality rate by actor · From: [Conflict, Opium & Territorial Control in North Shan](../papers/nshan.html)*
+*Stacked bar + fatality rate by actor · From: [Conflict, opium & territorial control in North Shan](../papers/nshan.html)*
 
 ![](/charts/assets/nshan_ordnance_dyad_stackedBar.png)
 
 **How do cartel rivalries structure violence networks? Michoacán & Guerrero (2018–2025)**<br>
-*Directional actor network · From: [Infrastructure of Violence in Michoacán & Guerrero](../papers/mich_guer.html)*
+*Directional actor network · From: [Infrastructure of violence in Michoacán & Guerrero](../papers/mich_guer.html)*
 
 ![](/charts/assets/mich_guer_directional_network.png)
 
 **Does land degradation concentrate near refugee camps, or near the road? Cameroon-CAR border corridor**<br>
-*Distance-decay analysis, N10 highway vs. Gado/Lolo camps · From: [Displacement & Land Pressure in Cameroon-CAR Borderlands](../papers/cam_car_border/cam_car_border.html)*
+*Distance-decay analysis, N10 highway vs. Gado/Lolo camps · From: [Displacement & land pressure in Cameroon-CAR borderlands](../papers/cam_car_border/cam_car_border.html)*
 
 ![](/charts/assets/cam_car_border_distance_decay.png)
 
 **Do rainfall reversals predict land-conversion reversals? N10 corridor and Lolo camp (2018–2025)**<br>
-*Process-tracing timing diagnostic · From: [Displacement & Land Pressure in Cameroon-CAR Borderlands](../papers/cam_car_border/cam_car_border.html)*
+*Process-tracing timing diagnostic · From: [Displacement & land pressure in Cameroon-CAR borderlands](../papers/cam_car_border/cam_car_border.html)*
 
 ![](/charts/assets/cam_car_border_reversal_diagnostic.png)
 

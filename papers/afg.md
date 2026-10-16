@@ -1,5 +1,5 @@
 ---
-title: "Detecting Coercion Without Visible Enforcement: Evidence from Afghanistan's Opium Ban"
+title: "Detecting coercion without visible enforcement: Evidence from Afghanistan's opium ban"
 author: "Tim Klustner"
 date: 2026-06-01
 ---

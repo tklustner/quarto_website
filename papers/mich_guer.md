@@ -1,5 +1,5 @@
 ---
-title: "Mapping the Infrastructure of Violence in Michoacán and Guerrero"
+title: "Mapping the infrastructure of violence in Michoacán and Guerrero"
 author: "Tim Klustner"
 date: 2025-06-30
 format: html

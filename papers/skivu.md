@@ -1,4 +1,4 @@
-# Conflict, Deforestation, and Mining in South Kivu, DRC
+# Conflict, deforestation, and mining in South Kivu, DRC
 
 ### *I. Executive Summary*
 

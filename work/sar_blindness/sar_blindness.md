@@ -1,5 +1,5 @@
 ---
-title: "SAR Blindness: Wet Soil, Small Footprints"
+title: "SAR blindness: Wet soil, small footprints"
 author: Tim Klustner
 date: 2026-08-28
 bibliography: references.bib
