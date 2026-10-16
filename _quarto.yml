@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  # Internal docs, not site pages.
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!change_log.md"
+    - "!lessons_learned.md"
   resources:
     # charts/assets/ is the single shared figure store. Every page (papers,
     # charts, home) references it as /charts/assets/x.png (root-absolute), so a
