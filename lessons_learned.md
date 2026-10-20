@@ -7,7 +7,7 @@ Written 2026-10-16 as an owner-approved backfill. Part A points to the house con
 - **Formatting.** Citations, figures, folder layout and the pre-flight checklist are in `PUBLISHING.md`. Dashes, units and statistics notation are in `CLAUDE.md` point 0. Both files sit one level above this repo.
 - **Titles.** Sentence case, with a capital after the colon: "The war-risk screen: Gleaning signal from noise in maritime conflict shipping" (owner, 2026-10-16). A title appears in four places: the page front matter, `papers/index.qmd` or `work/index.qmd`, the "From:" credits in `charts/index.qmd`, and the landing feature in `index.qmd`.
 - **Citations.** Superscript numbers (nature style), placed after the punctuation. In the legacy papers (afg, honduras, mich_guer, nshan, skivu) a cite may sit on the word it supports (`killed[@key] José`). Keep it there, so each source still covers the same claim.
-- **Terms.** "war-risk screen" in lower case (`116e0e6`). "Authentic", not "genuine", for signal validity (`voice_choices.md`, 2026-10-08).
+- **Terms.** "war-risk screen" in lower case (`116e0e6`). "Authentic", not "genuine", for signal validity (`voice_choices.md`, 2026-10-08). Foreign words and phrases found in a standard English dictionary (de jure, de facto) and Spanish terms are set in roman, not italic (owner, 2026-10-20).
 - **Voice.**
   - `work/` pages use the methods-and-results register, first-person plural (register table in `CLAUDE.md`, "options for").
   - About is first person and varies its wording from the landing headline on purpose.

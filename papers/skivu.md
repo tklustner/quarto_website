@@ -201,7 +201,7 @@ Expanding natural Protected Areas offers one effective strategy by increasing le
 
 Integrating community-based monitoring into REDD+[@rfuk2021moise] forest management programs further aligns incentives with sustainable development. Training residents to participate in data collection and surveillance ensures that those with intimate landscape knowledge play a key role in protecting it. Tying this involvement to financial benefits under REDD+ activities provides communities a substantive alternative to illegal activities while expanding access to conservation-focused livelihoods.
 
-Lastly, participatory[@bikubanya2023due] due diligence practices involving civilians at artisanal gold mines have shown[@bikubanya2023due] promise in reducing official corruption and mitigating conflict financing. Rather than *de facto* embargoes of 3T and other Congolese mineral products, actively engaging communities around mining hubs in alternative, transparent traceability practices must be the focus of reform.
+Lastly, participatory[@bikubanya2023due] due diligence practices involving civilians at artisanal gold mines have shown[@bikubanya2023due] promise in reducing official corruption and mitigating conflict financing. Rather than de facto embargoes of 3T and other Congolese mineral products, actively engaging communities around mining hubs in alternative, transparent traceability practices must be the focus of reform.
 
 **Strategic Implementation**
 
