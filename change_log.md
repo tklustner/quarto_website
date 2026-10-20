@@ -19,3 +19,4 @@ Written 2026-10-16 as a backfill from `git log` (owner-approved). One line per w
 - 2026-10-08 (`9e402d2`–`6bf7ff9`): war_risk_check prose pass, new title, numeric citations placed after punctuation.
 - 2026-10-09 (`116e0e6`–`88727c7`): "war-risk screen" lower-cased across the site; landing quote matched to war_risk_check line 91; R1 described as storage tanks.
 - 2026-10-16 (`9735b2c`–`d48efb9`): Titles changed to sentence case with a capital after the colon; all live writeups moved to `@key` citations with the nature style (legacy papers stay flat with a `<slug>.bib`); honduras NDVI note folded into the text; six nshan sources replaced; `change_log.md` and `lessons_learned.md` backfilled.
+- 2026-10-20 (`af76f2e`–`f5a64c8`): Closed both pre-BD-page tightening entries: war_risk_check vessel backscatter sign and the Dot cross-track flip fixed against the figure and a 2-image ascending check, and the 88% quote qualified "on the Ras Isa case" on all three pages.
