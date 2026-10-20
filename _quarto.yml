@@ -7,6 +7,7 @@ project:
     - "*.md"
     - "!change_log.md"
     - "!lessons_learned.md"
+    - "!tightening.md"
   resources:
     # charts/assets/ is the single shared figure store. Every page (papers,
     # charts, home) references it as /charts/assets/x.png (root-absolute), so a
