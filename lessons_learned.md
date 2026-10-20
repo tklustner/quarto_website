@@ -20,7 +20,7 @@ Written 2026-10-16 as an owner-approved backfill. Part A points to the house con
    - The war_risk_check opening sentence existed only in the site copy, not in `osint_toolkit/sar_damage_assessment/docs/war_risk_check/`.
    - The cam_car_border site copy was ahead of `cam_car_border/docs/` (last changed 2026-09-20).
 
-   `PUBLISHING.md` says the site copy is never edited, but in practice it is. Open owner decision: sync the project copies, or treat the site copies as canonical. A search for canonical copies that skips `docs/` folders misses both of them.
+   `PUBLISHING.md` said the site copy is never edited, but in practice it is. Decided 2026-10-20 (owner): the site copy is the source of truth after first publication (`PUBLISHING.md`, "After publication"). A search for canonical copies that skips `docs/` folders misses both project copies.
 2. **A render could leave the site without CNAME.** It had to be restored three times (`514e7ba`, `3f2ff90`, `edeb353`). It is now declared under `resources:` in `_quarto.yml`. Keep it there.
 3. **Relative paths broke when pages moved,** four times (`2500aab`, `4291a39`, `51c7972`, `e75e2da`). That history is why figure paths are root-absolute (`/charts/assets/x.png`).
 4. **Every render downloads the nature style from zotero.org.** A slow response there (about 22 s on 2026-10-16) fails the render with `ConnectionTimeout`. Retry before you debug the source.
