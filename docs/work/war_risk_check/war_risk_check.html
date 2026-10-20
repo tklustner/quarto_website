@@ -232,7 +232,7 @@ Figure&nbsp;2: The tested-coordinate zoom (3 km radius), same date. All six coor
 <img src="../../charts/assets/war_risk_check_naive_scan.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-naive-scan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: The same raw damage-proxy heuristic (R=after, G=B=before) over the wider AOI, 11–23 April 2025 (Sentinel-1 VH, DESCENDING). R1 is a redness peak (increase); Dot 1 and Dot 2 are cyan peaks (decrease). The dune and quay base are marked for comparison. Mooring point (~790 m east of quay base) is a redness peak beside two vessel streaks: cyan for the orange vessel that departs (optical 9 Apr, gone by 24 Apr), white for one that stays. Most of these peaks are false leads.
+Figure&nbsp;3: The same raw damage-proxy heuristic (R=after, G=B=before) over the wider AOI, 11–23 April 2025 (Sentinel-1 VH, descending). R1 is a redness peak (increase); Dot 1 and Dot 2 are cyan peaks (decrease). The dune and quay base are marked for comparison. Mooring point (~790 m east of quay base) is a redness peak beside two vessel streaks: cyan for the orange vessel that departs (optical 9 Apr, gone by 24 Apr), white for one that stays. Most of these peaks are false leads.
 </figcaption>
 </figure>
 </div>
@@ -356,7 +356,7 @@ Table&nbsp;1: Case metadata – Ras Isa oil terminal (Yemen)
 <h2 class="anchored" data-anchor-id="limitations-and-open-questions">Limitations and open questions</h2>
 <p>The war-risk screen is designed to help infer structural damage candidates using a single before and after image pair (n = 2). Statistical tests require n = 3. As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the screen as used in the Ras Isa case:</p>
 <ul>
-<li><strong>Only one SAR flight track covers the AOI.</strong> 4 ASCENDING annual scenes (ref_n = 1 inside 150 m buffer), compared to DESCENDING’s 64 annual scenes.</li>
+<li><strong>Only one SAR flight track covers the AOI.</strong> 4 ascending annual scenes (ref_n = 1 inside 150 m buffer), compared to descending’s 64 annual scenes.</li>
 <li><strong>Cannot confirm or reject candidates by itself.</strong> A single track with no independent third-source corroboration cannot be decisive. That said, R1 is supported as a candidate, presenting a backscatter increase at p &lt; 0.05 for both VV and VH bands. Conversely, discarded candidates (e.g., gate junction) cannot be decisively ruled out as undamaged.</li>
 </ul>
 </section>
@@ -368,7 +368,7 @@ Table&nbsp;1: Case metadata – Ras Isa oil terminal (Yemen)
 <li><p><strong>VHR.</strong> Planet SkySat’s published Assured-tasking rate is USD 40/km², 25 km² minimum order.<span class="citation" data-cites="observationdata_tasking2025"><sup><a href="#ref-observationdata_tasking2025" role="doc-biblioref">8</a></sup></span> A 113.1 km² initial pass (USD 4,524) plus four minimum-order zoomed tasks, one per coordinate (4 × 25 km² = 100 km², USD 4,000) ≈ USD 8,524.</p></li>
 <li><p><strong>AIS.</strong> Entry-tier commercial subscriptions start around USD 85/month (EUR 80),<span class="citation" data-cites="datadocked_pricing2026"><sup><a href="#ref-datadocked_pricing2026" role="doc-biblioref">9</a></sup></span> often running on coastal receiver networks with thin open-water coverage. Genuine satellite-AIS access for a remote site like Ras Isa is enterprise-quote-only and not publicly priced. The total AIS cost is likely underestimated.</p></li>
 </ul>
-<p><strong>The war-risk screen cuts the projected cost for the same run by 88% on the Ras Isa case.</strong> The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).</p>
+<p><strong>The war-risk screen cuts the projected cost for running the Ras Isa case by 88%.</strong> The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).</p>
 <p>Given a 25 km² minimum order at USD 40/km², this single VHR task costs around USD 1,000.</p>
 </section>
 <section id="appendix-data-and-parameters" class="level2">

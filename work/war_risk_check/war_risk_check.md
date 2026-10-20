@@ -38,7 +38,7 @@ What follows instead is the war-risk screen. It is a replicable three-step check
 
 A simple SAR scan of backscatter changes at the terminal before and after 17 April (@fig-naive-scan) returns backscatter increases inland of the northernmost quays (R1) and at a mooring along the waterline (Mooring point). Two points along the refining facility's southern wall (Dot 1, Dot 2) are redness peaks on the ascending image pair, though they read as decreases on the descending pair shown. Quay base, the reported coordinate, is marked along the same waterline. A sixth coordinate (Dune) was selected for investigation because of its unusual shape, evident from pre-bombing optical context (@fig-overview).
 
-![The same raw damage-proxy heuristic (R=after, G=B=before) over the wider AOI, 11–23 April 2025 (Sentinel-1 VH, DESCENDING). R1 is a redness peak (increase); Dot 1 and Dot 2 are cyan peaks (decrease). The dune and quay base are marked for comparison. Mooring point (~790 m east of quay base) is a redness peak beside two vessel streaks: cyan for the orange vessel that departs (optical 9 Apr, gone by 24 Apr), white for one that stays. Most of these peaks are false leads.](/charts/assets/war_risk_check_naive_scan.png){#fig-naive-scan width="100%"}
+![The same raw damage-proxy heuristic (R=after, G=B=before) over the wider AOI, 11–23 April 2025 (Sentinel-1 VH, descending). R1 is a redness peak (increase); Dot 1 and Dot 2 are cyan peaks (decrease). The dune and quay base are marked for comparison. Mooring point (~790 m east of quay base) is a redness peak beside two vessel streaks: cyan for the orange vessel that departs (optical 9 Apr, gone by 24 Apr), white for one that stays. Most of these peaks are false leads.](/charts/assets/war_risk_check_naive_scan.png){#fig-naive-scan width="100%"}
 
 At first blush, this initial analysis seems to generate multiple fruitful leads on which to spend time and resources. These clusters are made more appealing because they present as plausible location targets for the 17 April bombing, just inland of quays and along the refining facility structure. In fact, only one of these five leads proves plausible: the fuel storage tanks at coordinate R1 (@fig-r1-tank).
 
@@ -77,7 +77,7 @@ While this change is consistent with an image pair where wheeled traffic was pre
 
 The war-risk screen is designed to help infer structural damage candidates using a single before and after image pair (n = 2). Statistical tests require n = 3. As we have seen, transient vehicle traffic amid low-backscatter terrain in either SAR scene can generate false leads while suppressing plausible structural damage signals. Analysts should collect independent post-event data before drawing conclusions from SAR imagery alone. Two additional constraints on the screen as used in the Ras Isa case:
 
-- **Only one SAR flight track covers the AOI.** 4 ASCENDING annual scenes (ref_n = 1 inside 150 m buffer), compared to DESCENDING's 64 annual scenes.
+- **Only one SAR flight track covers the AOI.** 4 ascending annual scenes (ref_n = 1 inside 150 m buffer), compared to descending's 64 annual scenes.
 - **Cannot confirm or reject candidates by itself.** A single track with no independent third-source corroboration cannot be decisive. That said, R1 is supported as a candidate, presenting a backscatter increase at p < 0.05 for both VV and VH bands. Conversely, discarded candidates (e.g., gate junction) cannot be decisively ruled out as undamaged.
 
 ## What this means
@@ -90,7 +90,7 @@ The estimated cost for the Ras Isa case without the screen: USD 8,609.
 
 - **AIS.** Entry-tier commercial subscriptions start around USD 85/month (EUR 80),[@datadocked_pricing2026] often running on coastal receiver networks with thin open-water coverage. Genuine satellite-AIS access for a remote site like Ras Isa is enterprise-quote-only and not publicly priced. The total AIS cost is likely underestimated.
 
-**The war-risk screen cuts the projected cost for the same run by 88% on the Ras Isa case.** The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).
+**The war-risk screen cuts the projected cost for running the Ras Isa case by 88%.** The screen replaces the VHR survey pass with free imagery, and replaces AIS with an optical check for vessel turnover in its image pairs. What remains is a single confirmatory VHR tasking per surviving candidate (here, R1).
 
 Given a 25 km² minimum order at USD 40/km², this single VHR task costs around USD 1,000.
 
