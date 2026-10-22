@@ -1,0 +1,7 @@
+# CARTO tile proxy (see worker.js). Deploy: npx wrangler@4.148.0 deploy
+# Key: printf %s "$KEY" | npx wrangler@4.148.0 secret put CARTO_API_KEY
+# Pages use https://tiles.timklustner.com/light_all/{z}/{x}/{y}{r}.png (no key).
+name = "carto-tile-proxy"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+routes = [{ pattern = "tiles.timklustner.com", custom_domain = true }]
