@@ -14,14 +14,14 @@ One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8).
 ## A. House conventions
 
 - **Formatting.** Citations, figures, folder layout and the pre-flight checklist are in `PUBLISHING.md`. Dashes, units and statistics notation are in `CLAUDE.md` point 0. Both files sit one level above this repo.
-- **Titles.** Sentence case, with a capital after the colon: "The war-risk screen: Gleaning signal from noise in maritime conflict shipping" (owner, 2026-10-16). A title appears in four places: the page front matter, `papers/index.qmd` or `work/index.qmd`, the "From:" credits in `charts/index.qmd`, and the landing feature in `index.qmd`.
+- **Titles.** Sentence case, with a capital after the colon: "The war-risk screen: Gleaning signal from noise in maritime conflict shipping" (owner, 2026-10-16). A title can appear in five places: the page front matter, `papers/index.qmd` or `work/index.qmd`, the "From:" credits in `charts/index.qmd`, the landing feature in `index.qmd`, and a Services proof list (`services/*.qmd`; tin_rival_weighing, 2026-10-28).
 - **Citations.** Superscript numbers (nature style), placed after the punctuation. In the legacy papers (afg, honduras, mich_guer, nshan, skivu) a cite may sit on the word it supports (`killed[@key] José`). Keep it there, so each source still covers the same claim.
 - **Terms.** "war-risk screen" in lower case (`116e0e6`). "Authentic", not "genuine", for signal validity (`voice_choices.md`, 2026-10-08). Foreign words and phrases found in a standard English dictionary (de jure, de facto) and Spanish terms are set in roman, not italic (owner, 2026-10-20).
 - **Voice.**
   - `work/` pages use the methods-and-results register, first-person plural (register table in `CLAUDE.md`, "options for"). Exception: tin_rival_weighing keeps the analytic narrative of DC-Q35 after its move to `work/` (owner, 2026-10-28); the register follows the paper.
-  - The navbar and page titles say Cases (`papers/`) and Methods (`work/`); the folders keep their names so URLs do not change (owner, 2026-10-28).
   - About is first person and varies its wording from the landing headline on purpose.
   - About says "armed groups", not the junta, and uses "Hablo español" (`voice_choices.md`, 2026-10-07).
+- **Section names.** The navbar and page titles say Cases (`papers/`) and Methods (`work/`); the folders keep their names so URLs do not change (owner, 2026-10-28).
 - **Pulled quotes.** The landing page quote matches its source line word for word (`75020e3`).
 - **List order.** In every list of papers or checks on the site (section indexes, Services proof lists, the Services index), the most recent goes at the top (owner, 2026-10-28). The Services index leads with the mirror-trade check.
 
@@ -38,7 +38,7 @@ One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8).
 5. **The nature style drops page locators and editor-only books.** Keep page numbers in the text, as in afg "(p. 168)". Put a book's editors in the `author` field.
 6. **Bare-URL footnotes rot.** Of the 153 legacy links, many were signed links that expire (academia.edu, ScienceDirect, UQ eSpace), blocked automated access, or were private (Notion, Google Drive). Cite a DOI or a stable landing page at the time of writing.
 7. **Metadata written from memory is often wrong.** A Crossref check caught 10 errors in about 25 hand-filled entries. Check every DOI entry against Crossref before you commit.
-8. **A title change must reach all four places it appears** (Part A). The skivu credits on the charts page used different wording and were missed (`d48efb9`). Search for each title's distinctive words, not for the exact string.
+8. **A title change must reach every place it appears** (Part A). The skivu credits on the charts page used different wording and were missed (`d48efb9`). Search for each title's distinctive words, not for the exact string.
 9. **Check any bulk text transform by comparing the prose against a backup.** On 2026-10-16 a lazy regex left footnote text behind as stray lines. Only a comparison of the prose before and after, ignoring citations, caught it.
 10. **Rendering with an uncommitted draft open puts the draft into `docs/` and `docs/search.json`.** Commit first, or render the committed version.
 11. **A regenerated figure can contradict its own caption.** The war_risk_check naive-scan raster was regenerated on the other Sentinel-1 track (2026-09-19). The caption and the text burned into the PNG still called Dot 1 and Dot 2 "redness peaks", but on the new raster they read cyan. A caption that was right for the first image went public with the second. Found 2026-10-20 by measuring pixel colour at each mark. When a figure is rebuilt, re-check each caption claim against the new image, and say in the caption which pass or date the claim is about.
