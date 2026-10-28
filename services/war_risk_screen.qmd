@@ -1,0 +1,36 @@
+---
+title: War-Risk Screen
+
+---
+
+## The problem
+
+War-risk insurance premiums for shipping change in response to reported strikes on maritime infrastructure. Sentinel satellites revisit a site every 5–12 days, so for up to that long after a strike, estimates depend on statements from the parties to the violence. And neither party has a reason to report what was not damaged.
+
+An analyst with commercial very high resolution (VHR) imagery and ship-tracking (AIS) data can close that gap, at a cost of at least USD 8,600 for one strike on one oil terminal.
+
+## What I do
+
+For one reported airstrike on one port or terminal, I compare open Sentinel-1 radar and Sentinel-2 optical images at a strike location, before and after the strike. 
+
+I map every change detected across the area of interest, then screen out changes explained by vessel or vehicle traffic. I then mark sites where water or bare ground can obscure authentic damage. 
+
+Once three post-strike scenes exist (about one month), I test the remaining sites against a 12-month reference by orbit and band, to check whether each change exceeds the site's normal variation.
+
+## What you get
+
+A written memo in two stages:
+
+- From the first post-strike image pair: The sites that pass the screen, their coordinates, before-and-after figures, as well as the sites screened out, with a reason for each.
+  
+- Passing site test results (one month later): Each site that passes is a target for one confirmatory VHR tasking (about USD 1,000 at published rates).
+
+The screen uses one image pair, so it cannot confirm or rule out damage by itself. A site that passes needs independent post-strike data. A site screened out is not shown to be undamaged.
+
+## Proof
+
+- [The war-risk screen: Gleaning signal from noise in maritime conflict shipping](/work/war_risk_check/war_risk_check.html): of six candidate sites at the Ras Isa oil terminal after the 17 April 2025 strike, one cluster of storage tanks passes the screen. On the Ras Isa case, the screen cuts the projected cost of verification by 88%.
+
+---
+
+Reach me at <timklustner@proton.me>
