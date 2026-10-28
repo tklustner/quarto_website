@@ -2,6 +2,12 @@
 
 Written 2026-10-16 as an owner-approved backfill. Part A points to the house conventions for site prose; it holds a rule here only when no other doc does. Part B holds method and process findings. History lives in [[change_log.md]].
 
+## Axioms
+
+One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8). Newest at the bottom.
+
+- 2026-10-28 (twenty-first session). A claim can be checked only once its source is public, so publish the evidence before the summary that points to it.
+
 ## A. House conventions
 
 - **Formatting.** Citations, figures, folder layout and the pre-flight checklist are in `PUBLISHING.md`. Dashes, units and statistics notation are in `CLAUDE.md` point 0. Both files sit one level above this repo.
