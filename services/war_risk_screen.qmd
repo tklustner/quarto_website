@@ -11,9 +11,9 @@ An analyst with commercial very high resolution (VHR) imagery and ship-tracking 
 
 ## What I do
 
-For one reported airstrike on one port or terminal, I compare open Sentinel-1 radar and Sentinel-2 optical images at a strike location, before and after the strike. 
+For one reported airstrike on one port or terminal, I compare open Sentinel-1 radar and Sentinel-2 optical images at a strike location, before and after the strike.
 
-I map every change detected across the area of interest, then screen out changes explained by vessel or vehicle traffic. I then mark sites where water or bare ground can obscure authentic damage. 
+I map every change detected across the area of interest, then screen out changes explained by vessel or vehicle traffic. I then mark sites where water or bare ground can obscure authentic damage.
 
 Once three post-strike scenes exist (about one month), I test the remaining sites against a 12-month reference by orbit and band, to check whether each change exceeds the site's normal variation.
 
@@ -22,8 +22,8 @@ Once three post-strike scenes exist (about one month), I test the remaining site
 A written memo in two stages:
 
 - From the first post-strike image pair: The sites that pass the screen, their coordinates, before-and-after figures, as well as the sites screened out, with a reason for each.
-  
-- Passing site test results (one month later): Each site that passes is a target for one confirmatory VHR tasking (about USD 1,000 at published rates).
+
+- Full site test results (one month later): Each site that passes is a target for one confirmatory VHR tasking (about USD 1,000 at published rates).
 
 The screen uses one image pair, so it cannot confirm or rule out damage by itself. A site that passes needs independent post-strike data. A site screened out is not shown to be undamaged.
 
