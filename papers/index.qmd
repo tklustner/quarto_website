@@ -4,6 +4,9 @@ title: "Papers"
 
 ## Working Papers
 
+**[Weighing rival explanations: Rwanda's 2025 tin excess](tin_rival_weighing/tin_rival_weighing.html)**<br>
+Checking a UN Group of Experts smuggling claim against Rwanda's customs filing. Public records locate 1,305–1,512 t of ore with no declared source, but not its origin.
+
 **[Displacement & land pressure in Cameroon-CAR borderlands](cam_car_border/cam_car_border.html)**<br>
 Why land degradation in a forced displacement corridor concentrates around a highway, not human settlements.
 
