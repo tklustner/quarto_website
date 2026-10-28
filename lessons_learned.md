@@ -21,6 +21,7 @@ One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8).
   - About is first person and varies its wording from the landing headline on purpose.
   - About says "armed groups", not the junta, and uses "Hablo español" (`voice_choices.md`, 2026-10-07).
 - **Pulled quotes.** The landing page quote matches its source line word for word (`75020e3`).
+- **List order.** In every list of papers or checks on the site (section indexes, Services proof lists, the Services index), the most recent goes at the top (owner, 2026-10-28). The Services index leads with the mirror-trade check.
 
 ## B. Lessons
 
