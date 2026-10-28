@@ -15,7 +15,8 @@ One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8).
 - **Citations.** Superscript numbers (nature style), placed after the punctuation. In the legacy papers (afg, honduras, mich_guer, nshan, skivu) a cite may sit on the word it supports (`killed[@key] José`). Keep it there, so each source still covers the same claim.
 - **Terms.** "war-risk screen" in lower case (`116e0e6`). "Authentic", not "genuine", for signal validity (`voice_choices.md`, 2026-10-08). Foreign words and phrases found in a standard English dictionary (de jure, de facto) and Spanish terms are set in roman, not italic (owner, 2026-10-20).
 - **Voice.**
-  - `work/` pages use the methods-and-results register, first-person plural (register table in `CLAUDE.md`, "options for").
+  - `work/` pages use the methods-and-results register, first-person plural (register table in `CLAUDE.md`, "options for"). Exception: tin_rival_weighing keeps the analytic narrative of DC-Q35 after its move to `work/` (owner, 2026-10-28); the register follows the paper.
+  - The navbar and page titles say Cases (`papers/`) and Methods (`work/`); the folders keep their names so URLs do not change (owner, 2026-10-28).
   - About is first person and varies its wording from the landing headline on purpose.
   - About says "armed groups", not the junta, and uses "Hablo español" (`voice_choices.md`, 2026-10-07).
 - **Pulled quotes.** The landing page quote matches its source line word for word (`75020e3`).

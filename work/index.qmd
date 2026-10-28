@@ -1,22 +1,26 @@
 ---
-title: "Work"
+title: "Methods"
 ---
 
-## Systems
+## Papers
 
-**[SMS-to-map pipeline](https://github.com/tklustner/sms-mapper-overview.git)**  
-**March 2026** <br>
-Real-time field report ingestion and mapping system. CQRS + event-driven architecture,
-designed for low-resource conflict contexts.
+**[Weighing rival explanations: Rwanda's 2025 tin excess](tin_rival_weighing/tin_rival_weighing.html)**
+**October 2026** <br>
+Checking a UN Group of Experts smuggling claim against Rwanda's customs filing. Public records locate 1,305–1,512 t of ore with no declared source, but not its origin.
 
-## Methods
-
-**[The war-risk screen: Gleaning signal from noise in maritime conflict shipping](war_risk_check/war_risk_check.html)**  
+**[The war-risk screen: Gleaning signal from noise in maritime conflict shipping](war_risk_check/war_risk_check.html)**
 **September 2026** <br>
 Screens out false SAR structural damage leads with minimal open imagery, cutting projected costs of real-time verification by 88% on the Ras Isa case.
 
-**[SAR blindness: Wet soil, small footprints](sar_blindness/sar_blindness.html)**  
+**[SAR blindness: Wet soil, small footprints](sar_blindness/sar_blindness.html)**
 **August 2026** <br>
 Why open-access SAR radar missed 31 km of newly-built siege walls, and what can be done to increase detection capacity for small-footprint structures.
+
+## Systems
+
+**[SMS-to-map pipeline](https://github.com/tklustner/sms-mapper-overview.git)**
+**March 2026** <br>
+Real-time field report ingestion and mapping system. CQRS + event-driven architecture,
+designed for low-resource conflict contexts.
 
 ---

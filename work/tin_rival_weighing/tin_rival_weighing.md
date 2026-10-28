@@ -2,6 +2,8 @@
 title: "Weighing rival explanations: Rwanda's 2025 tin excess"
 author: Tim Klustner
 date: 2026-10-22
+aliases:
+  - /papers/tin_rival_weighing/tin_rival_weighing.html
 bibliography: references.bib
 csl: https://www.zotero.org/styles/nature
 ---
