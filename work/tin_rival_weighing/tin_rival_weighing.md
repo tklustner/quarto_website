@@ -60,7 +60,7 @@ The result is a single declaring chain that no later record can verify (@fig-cha
 
 At work are three main problems:
 
-1. **Mines and smelters erase mineral origins** 
+1. **Mines and smelters erase mineral origins.** 
 
 A mine's tin output – whether concentrate, ore, or residues – receives a single declaration of origin and output. This declaration is unverifiable without physical access to the mine's production.
 
@@ -76,7 +76,7 @@ These include production statistics, royalties, customs, the central bank's cass
 
 Where verification tagging exists at sites, Global Witness notes "the bulk of minerals tagged came from unvalidated mines in neighbouring territories". These minerals nonetheless enter the records as verified output.[@globalwitness2022itsci, p. 4] Importers abroad likewise record origin as the declarant reports it.[@unsd2013imts]
 
-3. **Inconsistent classification labels over time and between countries.** (@tbl-codes)
+3. **Inconsistent classification labels over time and between countries** (@tbl-codes).
 
 For example, the central bank's "cassiterite" line counts tin metal as ore beginning in 2019. The Group derives 7,700 t of "tin ore" from this combined figure (Section 3).
 
