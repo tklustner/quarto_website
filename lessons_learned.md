@@ -9,6 +9,7 @@ One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8).
 - 2026-10-28 (twenty-first session). A claim can be checked only once its source is public, so publish the evidence before the summary that points to it.
 - 2026-10-28 (twenty-second session). The section a piece sits in tells the reader what it claims to be, so moving it is a change of claim, not of layout, and its blurb and register have to follow.
 - 2026-10-28 (twenty-third session). A default that works for most cases hides the rule it stands in for, so write the rule down before the one case that breaks it.
+- 2026-10-28 (twenty-fourth session). When two words name one thing in adjacent sentences, check whether the second mention repeats the first before choosing between them, since cutting the repeat often fixes the clash.
 
 ## A. House conventions
 
