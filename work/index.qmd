@@ -2,7 +2,7 @@
 title: "Methods"
 ---
 
-## Papers
+## Checks
 
 **[Weighing rival explanations: Rwanda's 2025 tin excess](tin_rival_weighing/tin_rival_weighing.html)** <br>
 **October 2026** <br>
