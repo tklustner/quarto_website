@@ -1,5 +1,5 @@
 ---
-title: "Weighing rival explanations: Rwanda's 2025 tin excess"
+title: "Weighing rival explanations: Recounting Rwanda's 2025 tin excess"
 author: Tim Klustner
 date: 2026-10-22
 aliases:
@@ -16,7 +16,7 @@ It concludes that this rise is "consistent with increased smuggling" from areas 
 
 This paper checks each step of the Group's analysis using a second public record, Rwandan customs filing (@fig-workflow).
 
-Adding a second record shows that both disagree with exports reported by Rwanda's major tin producers. Comparing with a second source yields 1,305–1,512 t of tin ore with no declared source. After removing low-value lots, the Group's own metric shows a rise of 25%, not 58%.
+Adding a second record shows that both disagree with exports reported by Rwanda's major tin producers. With a second source, the recount yields 1,305–1,512 t of tin ore with no declared source. After removing low-value lots, the Group's own metric shows a rise of 25%, not 58%.
 
 Expanding the Group's one alternative explanation to seven shows no public record separates smuggling from the six benign alternatives at the end of its range nearest even odds. Testing mineral origin requires site-level records, which the smelter reports it maintains.
 
