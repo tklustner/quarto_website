@@ -46,6 +46,7 @@ h3 {
 
 /* Figure titles - restore bold */
 p strong,
+li strong,
 figcaption strong {
     font-weight: 600;
     color: #e8e8e8;
