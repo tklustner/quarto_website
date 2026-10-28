@@ -7,6 +7,7 @@ Written 2026-10-16 as an owner-approved backfill. Part A points to the house con
 One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8). Newest at the bottom.
 
 - 2026-10-28 (twenty-first session). A claim can be checked only once its source is public, so publish the evidence before the summary that points to it.
+- 2026-10-28 (twenty-second session). The section a piece sits in tells the reader what it claims to be, so moving it is a change of claim, not of layout, and its blurb and register have to follow.
 
 ## A. House conventions
 
@@ -41,3 +42,4 @@ One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8).
 12. **The editor buffer is not the file on disk.** On 2026-10-20 the owner reported two edits as done (the 88% sentence, then Limitations L81) that were still unsaved. Git, grep and the render all read the disk, so a commit then would have shipped the old text, and an edit by the assistant would have clashed with the open buffer. Before editing or committing a file the owner says they changed, check it on disk (`git diff`, or the file's modified time). If the change is not there, ask for a save before touching the file.
 13. **A live third-party dependency can break a published page with no change in the repo.** On 2026-10-20 the owner found Figure 3 of the Aguán memo (an interactive folium map, unchanged since June) showing "API KEY REQUIRED" tiles: CARTO began requiring a key on 2026-09-23. Nothing in git, the render or the pre-flight checklist could catch it. A figure that loads tiles, fonts or data at view time needs a periodic look in a browser; a static PNG does not.
 14. **A key in a URL that the browser loads is public.** On 2026-10-22 the CARTO key went into the Figure 3 tile URLs and so into a public commit and the live page; it had to be revoked and rotated. A browser key cannot be private: keep it on a server that adds it (`tile_proxy/`, a Cloudflare Worker), and keep `.env` in `.gitignore` from the day it is created. Also, a key in `.env` is not a key on the page: the av_conflict key was thought to be in use on the page, but no tile URL ever sent it.
+15. **A trailing-whitespace trim deletes Markdown hard line breaks.** On 2026-10-28 the Methods page lost the two trailing spaces after each title, so each title and its date rendered on one line on the live page; the "reformat" rule "no trailing whitespace" and an editor's trim-on-save both remove them. Write a line break as `<br>`, as the index pages do on their date lines, never as two trailing spaces.
