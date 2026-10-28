@@ -6,7 +6,7 @@ title: "Methods"
 
 **[Weighing rival explanations: Rwanda's 2025 tin excess](tin_rival_weighing/tin_rival_weighing.html)**
 **October 2026** <br>
-Checking a UN Group of Experts smuggling claim against Rwanda's customs filing. Public records locate 1,305–1,512 t of ore with no declared source, but not its origin.
+Tests a supplier's declared tin volumes against public trade and customs records. On Rwanda's 2025 exports, the test locates 1,305–1,512 t of ore with no declared source, but not its origin.
 
 **[The war-risk screen: Gleaning signal from noise in maritime conflict shipping](war_risk_check/war_risk_check.html)**
 **September 2026** <br>
