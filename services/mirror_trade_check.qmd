@@ -1,0 +1,24 @@
+---
+title: Mirror-Trade Check
+
+---
+
+## The problem
+
+Buyers of tin and other regulated minerals receive a supplier's declared volumes and origins. Public records of those volumes can all begin at one declaration in the same supply chain, so they can agree with each other while the declaration is wrong. Since 2021, EU importers of tin ores and metals above set annual volumes must carry out due diligence that follows the OECD guidance.
+
+## What I do
+
+For one origin country and one mineral, I compare the volumes the country's producers report with customs records, the central bank's export figures and the trade records of partner countries. I recount the gap after removing the differences that come from trade codes, low-value lots and mine growth. Then I weigh the rival explanations that remain, so that a gap is not called smuggling when domestic explanations fit it as well.
+
+## What you get
+
+A written memo (6–8 pages) that names the years worth investigating and the questions to put to sites and exporters, with a 60-minute walkthrough and one revision round. The memo states which records were checked, which were not, and why. Public records can locate a gap in a country's mineral exports, but not the origin of the ore; the memo names the site-level records that would trace it. Tin is validated. Another mineral starts with a test of its trade codes.
+
+## Proof
+
+- [Weighing rival explanations: Rwanda's 2025 tin excess](/work/tin_rival_weighing/tin_rival_weighing.html): public records locate 1,305–1,512 t of Rwanda's 2025 tin ore with no declared source. On the UN Group of Experts' own metric, the reported 58% rise is 25% once low-value lots are removed.
+
+---
+
+Reach me at <timklustner@proton.me>

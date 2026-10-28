@@ -5,6 +5,8 @@ I produce analysis and tools for organizations where standard data sources are n
 
 **[Opacity due diligence](/services/opacity_due_diligence.html)** – Adaptive evaluation of satellite, event, and financial signals for a case of interest: one entity, one area, bounded time period.
 
+**[Mirror-trade check](/services/mirror_trade_check.html)** – Test of a supplier's declared mineral volumes against customs records and the trade records of partner countries: one origin country, one mineral.
+
 **[Opacity monitoring](/services/opacity_monitoring.html)** – The same adaptive evaluation, sustained across multiple areas and time periods, for persistently opaque information environments.
 
 **[Ground truth infrastructure](/services/ground_truth_infra.html)** – Build and deploy SMS-based field reporting infrastructure for underconnected communities.
