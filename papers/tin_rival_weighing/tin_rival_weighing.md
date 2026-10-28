@@ -1,6 +1,5 @@
 ---
 title: "Weighing rival explanations: Rwanda's 2025 tin excess"
-subtitle: "Working paper. Full version in progress."
 author: Tim Klustner
 date: 2026-10-22
 bibliography: references.bib
