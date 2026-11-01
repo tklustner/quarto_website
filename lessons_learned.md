@@ -4,7 +4,7 @@ Written 2026-10-16 as an owner-approved backfill. Part A points to the house con
 
 ## Axioms
 
-One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8). Newest at the bottom.
+One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8). Newest at the bottom. Each axiom is at most 50 characters (owner, 2026-11-01); the mechanism, where it stops holding and the longer account are in the dated lesson of the same close-out.
 
 - 2026-10-28 (twenty-first session). A claim can be checked only once its source is public, so publish the evidence before the summary that points to it.
 - 2026-10-28 (twenty-second session). The section a piece sits in tells the reader what it claims to be, so moving it is a change of claim, not of layout, and its blurb and register have to follow.
