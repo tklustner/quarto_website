@@ -218,7 +218,7 @@ In this case records repeat the same initial declarations, whichever alternative
 
 : Which public records could separate foreign ore from the domestic alternatives, and the result of each. Values are in decibels, ten times the base-10 logarithm of the likelihood ratio.[@good1985] 3 dB is about twice as likely, 10 dB ten times. Negative values are more likely under the domestic alternatives. † Read before the alternatives were written down. In a Bayesian weighing, the order in which evidence is read does not change the result.[@fairfield2017, sec. 3.3.4] {#tbl-records}
 
-A repeated simulation using 24 settings (including 6 for foreign ore building up) models how likely each alternative is, accounting for variables unknowable from public records (e.g. the exact tin content in each tonne of exported tin ore). Line length shows the range between the lowest and highest results across all settings (@fig-timing).
+A repeated simulation using 24 settings (6 for the rows where foreign ore builds up) models how likely each record is under each alternative, accounting for variables unknowable from public records, like the exact tin content in each tonne of exported tin ore. Line length shows the range between the lowest and highest results across all settings (@fig-timing).
 
 On the axis of @fig-timing, a value of 3 means the record is about twice as likely under foreign ore as under the domestic alternatives. A value of −3 means the reverse.
 
