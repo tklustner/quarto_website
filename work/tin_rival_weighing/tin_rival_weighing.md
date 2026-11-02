@@ -24,7 +24,7 @@ Since 2021, EU importers of tin ores and metals above set annual volumes must ca
 
 This check gives them a public-records test of a supplier's declared volumes for tin and, in principle, for other regulated minerals.
 
-![Each row is one step of the Group's argument. Rows contain the check this paper applies to it, the second record used, and the result. The first three checks bear on volume, the fourth on origin. Each check is a method box in its section.](figures/fig0_workflow.png){#fig-workflow fig-alt="Diagram of four rows, one per section 3 to 6. Each row runs from the Group's step to a check, a second record and a result. A 58% rise becomes 25% on the Group's metric with low-value lots removed. 'No significant increase' encounters tin metal up 59%. The Group's 'would have had to triple' conclusion encounters 1,305–1,512 t of ore with no declared source. 'Coincided' encounters no record reaching the first threshold. A bracket groups the first three as volume and the fourth as origin, undecided."}
+![Each row is one claim of the Group's argument. Rows contain the check this paper applies to it, the second record used, and the result. The first three checks bear on volume, the fourth on origin. Each check is a method box in its section.](figures/fig0_workflow.png){#fig-workflow fig-alt="Diagram of four rows, one per section 3 to 6. Each row runs from the Group's claim to a check, a second record and a result. A 58% rise becomes 25% on the Group's metric with low-value lots removed. 'No significant increase' encounters tin metal up 59%. The Group's 'would have had to triple' conclusion encounters 1,305–1,512 t of ore with no declared source. 'Coincided' encounters no record reaching the first threshold. A bracket groups the first three as volume and the fourth as origin, undecided."}
 
 ## 1. The claim {#sec-claim}
 
@@ -52,7 +52,7 @@ Does any record differ from the volumes the producers report? What about from th
 
 As it moves from mine to smelter to port, tin ore undergoes changes in its physical properties, reporting classification, and its official origin. 
 
-Where a mineral's properties or classification change from one regime to another, definitive evidence of its initial properties, classification, and origin disappears. Only the domestic operator at each node reports them. 
+Where a mineral's properties or classification change from one regime to another, definitive evidence of its initial properties, classification, and origin disappears. Only the domestic operator at each node reports them.
 
 The result is a single declaring chain that no later record can verify (@fig-chain).
 
@@ -218,7 +218,7 @@ In this case records repeat the same initial declarations, whichever alternative
 
 : Which public records could separate foreign ore from the domestic alternatives, and the result of each. Values are in decibels, ten times the base-10 logarithm of the likelihood ratio.[@good1985] 3 dB is about twice as likely, 10 dB ten times. Negative values are more likely under the domestic alternatives. † Read before the alternatives were written down. In a Bayesian weighing, the order in which evidence is read does not change the result.[@fairfield2017, sec. 3.3.4] {#tbl-records}
 
-A repeated simulation using 24 settings (6 for the rows where foreign ore builds up) models how likely each record is under each alternative, accounting for variables unknowable from public records, like the exact tin content in each tonne of exported tin ore. Line length shows the range between the lowest and highest results across all settings (@fig-timing).
+A repeated simulation using 24 settings (6 for the rows where foreign ore builds up) models how likely the record is under each alternative, accounting for variables unknowable from public records, like the exact tin content in each tonne of exported tin ore. Line length shows the range between the lowest and highest results across all settings (@fig-timing).
 
 On the axis of @fig-timing, a value of 3 means the record is about twice as likely under foreign ore as under the domestic alternatives. A value of −3 means the reverse.
 
