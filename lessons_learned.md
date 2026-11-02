@@ -11,6 +11,7 @@ One sentence per session, synthesized at "close out" (root `CLAUDE.md`, step 8).
 - 2026-10-28 (twenty-third session). A default that works for most cases hides the rule it stands in for, so write the rule down before the one case that breaks it.
 - 2026-10-28 (twenty-fourth session). When two words name one thing in adjacent sentences, check whether the second mention repeats the first before choosing between them, since cutting the repeat often fixes the clash.
 - 2026-10-28 (twenty-fifth session). Each edit that makes a sentence easier to read can also change what it claims, so check the claim against its source again after every edit, not only after the first draft.
+- 2026-11-02 (Figure 8 session). Explain a unit to readers before its values.
 
 ## A. House conventions
 
