@@ -220,7 +220,7 @@ In this case records repeat the same initial declarations, whichever alternative
 
 Only the timing of the rise differs between foreign ore and the domestic alternatives. Under the domestic alternatives the rise is more likely. At the cautious end, foreign ore and domestic alternatives are almost even, below the first threshold (@fig-timing). 
 
-In @fig-timing, the three components that concern tin are each more likely under foreign ore at the median setting, though less than twice as likely. They measure how suddenly declared tin exports rise after February 2025, how much they rise, and whether they stay high into 2026.
+In @fig-timing, the three components that concern tin are each more likely under foreign ore at the median setting, though less than twice as likely. They measure how suddenly declared tin exports rise after February 2025, how much they rise, and whether this elevated rate continues into 2026.
 
 The difference comes from coltan. Tungsten's timing is also consistent with domestic alternatives, though less so. If Rubaya's ore enters Rwanda at once, Rwanda's declared coltan exports would rise suddenly soon after. But coltan exports do not suddenly rise in May 2024. They rise only later, and gradually (@fig-coltan).
 
