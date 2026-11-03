@@ -64,7 +64,7 @@ In 2005, Cameroon passed a law granting forcibly displaced people similar rights
 
 In the first quarter of 2020, for example, UNHCR reports at least 48,535 refugees from CAR accessed the cash transfer program.[@unhcr_inclusion_2021] The program was finally cut in 2025 as part of UNHCR's 30% blanket reduction in cash assistance programs.[@unhcr_cash_2025] In their 2025 Annual Report, UNHCR reports the cash transfer program ultimately reached 17% of refugees in Cameroon, compared to 83% of internally displaced people (IDPs). This gap is attributed to "funding constraints and related prioritization".[@iom_crp2025]
 
-Whether the cash transfer program extended to people in Gado and Lolo camps remains uncorroborated in official reporting. Even a fully-funded humanitarian response could not touch change levers like land allocation, road corridors, or protected-area designation. That authority lies with Cameroonian ministries: MINDCAF (Ministry of State Property, Surveys, and Land Tenure); MINTP (Public Works); and MINEPDED (Environment, Natural Protection, and Sustainable Development).
+Whether the cash transfer program extended to people in Gado and Lolo camps remains uncorroborated in official reporting. Even a fully funded humanitarian response could not touch change levers like land allocation, road corridors, or protected-area designation. That authority lies with Cameroonian ministries: MINDCAF (Ministry of State Property, Surveys, and Land Tenure); MINTP (Public Works); and MINEPDED (Environment, Natural Protection, and Sustainable Development).
 
 ## Policy Recommendations
 

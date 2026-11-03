@@ -120,7 +120,7 @@ Given a 25 km² minimum order at USD 40/km², this single VHR task costs around 
 | Dot 1         | 350 m                    |
 | Dune          | 552 m                    |
 
-: Distance from each tested coordinate to the nearest JRC Global Surface Water pixel (occurrence ≥ 5%).[@slagter2024] Only Mooring point and Quay base fall inside this 100 m threshold. Dot 1, Dot 2, and the dune are well clear of mapped water. The dots' VV backscatter decrease and optically-checked location are consistent with wheeled vehicle presence then absence; the dune's backscatter instability is consistent with its general bare/featureless terrain. {#tbl-water}
+: Distance from each tested coordinate to the nearest JRC Global Surface Water pixel (occurrence ≥ 5%).[@slagter2024] Only Mooring point and Quay base fall inside this 100 m threshold. Dot 1, Dot 2, and the dune are well clear of mapped water. The dots' VV backscatter decrease and optically checked location are consistent with wheeled vehicle presence then absence; the dune's backscatter instability is consistent with its general bare/featureless terrain. {#tbl-water}
 
 ## References
 

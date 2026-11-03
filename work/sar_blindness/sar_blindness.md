@@ -14,7 +14,7 @@ We sought berms in the desert. The reports said they were there, 31 km of newly 
 
 SAR is touted as the gold standard in open-access change-detection (CD), particularly change caused by violence.[@ballinger2025] Combined with access to Very High Resolution (VHR) satellite imagery unavailable to the public, SAR is a centerpiece of CD methods in conflict zones, from Mariupol to Gaza.[@dietrich2025; @ballinger2025] Distinguishing disrupted earth from desert is surely plausible.
 
-We ran the same underlying SAR data through five different methods: raw differencing, baseline normalization, significance testing, multi-scale resampling, and texture analysis. Only the fifth, the Pixel-Wise T-Test (PWTT) of @ballinger2025, produced a statistically-defensible positive.
+We ran the same underlying SAR data through five different methods: raw differencing, baseline normalization, significance testing, multi-scale resampling, and texture analysis. Only the fifth, the Pixel-Wise T-Test (PWTT) of @ballinger2025, produced a statistically defensible positive.
 
 A second case set, Myanmar's Sagaing Region, retests the footprint problem against three airstrike locations. Two returned nulls. The third was unresolved.
 
@@ -74,7 +74,7 @@ c. Second independent source for corroborating coordinates: the single hospital 
 
 The result was completely confounded by moisture. The scene pair spanned 150 days and 242.5 mm of rainfall, a full wet-season onset. Since raw SAR backscatter is more sensitive to soil moisture than the optical channels used elsewhere in this project,[@wagner1998; @stanyer2025] the berm's CD signature was swamped out by seasonal field-to-fallow changes. The 30x difference result was pointed at farmland, not the berm.
 
-*Solution*: We rebuilt the SAR channel using a multi-image reference distribution (`reference_collection`). This approach works because many reference scenes give a real estimate of normal variation, not one arbitrarily-timed "before" snapshot that a single rainy week can distort. Rerunning `reference_collection` on the same 1.1 AOI, the false positive disappeared. The optical-verified berm location, even isolated from this false-positive, returned no signal to the SAR channel. Any raw two-date SAR statistic is insufficient for verification on its own (@fig-rule3).
+*Solution*: We rebuilt the SAR channel using a multi-image reference distribution (`reference_collection`). This approach works because many reference scenes give a real estimate of normal variation, not one arbitrarily timed "before" snapshot that a single rainy week can distort. Rerunning `reference_collection` on the same 1.1 AOI, the false positive disappeared. The optical-verified berm location, even isolated from this false-positive, returned no signal to the SAR channel. Any raw two-date SAR statistic is insufficient for verification on its own (@fig-rule3).
 
 ![Rule 3 at Alsen. Left, Sentinel-2 true color for reference. Centre, a raw two-date Sentinel-1 difference over a rainy 150-day pair reads change across the whole scene. Right, the PWTT over a 12-month reference period puts a bright linear signal on the berm. The ring marks the berm crossing.](figures/rule3-raw-vs-pwtt.png){#fig-rule3}
 
