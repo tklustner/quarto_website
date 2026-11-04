@@ -37,4 +37,4 @@ The screen uses one image pair, so it cannot confirm or rule out damage by itsel
 
 ---
 
-Reach me at <timklustner@proton.me>
+Reach me at <tim@timklustner.com>
