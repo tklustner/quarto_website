@@ -21,6 +21,7 @@ body {
 /* Figure captions */
 .figure-caption,
 figcaption {
+    font-family: inherit;
     font-size: 0.85em;
     color: #a0a0a0;
     font-style: italic;
