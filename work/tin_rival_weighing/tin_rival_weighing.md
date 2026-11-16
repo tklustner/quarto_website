@@ -54,7 +54,7 @@ As it moves from mine to smelter to port, tin ore undergoes changes in its physi
 
 Where a mineral's properties or classification change from one regime to another, definitive evidence of its initial properties, classification, and origin disappears. Only the domestic operator at each node reports them.
 
-The result is a single declaring chain that no later record can verify (@fig-chain).
+The result is a single declaring chain that later records cannot verify (@fig-chain).
 
 ![Ore passes the mine, and often the smelter, before an export declaration. Every public record derives from that declaration. Ore from outside Rwanda can enter at the mine or the smelter, where no later record checks what goes in.](figures/fig_chain.png){#fig-chain fig-alt="Flow diagram. A dashed box, ore from outside Rwanda, has dashed arrows into the mine and the smelter. The mine, where origin and tonnage are declared, feeds the smelter, where ore becomes metal and the metal's origin is set. Both are outlined in gold under a bracket reading 'No later record checks what enters these two nodes'. The mine also exports ore directly. Both paths reach the export declaration, which fans out to the central bank's cassiterite line, Rwanda's customs filing and importers' records. All labeling derives from one declaration."}
 
@@ -96,7 +96,7 @@ To avoid these pitfalls, mirror gap analysis aligns definitions, coverage and pr
 
 : The codes the analysis crosses, and how each changes an interpretation of the records. HS is the Harmonized System, the international customs code list. {#tbl-codes}
 
-After every label is corrected, a gap remains, though not the one the Group measures. The national mirror shortfall is 1,248 t, June 2022 to December 2025 (@fig-mirror). The UN manual for trade statisticians expects some difference to survive every adjustment, and lists fraud as only one of its causes.[@unsd2013imts] The gap alone is not evidence of smuggled ore.
+After every label is corrected, a gap remains, though not the one the Group measures. The national mirror shortfall for tin ore is 1,248 t, June 2022 to December 2025 (@fig-mirror). The UN manual for trade statisticians expects some difference to survive every adjustment, and lists fraud as only one of its causes.[@unsd2013imts] The gap alone is not evidence of smuggled ore.
 
 The Group tests one alternative against smuggling, production at Rwandan mines as the producers report it. Six benign alternatives may explain the same records:
 
@@ -130,7 +130,7 @@ Processed tin metal accounts for another 497 t. Without the low-value lots, tin 
 
 On the Group's own metric, with the low-value lots removed, the rise is 25%, not 58%. A rise nonetheless.
 
-One national total can comprise several products, and the size of a rise depends on which products are counted. Neither record notes where the tonnes came from. For that, the Group turns from the central bank's figures to the producers' own reports.
+One national total can comprise several products, and the size of a rise depends on which products are counted. Neither record includes the origin of the extra tonnage. For that, the Group turns from the central bank's figures to the producers' own reports.
 
 ## 4. The producers' reports {#sec-producers}
 
